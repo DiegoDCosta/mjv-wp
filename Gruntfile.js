@@ -44,7 +44,7 @@ module.exports = function (grunt) {
                     'js/**/*',
                     'sass/**/*'
                 ],
-                tasks: ['uglify', 'sass']
+                tasks: ['uglify', 'sass', 'cssmin']
             }
         } // watch
 
@@ -55,7 +55,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     // Tarefas que serão executadas
-    grunt.registerTask('default', ['uglify', 'sass', 'cssmin']);
+    grunt.registerTask('', ['uglify', 'sass', 'cssmin']);
     // Tarefa para Watch
     grunt.registerTask('build', ['watch']);
 };
