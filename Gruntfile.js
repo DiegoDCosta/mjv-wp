@@ -8,7 +8,7 @@ module.exports = function (grunt) {
             },
             my_target: {
                 files: {
-                    'js/main-min.js': ['js/**/*.js', 'js/*.js']
+                    'js/main.min.js': ['js/**/*.js', 'js/*.js', 'vendor/**/*.js']
                 }
             }
         }, // uglify
@@ -33,7 +33,7 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'style.min.css': 'style.css'
+                    'style.min.css': ['style.css', 'vendor/**/*.css']
                 }
             }
         },
