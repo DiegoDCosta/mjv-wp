@@ -1,50 +1,61 @@
-'use strict';
 module.exports = function (grunt) {
 
     grunt.initConfig({
 
-        watch: {
-            js: {
-                files: [
-                    'Gruntfile.js',
-                    'js/libs/*.js',
-                    'js/script/*.js'
-                ],
-                tasks: ['uglify', 'clean']
+        uglify: {
+            options: {
+                mangle: false
             },
-            sass: {
-                dist: {
-                    files: {
-                        'style.css': 'sass/style.scss'
-                    },
-                    tasks: ['sass', 'cssmin', 'clean']
-                }
-            },
-            cssmin: {
-                options: {
-                    shorthandCompacting: false,
-                    roundingPrecision: -1
-                },
-                target: {
-                    files: {
-                        'style.min.css': 'style.css'
-                    }
+            my_target: {
+                files: {
+                    'js/main-min.js': ['js/**/*.js', 'js/*.js']
                 }
             }
-        }
+        }, // uglify
+
+
+
+        sass: {
+            options: {
+                sourceMap: false
+            },
+            dist: {
+                options: {style: 'none'},
+                files: {
+                    'style.css': 'sass/style.scss'
+                }
+            }
+        }, // sass
+        cssmin: {
+            options: {
+                shorthandCompacting: false,
+                roundingPrecision: -1
+            },
+            target: {
+                files: {
+                    'style.min.css': 'style.css'
+                }
+            }
+        },
+
+        watch: {
+            dist: {
+                files: [
+                    'js/**/*',
+                    'sass/**/*'
+                ],
+                tasks: ['uglify', 'sass']
+            }
+        } // watch
 
     });
-
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    // Plugins do Grunt
     grunt.loadNpmTasks('grunt-contrib-uglify');
-     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
-
-    // register task
-    grunt.registerTask('default', [
-        'sass',
-        'cssmin',
-        'watch',
-        'uglify'
-    ]);
+    // Tarefas que serão executadas
+    grunt.registerTask('default', ['uglify', 'sass', 'cssmin']);
+    // Tarefa para Watch
+    grunt.registerTask('build', ['watch']);
 };
