@@ -47,17 +47,25 @@ module.exports = function (grunt) {
                 ],
                 tasks: ['uglify', 'sass', 'cssmin', 'clean']
             }
-        } // watch
+        }, // watch
+        clean: {
+            build: {
+                src: ['js/**/*',
+                    'sass/**/*',
+                    'vendor/**/*']
+            }
+        }
 
     });
     // Plugins do Grunt
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-concat-css');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
     // Tarefas que serão executadas
-    grunt.registerTask('default', ['uglify', 'sass', 'cssmin']);
+    grunt.registerTask('default', ['uglify', 'sass', 'concat-css', 'cssmin']);
     // Tarefa para Watch
-    grunt.registerTask('build', ['watch']);
+    grunt.registerTask('build', ['watch', 'clean']);
 };
