@@ -8,11 +8,10 @@ module.exports = function (grunt) {
             },
             my_target: {
                 files: {
-                    'js/main.min.js': ['js/**/*.js', 'js/*.js', 'vendor/**/*.js']
+                    'js/main.min.js': ['js/**/*.js', 'js/*.js']
                 }
             }
         }, // uglify
-
 
 
         sass: {
@@ -65,7 +64,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
     // Tarefas que serão executadas
-    grunt.registerTask('default', ['uglify', 'sass', 'concat-css', 'cssmin']);
+    grunt.registerTask('default', ['uglify', 'sass', 'cssmin']);
     // Tarefa para Watch
     grunt.registerTask('build', ['watch', 'clean']);
 };
