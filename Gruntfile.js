@@ -33,7 +33,7 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'style.min.css': ['style.css', 'vendor/**/*.css']
+                    'style.min.css': 'style.css'
                 }
             }
         },
@@ -42,9 +42,10 @@ module.exports = function (grunt) {
             dist: {
                 files: [
                     'js/**/*',
-                    'sass/**/*'
+                    'sass/**/*',
+                    'vendor/**/*'
                 ],
-                tasks: ['uglify', 'sass', 'cssmin']
+                tasks: ['uglify', 'sass', 'cssmin', 'clean']
             }
         } // watch
 
@@ -53,9 +54,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
     // Tarefas que serão executadas
-    grunt.registerTask('', ['uglify', 'sass', 'cssmin']);
+    grunt.registerTask('default', ['uglify', 'sass', 'cssmin']);
     // Tarefa para Watch
     grunt.registerTask('build', ['watch']);
 };
