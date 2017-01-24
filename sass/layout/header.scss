@@ -1,0 +1,33 @@
+@import "../mixins/utility.scss";
+@import "../typography/_typography.scss";
+/* 
+    Created on : 23/01/2017, 16:13:28
+    Author     : diego.costa
+*/
+
+
+header{
+    .header__navigation{
+        a {
+            padding:10px;
+            @include font-roboto-bold(1.4rem, #FFF, normal);
+            &:visited {
+                color: #FFF;
+            }
+            &:hover,
+                &:focus,
+                &:active {
+                color: #FFF;
+                background: #4889a7;
+            }
+            &:focus {
+                outline: thin dotted;
+            }
+            &:hover,
+                &:active {
+                outline: 0;
+            }
+        }
+    }
+
+}

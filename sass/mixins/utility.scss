@@ -1,0 +1,186 @@
+/* 
+    Created on : 23/01/2017, 17:18:05
+    Author     : diego.costa
+*/
+
+$font : '../../fonts';
+
+@mixin box-shadow ($shadow){
+  -webkit-box-shadow:$shadow;
+  -moz-box-shadow:$shadow;
+  box-shadow:$shadow;
+  }
+
+@mixin border-radius ($radius) {
+  -webkit-border-radius:$radius;
+  -moz-border-radius:$radius;
+  border-radius:$radius;
+  }
+
+@mixin pseudo ($display: block, $position: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $position;
+  }
+
+@mixin block-center {
+  display:block;
+  margin: {
+    left: auto;
+    right: auto;
+    }
+  }
+
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+  }
+
+@mixin transition($values) {
+  -webkit-transition: $values;
+  -moz-transition: $values;
+  -ms-transition: $values;
+  -o-transition: $values;
+  transition: $values;
+  }
+
+@mixin user-select ($attr) {
+  -webkit-user-select: $attr;
+  -moz-user-select: $attr;
+  -ms-user-select: $attr;
+  user-select: $attr;
+  }
+
+@mixin touch-action ($attr) {
+  -ms-touch-action: $attr;
+  touch-action: $attr;
+  }
+
+@mixin font-roboto-bold($size: false, $color: false, $weight: false,  $lh: false){
+  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  @if $size { font-size: $size; }
+  @if $color { color: $color; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+@mixin font-roboto-thin($size: false, $color: false, $weight: false,  $lh: false) {
+  font-family: 'robotothin', Helvetica, Arial, sans-serif;
+  @if $size { font-size: $size; }
+  @if $color { color: $color; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+@mixin font-roboto-regular($size: false, $color: false, $weight: false,  $lh: false) {
+  font-family: 'robotoregular', Helvetica, Arial, sans-serif;
+  @if $size { font-size: $size; }
+  @if $color { color: $color; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+@mixin font-roboto-italic($size: false, $color: false, $weight: false,  $lh: false) {
+  font-family: 'robotoitalic', Helvetica, Arial, sans-serif;
+  @if $size { font-size: $size; }
+  @if $color { color: $color; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+
+@mixin margin-extremes ($value) {
+  margin-top: $value;
+  margin-bottom: $value;
+}
+
+@mixin margin-sides ($value) {
+  margin-left: $value;
+  margin-right: $value;
+}
+@mixin padding-extremes ($value) {
+  padding-top:$value;
+  padding-bottom: $value;
+}
+@mixin padding-sides ($value) {
+  padding-left: $value;
+  padding-right: $value;
+}
+
+@mixin text-center {
+  text-align: center;
+  }
+
+@mixin text-right {
+  text-align: right;
+  }
+
+.row-align-center {
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.row-align-footer-vert {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  align-items: center;
+  height: 100px;
+
+  }
+
+.img-rounded {
+  border-radius: 50%;
+}
+
+@mixin gradient ($first-color, $second-color) {
+  background: $first-color;
+  background: -moz-linear-gradient(left, $first-color 0%, $second-color 100%);
+  background: -webkit-linear-gradient(left, $first-color 0%,$second-color 100%);
+  background: linear-gradient(to right, $first-color 0%,$second-color 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$first-color', endColorstr='$second-color',GradientType=1 );
+  }
+
+@mixin gradient-vertical ($first-color:rgba(255,255,255,0), $second-color:rgba(150,150,150,0.5), $third-color:rgba(0,0,0,1)) {
+  background: -moz-linear-gradient(top, $first-color 0%, $second-color 41%, $third-color 100%);
+  background: -webkit-linear-gradient(top, $first-color 0%,$second-color 41%,$third-color 100%);
+  background: linear-gradient(to bottom, $first-color 0%,$second-color 41%,$third-color 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000',GradientType=0 );
+  }
+
+@mixin gradient-normal ($first-color:rgba(0,0,0,0.8), $second-color:rgba(125,185,232,0)) {
+  background: -moz-linear-gradient(top, $first-color 0%, $second-color 100%);
+  background: -webkit-linear-gradient(top, $first-color 0%,$second-color 100%);
+  background: linear-gradient(to bottom, $first-color 0%,$second-color 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#007db9e8',GradientType=0 );
+  }
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+  }
+
+/* Rever */
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+  }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+  }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.display-none {
+  display: none;
+  }

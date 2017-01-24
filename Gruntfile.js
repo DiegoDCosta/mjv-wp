@@ -1,19 +1,16 @@
 module.exports = function (grunt) {
 
     grunt.initConfig({
-
         uglify: {
             options: {
                 mangle: false
             },
             my_target: {
                 files: {
-                    'js/main.min.js': ['js/**/*.js', 'js/*.js']
+                    'js/main.min.js': ['js/**/*.js']
                 }
             }
-        }, // uglify
-
-
+        }, //uglify
         sass: {
             options: {
                 sourceMap: false
@@ -35,8 +32,7 @@ module.exports = function (grunt) {
                     'style.min.css': 'style.css'
                 }
             }
-        },
-
+        }, //cssmin
         watch: {
             dist: {
                 files: [
@@ -44,16 +40,9 @@ module.exports = function (grunt) {
                     'sass/**/*',
                     'vendor/**/*'
                 ],
-                tasks: ['uglify', 'sass', 'cssmin', 'clean']
+                tasks: ['sass', 'cssmin']
             }
-        }, // watch
-        clean: {
-            build: {
-                src: ['js/**/*',
-                    'sass/**/*',
-                    'vendor/**/*']
-            }
-        }
+        } // watch
 
     });
     // Plugins do Grunt
@@ -61,10 +50,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-concat-css');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
     // Tarefas que serão executadas
     grunt.registerTask('default', ['uglify', 'sass', 'cssmin']);
     // Tarefa para Watch
-    grunt.registerTask('build', ['watch', 'clean']);
+    grunt.registerTask('build', ['watch']);
 };
