@@ -10,13 +10,7 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: mjv-theme
 Tags:
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-mjv-theme is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-*/
+
 /*--------------------------------------------------------------
 # Boostrap 3.3.7
 --------------------------------------------------------------*/
@@ -3565,9 +3559,6 @@ tbody.collapse.in {
     margin-right: -15px; }
   .navbar-right ~ .navbar-right {
     margin-right: 0; } }
-.navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7; }
 .navbar-default .navbar-brand {
   color: #777; }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
@@ -3587,11 +3578,11 @@ tbody.collapse.in {
   color: #ccc;
   background-color: transparent; }
 .navbar-default .navbar-toggle {
-  border-color: #ddd; }
+  border-color: none; }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #ddd; }
+  background-color: none; }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #888; }
+  background-color: #FFF; }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-color: #e7e7e7; }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
@@ -5527,7 +5518,9 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  /* Fallback for when there is no custom background color defined. */
+  background: url(./template_image/body__bg.png) repeat 0 0;
+  background-size: cover; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -5862,6 +5855,10 @@ embed, iframe, object {
 # partes do site
 --------------------------------------------------------------*/
 /* 
+    Created on : 23/01/2017, 16:13:28
+    Author     : diego.costa
+*/
+/* 
     Created on : 23/01/2017, 17:18:05
     Author     : diego.costa
 */
@@ -6042,24 +6039,101 @@ mark, ins {
 big {
   font-size: 125%; }
 
-/* 
-    Created on : 23/01/2017, 16:13:28
-    Author     : diego.costa
-*/
-header .header__navigation a {
+header.site-header {
+  background: url(./template_image/header_bg.png) repeat 0 0;
+  background-size: false;
+  min-height: 161px;
+  padding-top: 30px;
+  position: absolute;
+  width: 100%;
+  z-index: 2; }
+
+.header__form_busca .search {
+  font-size: 80px;
+  font-size: 5rem;
+  height: 90px;
+  text-align: center; }
+.header__form_busca .modal-dialog {
+  margin-top: 22%; }
+
+.visible {
+  display: block !important;
+  -webkit-transition: all 1s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+  -moz-transition: all 1s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+  -ms-transition: all 1s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+  -o-transition: all 1s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+  transition: all 1s cubic-bezier(0.6, -0.28, 0.74, 0.05); }
+
+header .header__navigation ul li a {
   padding: 10px;
   font-family: 'robotobold', Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   color: #FFF;
   font-weight: normal; }
-header .header__navigation a:visited {
+header .header__navigation ul li a:visited {
   color: #FFF; }
-header .header__navigation a:hover, header .header__navigation a:focus, header .header__navigation a:active {
+header .header__navigation ul li a:hover, header .header__navigation ul li a:focus, header .header__navigation ul li a:active {
   color: #FFF;
   background: #4889a7; }
-header .header__navigation a:focus {
+header .header__navigation ul li a:focus {
   outline: thin dotted; }
-header .header__navigation a:hover, header .header__navigation a:active {
+header .header__navigation ul li a:hover, header .header__navigation ul li a:active {
   outline: 0; }
+header .header__navigation ul li:hover ul {
+  background: #4889a7;
+  margin-top: 2.5em;
+  -webkit-transition: all 0.5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+  -moz-transition: all 0.5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+  -ms-transition: all 0.5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+  -o-transition: all 0.5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+  transition: all 0.5s cubic-bezier(0.6, -0.28, 0.74, 0.05); }
+header .header__navigation ul li:hover ul li a:hover {
+  text-decoration: underline; }
+header .header__logo a {
+  display: block;
+  padding: 50px;
+  background: url(./template_image/header__logo_mjv.png) no-repeat center center;
+  background-size: false;
+  background-size: 100%; }
+header .header__busca button {
+  background: none;
+  border: none;
+  color: #FFF; }
+header .header__busca .ico-search {
+  background: url(./template_image/ico-search.png) no-repeat 0 0;
+  background-size: 100%;
+  padding: 15px; }
+header .header__submenu {
+  padding-bottom: 10px;
+  padding-top: 10px; }
+header .header__submenu ul {
+  list-style: none; }
+header .header__submenu ul li {
+  float: left; }
+header .header__submenu ul li a {
+  color: #FFF;
+  margin: 20px 5px 5px;
+  font-size: 1.4rem;
+  padding-right: 10px;
+  border-right: solid 1px #FFF; }
+header .header__submenu ul li :hover {
+  text-decoration: underline; }
+header .header__submenu ul li:last-child {
+  border: none;
+  float: right; }
+header .header__submenu ul li:last-child a {
+  border: none; }
+header .header__submenu .ico-globo {
+  background: url(./template_image/ico-globo.png) no-repeat center center;
+  background-size: 60%;
+  padding: 15px; }
+header nav .navbar-default .navbar-toggle button:focus, header nav .navbar-default .navbar-toggle button:hover {
+  border: none !important; }
+
+footer .footer__logo a {
+  padding: 50px;
+  display: block;
+  background: url(./template_image/footer__logo_mjv.png) no-repeat center center;
+  background-size: 60%; }
 
 /*# sourceMappingURL=style.css.map */

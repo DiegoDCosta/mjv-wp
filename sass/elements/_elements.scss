@@ -10,6 +10,7 @@ html {
 
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+        @include background("./template_image/body__bg.png", $repeat: repeat, $background-size:cover);
 }
 
 blockquote, q {

@@ -1,0 +1,151 @@
+/* 
+    Created on : 23/01/2017, 16:13:28
+    Author     : diego.costa
+*/
+
+@import "../mixins/utility.scss";
+@import "../typography/_typography.scss";
+
+header.site-header{
+    @include background("./template_image/header_bg.png", $repeat: repeat);
+    min-height: 161px;
+    padding-top: 30px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.header__form_busca{
+    .search{
+        @include font-size(5);
+        height: 90px;
+        @include text-center();
+    }
+    .modal-dialog{
+        margin-top: 22%;
+    }
+}
+.visible {
+    display: block!important;
+    @include transition(all 1s cubic-bezier(.6,-0.28,.74,.05));
+}
+//.main-navigation ul li:hover > ul
+header{
+    .header__navigation{
+        ul{
+            li{
+                a {
+                    padding:10px;
+                    @include font-roboto-bold(1.4rem, #FFF, normal);
+                    &:visited {
+                        color: #FFF;
+                    }
+                    &:hover,
+                        &:focus,
+                        &:active {
+                        color: #FFF;
+                        background: #4889a7;
+                    }
+                    &:focus {
+                        outline: thin dotted;
+                    }
+                    &:hover,
+                        &:active {
+                        outline: 0;
+                    }
+                }
+                &:hover{
+                    ul{
+                        background: #4889a7;
+                        margin-top: 2.5em;
+                        @include transition(all 0.5s cubic-bezier(.6,-0.28,.74,.05));
+                        li{
+                            a{
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header__logo{
+        a{
+            display: block;
+            padding: 50px;
+            @include background("./template_image/header__logo_mjv.png", $repeat: no-repeat, $position: center center);
+            background-size: 100%;
+        }
+    }
+    .header__busca{
+        button{            
+            background:none;
+            border: none;
+            color: #FFF;
+        }
+        .ico-search{
+            @include background("./template_image/ico-search.png", $background-size:100%);
+            padding: 15px;
+        }
+
+    }
+
+    .header__submenu {
+        //border-bottom: solid 1px #FFF;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        ul {
+            list-style: none;
+            li{
+                float:left;
+                a{
+                    color:#FFF;
+                    margin: 20px 5px 5px;
+                    font-size: 1.4rem;
+                    padding-right: 10px;
+                    border-right: solid 1px #FFF;
+                }
+                :hover{
+                    text-decoration: underline;
+                }
+                &:last-child{
+                    border: none;
+                    float: right;
+                    a{
+                        border: none;
+                    }
+                }
+
+            }
+
+        }
+        .ico-globo{            
+            @include background("./template_image/ico-globo.png", $repeat: no-repeat, $position: center center, $background-size:60%);
+            padding: 15px;
+        }
+    }
+    nav{
+        .navbar-default{
+            .navbar-toggle { 
+                button{
+                    &:focus,
+                        &:hover{
+                        border: none !important;
+                    }
+                }
+            }
+        }
+    }
+}// fim header
+
+
+footer {
+    .footer__logo{
+        a{
+            padding: 50px;
+            display: block;
+            @include background("./template_image/footer__logo_mjv.png", $repeat: no-repeat, $position: center center, $background-size:60%);
+        }
+    }
+}

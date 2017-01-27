@@ -3,11 +3,13 @@ module.exports = function (grunt) {
     grunt.initConfig({
         uglify: {
             options: {
-                mangle: false
+                mangle: {
+                    except: ['vendor/js/jquery-3.1.1.min']
+                }
             },
             my_target: {
                 files: {
-                    'js/main.min.js': ['js/**/*.js']
+                    'js/main.min.js': ['js/*.js']
                 }
             }
         }, //uglify
@@ -18,7 +20,7 @@ module.exports = function (grunt) {
             dist: {
                 options: {style: 'none'},
                 files: {
-                    'style.css': 'sass/style.scss'
+                    'style.css': ['sass/style.scss']
                 }
             }
         }, // sass
@@ -40,7 +42,7 @@ module.exports = function (grunt) {
                     'sass/**/*',
                     'vendor/**/*'
                 ],
-                tasks: ['sass', 'cssmin']
+                tasks: ['sass', 'cssmin', 'uglify']
             }
         } // watch
 
@@ -48,7 +50,6 @@ module.exports = function (grunt) {
     // Plugins do Grunt
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-concat-css');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     // Tarefas que serão executadas
