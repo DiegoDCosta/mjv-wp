@@ -1,7 +1,7 @@
 module.exports = function (grunt) {
 
     grunt.initConfig({
-        uglify: {
+       uglify: {
             options: {
                 mangle: {
                     except: ['vendor/js/jquery-3.1.1.min']

@@ -155,9 +155,12 @@ $font : '../../fonts';
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#007db9e8',GradientType=0 );
 }
 
-@mixin background($imgpath,$position:0 0,$repeat: no-repeat,  $background-size:false) {
+@mixin background($imgpath, $position:0 0, $repeat: no-repeat,  $background-size:false) {
     background: url(#{$imgpath}) $repeat $position;
-    background-size: $background-size;
+   @if $background-size {background-size: $background-size;}
+}
+@mixin background-color($color-blue-regular){
+    background-color: $color-blue-regular;
 }
 
 @mixin border($width, $style, $color) {

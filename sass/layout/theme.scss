@@ -5,9 +5,9 @@
 
 @import "../mixins/utility.scss";
 @import "../typography/_typography.scss";
+@import "../variables-site/_colors.scss";
 
 header.site-header{
-    @include background("./template_image/header_bg.png", $repeat: repeat);
     min-height: 161px;
     padding-top: 30px;
     position: absolute;
@@ -24,10 +24,55 @@ header.site-header{
         margin-top: 22%;
     }
 }
+//transição do sub-menu desktop
 .visible {
     display: block!important;
     @include transition(all 1s cubic-bezier(.6,-0.28,.74,.05));
 }
+//logo mobile
+.logo-holder{
+    text-align: left!important;
+    margin-left: 20px;
+}
+.mobmenur-container{
+    margin-right: 20px!important;
+}
+.mobmenu_content{
+    #mobmenuright {
+        li.menu-item-has-children{
+            ul.sub-menu{
+                li.menu-item{
+                    a{
+                        padding-left: 15px!important;
+                    }
+                }
+            }
+        }
+        .sub-menu{
+            padding-left: 0!important;
+
+        }
+    }
+}
+
+//botao laranja
+
+.btnLaranja{
+    color: #FFF;
+    background: $color-orange;
+    @include font-roboto-bold();
+    padding: 12px 35px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    &:hover{
+        color: #FFF;
+    }
+}
+
+
+
 //.main-navigation ul li:hover > ul
 header{
     .header__navigation{
@@ -137,15 +182,55 @@ header{
             }
         }
     }
+
 }// fim header
+
+main{
+    h1, h2, h3, h4, h5, h6{
+        @include font-roboto-bold($color: $color-blue-regular , $weight: bold);
+    }
+}
 
 
 footer {
+    h1, h2, h3, h4, h5, h6{
+        @include font-roboto-bold($color: $color-gray-light, $weight: bold);
+    }
     .footer__logo{
         a{
-            padding: 50px;
+            padding: 40px;
             display: block;
-            @include background("./template_image/footer__logo_mjv.png", $repeat: no-repeat, $position: center center, $background-size:60%);
+            @include background("./template_image/footer__logo_mjv.png", $repeat: no-repeat, $position: left center, $background-size:100%);
         }
     }
+    .footer__redes-sociais{
+        @include background-color($color-blue-regular);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        ul{
+            list-style: none!important;
+            li{
+                float:left;
+                a{
+                    padding:20px; 
+                }
+                a.footer_redes-sociais-face{
+                    @include background("./template_image/footer__ico-facebook.png", $repeat: no-repeat, $position: center center, $background-size:100%);
+                }
+                a.footer_redes-sociais-linkedin{
+                    @include background("./template_image/footer__ico-linkedin.png", $repeat: no-repeat, $position: center center, $background-size:100%);
+                    margin: 0 20px;
+                }
+                a.footer_redes-sociais-twitter{
+                    @include background("./template_image/footer__ico-twitter.png", $repeat: no-repeat, $position: center center, $background-size:100%);
+                }
+            }
+        }
+    }
+    .footer__logo-sap{
+        @include background("./template_image/footer__logo-sap.png", $repeat: no-repeat, $position: left top, $background-size:60%);
+        padding: 50px;
+    }
 }
+
+

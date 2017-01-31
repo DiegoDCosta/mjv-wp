@@ -5443,10 +5443,10 @@ body, button, input, select, textarea {
   line-height: 1.5; }
 
 h1 {
-  font-size: 1.6rem; }
+  font-size: 3rem; }
 
 h2 {
-  font-size: 1.5rem; }
+  font-size: 2.5rem; }
 
 h3 {
   font-size: 1.4rem; }
@@ -5518,9 +5518,7 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */
-  background: url(./template_image/body__bg.png) repeat 0 0;
-  background-size: cover; }
+  /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
   quotes: "" ""; }
@@ -5976,10 +5974,10 @@ body, button, input, select, textarea {
   line-height: 1.5; }
 
 h1 {
-  font-size: 1.6rem; }
+  font-size: 3rem; }
 
 h2 {
-  font-size: 1.5rem; }
+  font-size: 2.5rem; }
 
 h3 {
   font-size: 1.4rem; }
@@ -6040,8 +6038,6 @@ big {
   font-size: 125%; }
 
 header.site-header {
-  background: url(./template_image/header_bg.png) repeat 0 0;
-  background-size: false;
   min-height: 161px;
   padding-top: 30px;
   position: absolute;
@@ -6063,6 +6059,30 @@ header.site-header {
   -ms-transition: all 1s cubic-bezier(0.6, -0.28, 0.74, 0.05);
   -o-transition: all 1s cubic-bezier(0.6, -0.28, 0.74, 0.05);
   transition: all 1s cubic-bezier(0.6, -0.28, 0.74, 0.05); }
+
+.logo-holder {
+  text-align: left !important;
+  margin-left: 20px; }
+
+.mobmenur-container {
+  margin-right: 20px !important; }
+
+.mobmenu_content #mobmenuright li.menu-item-has-children ul.sub-menu li.menu-item a {
+  padding-left: 15px !important; }
+.mobmenu_content #mobmenuright .sub-menu {
+  padding-left: 0 !important; }
+
+.btnLaranja {
+  color: #FFF;
+  background: #FFB400;
+  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  padding: 12px 35px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center; }
+.btnLaranja:hover {
+  color: #FFF; }
 
 header .header__navigation ul li a {
   padding: 10px;
@@ -6093,7 +6113,6 @@ header .header__logo a {
   display: block;
   padding: 50px;
   background: url(./template_image/header__logo_mjv.png) no-repeat center center;
-  background-size: false;
   background-size: 100%; }
 header .header__busca button {
   background: none;
@@ -6130,10 +6149,69 @@ header .header__submenu .ico-globo {
 header nav .navbar-default .navbar-toggle button:focus, header nav .navbar-default .navbar-toggle button:hover {
   border: none !important; }
 
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  color: #57a8db;
+  font-weight: bold; }
+
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  color: #888888;
+  font-weight: bold; }
 footer .footer__logo a {
-  padding: 50px;
+  padding: 40px;
   display: block;
-  background: url(./template_image/footer__logo_mjv.png) no-repeat center center;
-  background-size: 60%; }
+  background: url(./template_image/footer__logo_mjv.png) no-repeat left center;
+  background-size: 100%; }
+footer .footer__redes-sociais {
+  background-color: #57a8db;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+footer .footer__redes-sociais ul {
+  list-style: none !important; }
+footer .footer__redes-sociais ul li {
+  float: left; }
+footer .footer__redes-sociais ul li a {
+  padding: 20px; }
+footer .footer__redes-sociais ul li a.footer_redes-sociais-face {
+  background: url(./template_image/footer__ico-facebook.png) no-repeat center center;
+  background-size: 100%; }
+footer .footer__redes-sociais ul li a.footer_redes-sociais-linkedin {
+  background: url(./template_image/footer__ico-linkedin.png) no-repeat center center;
+  background-size: 100%;
+  margin: 0 20px; }
+footer .footer__redes-sociais ul li a.footer_redes-sociais-twitter {
+  background: url(./template_image/footer__ico-twitter.png) no-repeat center center;
+  background-size: 100%; }
+footer .footer__logo-sap {
+  background: url(./template_image/footer__logo-sap.png) no-repeat left top;
+  background-size: 60%;
+  padding: 50px; }
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+/*
+    Medias queries
+
+    Created on : 31/01/2017, 10:41:25
+    Author     : diego.costa
+*/
+/* Large desktops and laptops */
+/* Landscape tablets and medium desktops */
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .footer__logo-sap {
+    background: url(./template_image/footer__logo-sap.png) no-repeat -10px top;
+    background-size: 30%; } }
+/* Landscape phones and portrait tablets */
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  footer p {
+    font-size: 16px;
+    font-size: 1rem; }
+  footer .footer__logo-sap {
+    background: url(./template_image/footer__logo-sap.png) no-repeat -10px top;
+    background-size: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
