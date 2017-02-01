@@ -6084,6 +6084,9 @@ header.site-header {
 .btnLaranja:hover {
   color: #FFF; }
 
+.bg-footer {
+  background-color: #57a8db; }
+
 header .header__navigation ul li a {
   padding: 10px;
   font-family: 'robotobold', Helvetica, Arial, sans-serif;
@@ -6156,9 +6159,28 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
   font-family: 'robotobold', Helvetica, Arial, sans-serif;
   color: #57a8db;
   font-weight: bold; }
-
-.bg-footer {
-  background-color: #57a8db; }
+main .expertise {
+  padding: 5px inherit; }
+main .expertise .expertise__bg-1 {
+  background-color: #ca2c58; }
+main .expertise .expertise__bg-2 {
+  background-color: #ffb400; }
+main .expertise .expertise__bg-3 {
+  background-color: #78b444; }
+main .expertise .expertise__bg-4 {
+  background-color: #b4adcc; }
+main .expertise .expertise__bg-5 {
+  background-color: #00698c; }
+main .expertise .expertise__bg-6 {
+  background-color: #6cc4c8; }
+main .expertise figure figcaption {
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5px; }
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   font-family: 'robotobold', Helvetica, Arial, sans-serif;

@@ -70,6 +70,9 @@ header.site-header{
         color: #FFF;
     }
 }
+.bg-footer{
+    @include background-color($color-blue-regular);
+}
 
 
 
@@ -173,7 +176,7 @@ header{
     nav{
         display: flex!important;
         flex-direction: row-reverse;
-        
+
         .navbar-default{
             .navbar-toggle { 
                 button{
@@ -192,11 +195,31 @@ main{
     h1, h2, h3, h4, h5, h6{
         @include font-roboto-bold($color: $color-blue-regular , $weight: bold);
     }
+    .expertise{
+        padding: 5px inherit;
+        
+        @each $current-color in $colors-list {
+            $i: index($colors-list, $current-color);
+            .expertise__bg-#{$i} {
+                background-color: $current-color;
+            }
+        }
+
+        figure{
+
+            figcaption{
+                @include font-size(1.5);
+                color: $color-white;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+        }
+    }
 }
 
-.bg-footer{
-    @include background-color($color-blue-regular);
-}
+
 
 footer {
     h1, h2, h3, h4, h5, h6{
