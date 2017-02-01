@@ -64,7 +64,7 @@
                                     </ul>
                                 </div>
                                 <!--menu -->
-                                <div class="col-md-12">
+                                <div class="menu">
                                     <nav id="site-navigation" class="header__navigation main-navigation" role="navigation">
                                         <?php wp_nav_menu(array('theme_location' => 'menu-1', 'menu_id' => 'primary-menu')); ?>
                                     </nav><!-- #site-navigation -->

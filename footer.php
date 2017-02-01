@@ -9,6 +9,7 @@
 
 </div><!-- #content -->
 
+
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="container">
         <div class="row">
@@ -70,23 +71,23 @@
                 <div class="footer__logo-sap"></div>
             </div>
         </div>
-        <div class="row footer__redes-sociais">
-            <div class="col-xs-12 col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-3  col-lg-5 col-lg-push-1">
-                <ul class="text-center">
-                    <li>
-                        <a class="footer_redes-sociais-face" href="https://www.facebook.com/mjvinnovation" target="_blank"></a>
-                    </li>
-                    <li>
-                        <a class="footer_redes-sociais-linkedin" href="http://linkedin.com/company/mjv-innovation" target="_blank"></a>
-                    </li>
-                    <li>
-                        <a class="footer_redes-sociais-twitter" href="https://twitter.com/mjvinnovation" target="_blank"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
 </footer><!-- #colophon -->
+<div class="container-fluid sub__footer">
+    <div class="row bg-footer sub__footer-redes-sociais">       
+        <ul>
+            <li>
+                <a class="sub__footer-redes-face" href="https://www.facebook.com/mjvinnovation" target="_blank"></a>
+            </li>
+            <li>
+                <a class="sub__footer-redes-linkedin" href="http://linkedin.com/company/mjv-innovation" target="_blank"></a>
+            </li>
+            <li>
+                <a class="sub__footer-redes-twitter" href="https://twitter.com/mjvinnovation" target="_blank"></a>
+            </li>
+        </ul>        
+    </div>
+</div>
+</div>
 </div><!-- #page -->
 
 

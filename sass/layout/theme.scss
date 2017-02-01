@@ -171,6 +171,9 @@ header{
         }
     }
     nav{
+        display: flex!important;
+        flex-direction: row-reverse;
+        
         .navbar-default{
             .navbar-toggle { 
                 button{
@@ -191,6 +194,9 @@ main{
     }
 }
 
+.bg-footer{
+    @include background-color($color-blue-regular);
+}
 
 footer {
     h1, h2, h3, h4, h5, h6{
@@ -203,34 +209,37 @@ footer {
             @include background("./template_image/footer__logo_mjv.png", $repeat: no-repeat, $position: left center, $background-size:100%);
         }
     }
-    .footer__redes-sociais{
-        @include background-color($color-blue-regular);
-        padding-top: 20px;
-        padding-bottom: 20px;
-        ul{
-            list-style: none!important;
-            li{
-                float:left;
-                a{
-                    padding:20px; 
-                }
-                a.footer_redes-sociais-face{
-                    @include background("./template_image/footer__ico-facebook.png", $repeat: no-repeat, $position: center center, $background-size:100%);
-                }
-                a.footer_redes-sociais-linkedin{
-                    @include background("./template_image/footer__ico-linkedin.png", $repeat: no-repeat, $position: center center, $background-size:100%);
-                    margin: 0 20px;
-                }
-                a.footer_redes-sociais-twitter{
-                    @include background("./template_image/footer__ico-twitter.png", $repeat: no-repeat, $position: center center, $background-size:100%);
-                }
-            }
-        }
-    }
     .footer__logo-sap{
         @include background("./template_image/footer__logo-sap.png", $repeat: no-repeat, $position: left top, $background-size:60%);
         padding: 50px;
     }
 }
+.sub__footer{
+    .sub__footer-redes-sociais{
+        ul{
+            list-style: none!important;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            padding: 10px;
+            margin: 1.5rem 0;
+        }
 
-
+        li{
+            a{
+                padding:12px 20px; 
+            }
+            a.sub__footer-redes-face{
+                @include background("./template_image/footer__ico-facebook.png", $repeat: no-repeat, $position: center center, $background-size:100%);
+            }
+            a.sub__footer-redes-linkedin{
+                @include background("./template_image/footer__ico-linkedin.png", $repeat: no-repeat, $position: center center, $background-size:100%);
+                margin: 0 20px;
+            }
+            a.sub__footer-redes-twitter{
+                @include background("./template_image/footer__ico-twitter.png", $repeat: no-repeat, $position: center center, $background-size:100%);
+            }
+        }
+    }
+}
