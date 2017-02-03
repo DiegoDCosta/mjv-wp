@@ -6042,7 +6042,8 @@ header.site-header {
   padding-top: 30px;
   position: absolute;
   width: 100%;
-  z-index: 2; }
+  z-index: 2;
+  background: url(./template_image/header_bg.png) repeat-x 0 0; }
 
 .header__form_busca .search {
   font-size: 80px;
@@ -6073,15 +6074,20 @@ header.site-header {
   padding-left: 0 !important; }
 
 .btnLaranja {
-  color: #FFF;
   background: #FFB400;
-  font-family: 'robotobold', Helvetica, Arial, sans-serif;
-  padding: 12px 35px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: block;
   text-transform: uppercase;
-  font-weight: bold;
   text-align: center; }
-.btnLaranja:hover {
+.btnLaranja a {
+  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold; }
+.btnLaranja a:hover {
   color: #FFF; }
 
 .bg-footer {
@@ -6159,20 +6165,24 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
   font-family: 'robotobold', Helvetica, Arial, sans-serif;
   color: #57a8db;
   font-weight: bold; }
-main .expertise {
-  padding: 5px inherit; }
 main .expertise .expertise__bg-1 {
-  background-color: #ca2c58; }
+  background-color: #ca2c58;
+  padding: 5px 0; }
 main .expertise .expertise__bg-2 {
-  background-color: #ffb400; }
+  background-color: #ffb400;
+  padding: 5px 0; }
 main .expertise .expertise__bg-3 {
-  background-color: #78b444; }
+  background-color: #78b444;
+  padding: 5px 0; }
 main .expertise .expertise__bg-4 {
-  background-color: #b4adcc; }
+  background-color: #b4adcc;
+  padding: 5px 0; }
 main .expertise .expertise__bg-5 {
-  background-color: #00698c; }
+  background-color: #00698c;
+  padding: 5px 0; }
 main .expertise .expertise__bg-6 {
-  background-color: #6cc4c8; }
+  background-color: #6cc4c8;
+  padding: 5px 0; }
 main .expertise figure figcaption {
   font-size: 24px;
   font-size: 1.5rem;
@@ -6180,7 +6190,45 @@ main .expertise figure figcaption {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  margin-top: 5px; }
+  padding: 5px; }
+main .expertise figure figcaption a, main .expertise figure figcaption:hover {
+  color: #ffffff; }
+main .cases .cases__title {
+  margin-bottom: 0; }
+main .cases .cases__box .cases__content {
+  background-color: #6cc4c8; }
+main .cases .cases__box .cases__content figure {
+  padding: 5px 0; }
+main .cases .cases__box .cases__content figure img {
+  max-height: 149px; }
+main .cases .cases__box .cases__content figure figcaption {
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px; }
+main .cases .cases__box .cases__content figure figcaption a, main .cases .cases__box .cases__content figure figcaption:hover {
+  color: #ffffff; }
+main .content .content__title {
+  margin-bottom: 0; }
+main .content .content__box .content__content {
+  background-color: #E38428; }
+main .content .content__box .content__content figure {
+  padding: 5px 0; }
+main .content .content__box .content__content figure img {
+  max-height: 149px; }
+main .content .content__box .content__content figure figcaption {
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px; }
+main .content .content__box .content__content figure figcaption a, main .content .content__box .content__content figure figcaption:hover {
+  color: #ffffff; }
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   font-family: 'robotobold', Helvetica, Arial, sans-serif;
@@ -6232,8 +6280,14 @@ footer .footer__logo-sap {
 @media (min-width: 768px) and (max-width: 991px) {
   footer .footer__logo-sap {
     background: url(./template_image/footer__logo-sap.png) no-repeat -10px top;
-    background-size: 30%; } }
+    background-size: 30%; }
+
+  .header.site-header {
+    background: none; } }
 /* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .header.site-header {
+    background: none; } }
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
   footer p {
@@ -6241,6 +6295,8 @@ footer .footer__logo-sap {
     font-size: 1rem; }
   footer .footer__logo-sap {
     background: url(./template_image/footer__logo-sap.png) no-repeat -10px top;
-    background-size: 100%; } }
+    background-size: 100%; }
+  footer .header.site-header {
+    background: none; } }
 
 /*# sourceMappingURL=style.css.map */
