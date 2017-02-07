@@ -8,6 +8,8 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
     <head>
+
+
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="<?php echo get_template_directory_uri(); ?>/vendor/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
@@ -18,12 +20,12 @@
     </head>
 
     <body <?php body_class(); ?>>
-        <div id="page" class="site ">
+        <div id="page" class="site">
             <a class="skip-link screen-reader-text" href="#content">
                 <?php esc_html_e('Skip to content', 'mjv-theme'); ?>
             </a>
 
-            <header id="masthead" class="site-header" role="banner">
+            <header id="masthead" class="site-header insider" role="banner" style="background-image: url('<?php echo get_post_meta($post->ID, 'wpcf-topo-das-internas', true); ?>');">
                 <div class="container">
                     <div class="row hidden-xs hidden-sm">
                         <div class="col-md-2">
@@ -31,13 +33,21 @@
                                 <a href="<?php echo esc_url(home_url('/')); ?>"></a>
                             </div><!-- .site-branding -->
                         </div>
-                        <div class="col-md-9 col-md-offset-1">
+                        <div class="col-md-8 col-md-offset-2">
                             <div class="row header__busca">
-                                
+                                <div class="col-md-5">
+                                    <div class="header__form_busca hidden">
+                                        <form role="search" method="get" action="<?php home_url('/'); ?>">
+                                            <div>
+                                                <input type="search" class="form-control" placeholder="Search" value="<?php echo get_search_query(); ?>" name="s" title="Search" />
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                                 <div class="col-md-1 col-md-offset-5">
                                     <button type="button" class="ico-search" data-toggle="modal" data-target=".bs-example-modal-sm"></button>
                                 </div>
-                                <div class="col-md-6 header__submenu">
+                                <div class="col-md-7 header__submenu">
                                     <ul>
                                         <li>
                                             <a href="<?php bloginfo('url'); ?>/news">News</a>
@@ -62,6 +72,14 @@
                                     </nav><!-- #site-navigation -->
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 breadcrumbs">
+                            <div class="breadcrumbs-itens">
+                                <?php the_breadcrumb(); ?>
+                                <h1 class="breadcrumbs-titulo"><?php the_title(); ?></h1>
+                            </div>                            
                         </div>
                     </div>
                 </div>

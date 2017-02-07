@@ -12,7 +12,9 @@
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-
+    header.site-header{
+            max-height: 340px;
+        }
 }
 
 /* Portrait tablets and small desktops */
@@ -22,15 +24,15 @@
             @include background("./template_image/footer__logo-sap.png", $repeat: no-repeat, $position: -10px top, $background-size:30%);
         }
     }
-    .header.site-header{
-        background: none;
+    .home header.site-header{
+        background: none!important;
     }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-    .header.site-header{
-        background: none;
+    .home header.site-header{
+        background: none!important;
     }
 }
 
@@ -44,8 +46,12 @@
         .footer__logo-sap{
             @include background("./template_image/footer__logo-sap.png", $repeat: no-repeat, $position: -10px top, $background-size:100%);
         }
-        .header.site-header{
-            background: none;
+
+        .home header.site-header{
+            background: none!important;
+        }
+        header.site-header{
+            max-height: 190px;
         }
     }
 

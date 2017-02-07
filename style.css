@@ -6037,13 +6037,19 @@ mark, ins {
 big {
   font-size: 125%; }
 
+.home header.site-header {
+  position: absolute;
+  background: url(./template_image/header_bg.png) repeat-x 0 0; }
+
+.insider {
+  background-size: cover;
+  height: 300px; }
+
 header.site-header {
   min-height: 161px;
   padding-top: 30px;
-  position: absolute;
   width: 100%;
-  z-index: 2;
-  background: url(./template_image/header_bg.png) repeat-x 0 0; }
+  z-index: 2; }
 
 .header__form_busca .search {
   font-size: 80px;
@@ -6093,6 +6099,9 @@ header.site-header {
 .bg-footer {
   background-color: #57a8db; }
 
+.page-template-page-insider header .insider {
+  position: relative; }
+
 header .header__navigation ul li a {
   padding: 10px;
   font-family: 'robotobold', Helvetica, Arial, sans-serif;
@@ -6133,7 +6142,8 @@ header .header__busca .ico-search {
   padding: 15px; }
 header .header__submenu {
   padding-bottom: 10px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  padding-right: 0; }
 header .header__submenu ul {
   list-style: none; }
 header .header__submenu ul li {
@@ -6160,6 +6170,33 @@ header nav {
   flex-direction: row-reverse; }
 header nav .navbar-default .navbar-toggle button:focus, header nav .navbar-default .navbar-toggle button:hover {
   border: none !important; }
+
+.breadcrumbs {
+  position: relative;
+  height: 170px; }
+.breadcrumbs .breadcrumbs-itens {
+  position: absolute;
+  bottom: 20px;
+  height: auto;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 24px;
+  font-size: 1.5rem; }
+.breadcrumbs .breadcrumbs-itens a, .breadcrumbs .breadcrumbs-itensa:hover {
+  color: #ffffff; }
+.breadcrumbs .breadcrumbs-itens ol {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+.breadcrumbs .breadcrumbs-itens ol li {
+  padding-right: 10px; }
+.breadcrumbs .breadcrumbs-itens .breadcrumbs-titulo {
+  margin-top: 10px;
+  margin-bottom: 0; }
 
 main h1, main h2, main h3, main h4, main h5, main h6 {
   font-family: 'robotobold', Helvetica, Arial, sans-serif;
@@ -6276,18 +6313,21 @@ footer .footer__logo-sap {
 */
 /* Large desktops and laptops */
 /* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  header.site-header {
+    max-height: 340px; } }
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
   footer .footer__logo-sap {
     background: url(./template_image/footer__logo-sap.png) no-repeat -10px top;
     background-size: 30%; }
 
-  .header.site-header {
-    background: none; } }
+  .home header.site-header {
+    background: none !important; } }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-  .header.site-header {
-    background: none; } }
+  .home header.site-header {
+    background: none !important; } }
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
   footer p {
@@ -6296,7 +6336,9 @@ footer .footer__logo-sap {
   footer .footer__logo-sap {
     background: url(./template_image/footer__logo-sap.png) no-repeat -10px top;
     background-size: 100%; }
-  footer .header.site-header {
-    background: none; } }
+  footer .home header.site-header {
+    background: none !important; }
+  footer header.site-header {
+    max-height: 190px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -18,11 +18,7 @@
         ));
         ?>
         <div class="clearfix"></div>
-        <header class="entry-header">
-            <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
-        </header><!-- .entry-header -->
-
-        <!-- expertises -->
+       <!-- expertises -->
         <div class="row">
             <div class="expertise col-xs-12 col-md-4 col-sm-4">
                 <div class="expertise__design-thinking">

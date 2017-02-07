@@ -7,13 +7,20 @@
 @import "../typography/_typography.scss";
 @import "../variables-site/_colors.scss";
 
+.home header.site-header{
+    position: absolute;
+    @include background("./template_image/header_bg.png", $repeat: repeat-x);
+}
+.insider {
+    background-size: cover;
+    height: 300px;
+}
 header.site-header{
     min-height: 161px;
     padding-top: 30px;
-    position: absolute;
     width: 100%;
     z-index: 2;
-    @include background("./template_image/header_bg.png", $repeat: repeat-x);
+
 }
 .header__form_busca{
     .search{
@@ -76,7 +83,13 @@ header.site-header{
 .bg-footer{
     @include background-color($color-blue-regular);
 }
-
+.page-template-page-insider{
+    header{
+        .insider{
+            position: relative;
+        }
+    }
+}
 
 
 //.main-navigation ul li:hover > ul
@@ -146,6 +159,8 @@ header{
         //border-bottom: solid 1px #FFF;
         padding-bottom: 10px;
         padding-top: 10px;
+        padding-right: 0;
+        
         ul {
             list-style: none;
             li{
@@ -193,6 +208,45 @@ header{
     }
 
 }// fim header
+
+// breadcrumb
+.breadcrumbs{
+    position: relative;
+    height: 170px;
+
+    .breadcrumbs-itens{
+        position: absolute;
+        bottom: 20px;
+        height: auto;
+        text-transform: capitalize;
+        color: $color-white;
+        @include font-size(1.5);
+
+        a, &a:hover{
+            color: $color-white;
+        }
+
+        ol{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li{
+                padding-right: 10px;
+            }
+        }
+        .breadcrumbs-titulo{
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    }
+
+
+}
 
 main{
     h1, h2, h3, h4, h5, h6{

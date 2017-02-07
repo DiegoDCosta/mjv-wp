@@ -12,6 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
+		
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php mjv_theme_posted_on(); ?>
