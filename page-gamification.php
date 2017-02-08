@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Internas
+ * Template Name: Gamification
  * @package mjv-theme
  */
 if (is_home()) :
@@ -10,12 +10,16 @@ else :
 endif;
 ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area gamification">
     <main id="main" class="site-main" role="main">
+        <?php the_content(); ?>
         <?php
         while (have_posts()) : the_post();
 
             get_template_part('template-parts/content', 'insiders');
+            
+            //carrega os cases, clients e content
+            get_template_part('template-parts/content', 'cases-e-content');
 
         // If comments are open or we have at least one comment, load up the comment template.
         /* if (comments_open() || get_comments_number()) :

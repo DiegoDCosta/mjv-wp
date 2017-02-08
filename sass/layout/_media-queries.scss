@@ -15,6 +15,20 @@
     header.site-header{
             max-height: 340px;
         }
+        header{
+            .header__navigation{
+                ul{
+                    li{
+                        a{
+                            @include font-size(1.2);
+                        }
+                    }
+                }
+            }
+        }
+        .breadcrumbs{
+            height: 200px;
+        }
 }
 
 /* Portrait tablets and small desktops */
@@ -38,6 +52,10 @@
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+    
+    .insider{
+        height: 300px;
+    }
 
     footer {
         p{

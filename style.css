@@ -6037,13 +6037,18 @@ mark, ins {
 big {
   font-size: 125%; }
 
+.insider {
+  background: url(false) no-repeat center center;
+  background-size: cover;
+  height: 400px; }
+
 .home header.site-header {
   position: absolute;
   background: url(./template_image/header_bg.png) repeat-x 0 0; }
-
-.insider {
-  background-size: cover;
-  height: 300px; }
+.home h1, .home h2, .home h3, .home h4, .home h5 {
+  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  color: #57a8db;
+  font-weight: bold; }
 
 header.site-header {
   min-height: 161px;
@@ -6173,7 +6178,7 @@ header nav .navbar-default .navbar-toggle button:focus, header nav .navbar-defau
 
 .breadcrumbs {
   position: relative;
-  height: 170px; }
+  height: 270px; }
 .breadcrumbs .breadcrumbs-itens {
   position: absolute;
   bottom: 20px;
@@ -6200,8 +6205,8 @@ header nav .navbar-default .navbar-toggle button:focus, header nav .navbar-defau
 
 main h1, main h2, main h3, main h4, main h5, main h6 {
   font-family: 'robotobold', Helvetica, Arial, sans-serif;
-  color: #57a8db;
-  font-weight: bold; }
+  color: #888888;
+  font-weight: 100; }
 main .expertise .expertise__bg-1 {
   background-color: #ca2c58;
   padding: 5px 0; }
@@ -6266,6 +6271,20 @@ main .content .content__box .content__content figure figcaption {
   padding: 5px; }
 main .content .content__box .content__content figure figcaption a, main .content .content__box .content__content figure figcaption:hover {
   color: #ffffff; }
+main .destaques-internas {
+  display: table;
+  width: 100%; }
+main .destaques-internas .destaques-internas-numero {
+  text-align: center;
+  border: solid 1px red;
+  margin-top: 0;
+  display: table-cell; }
+main .destaques-internas .destaques-internas-titulo {
+  width: 100%;
+  border-bottom: solid 1px red;
+  font-size: 23px;
+  vertical-align: bottom;
+  padding-left: 20px; }
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   font-family: 'robotobold', Helvetica, Arial, sans-serif;
@@ -6315,7 +6334,14 @@ footer .footer__logo-sap {
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
   header.site-header {
-    max-height: 340px; } }
+    max-height: 340px; }
+
+  header .header__navigation ul li a {
+    font-size: 19.2px;
+    font-size: 1.2rem; }
+
+  .breadcrumbs {
+    height: 200px; } }
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
   footer .footer__logo-sap {
@@ -6330,6 +6356,9 @@ footer .footer__logo-sap {
     background: none !important; } }
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+  .insider {
+    height: 300px; }
+
   footer p {
     font-size: 16px;
     font-size: 1rem; }

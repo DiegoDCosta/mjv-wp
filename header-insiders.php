@@ -35,19 +35,11 @@
                         </div>
                         <div class="col-md-8 col-md-offset-2">
                             <div class="row header__busca">
-                                <div class="col-md-5">
-                                    <div class="header__form_busca hidden">
-                                        <form role="search" method="get" action="<?php home_url('/'); ?>">
-                                            <div>
-                                                <input type="search" class="form-control" placeholder="Search" value="<?php echo get_search_query(); ?>" name="s" title="Search" />
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
+                               
                                 <div class="col-md-1 col-md-offset-5">
                                     <button type="button" class="ico-search" data-toggle="modal" data-target=".bs-example-modal-sm"></button>
                                 </div>
-                                <div class="col-md-7 header__submenu">
+                                <div class="col-md-6 header__submenu">
                                     <ul>
                                         <li>
                                             <a href="<?php bloginfo('url'); ?>/news">News</a>

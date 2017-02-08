@@ -32,8 +32,7 @@
                             </div><!-- .site-branding -->
                         </div>
                         <div class="col-md-9 col-md-offset-1">
-                            <div class="row header__busca">
-                                
+                            <div class="row header__busca">                                
                                 <div class="col-md-1 col-md-offset-5">
                                     <button type="button" class="ico-search" data-toggle="modal" data-target=".bs-example-modal-sm"></button>
                                 </div>

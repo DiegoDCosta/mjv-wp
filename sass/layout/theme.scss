@@ -7,13 +7,19 @@
 @import "../typography/_typography.scss";
 @import "../variables-site/_colors.scss";
 
-.home header.site-header{
-    position: absolute;
-    @include background("./template_image/header_bg.png", $repeat: repeat-x);
-}
+
 .insider {
-    background-size: cover;
-    height: 300px;
+    @include background($position:center center, $repeat: no-repeat,  $background-size:cover);
+    height: 400px;
+}
+.home{
+    header.site-header{
+        position: absolute;
+        @include background("./template_image/header_bg.png", $repeat: repeat-x);
+    }
+    h1, h2, h3, h4, h5{
+        @include font-roboto-bold($color: $color-blue-regular , $weight: bold);
+    }
 }
 header.site-header{
     min-height: 161px;
@@ -160,7 +166,7 @@ header{
         padding-bottom: 10px;
         padding-top: 10px;
         padding-right: 0;
-        
+
         ul {
             list-style: none;
             li{
@@ -212,7 +218,7 @@ header{
 // breadcrumb
 .breadcrumbs{
     position: relative;
-    height: 170px;
+    height: 270px;
 
     .breadcrumbs-itens{
         position: absolute;
@@ -250,11 +256,11 @@ header{
 
 main{
     h1, h2, h3, h4, h5, h6{
-        @include font-roboto-bold($color: $color-blue-regular , $weight: bold);
+        @include font-roboto-bold($color: $color-gray-light  , $weight: 100);
     }
     .expertise{        
-        @each $current-color in $colors-list {
-            $i: index($colors-list, $current-color);
+        @each $current-color in $color__colors-list {
+            $i: index($color__colors-list, $current-color);
             .expertise__bg-#{$i} {
                 background-color: $current-color;
                 padding: 5px 0;
@@ -282,7 +288,7 @@ main{
         }
         .cases__box{
             .cases__content{
-                @include background-color($cases-bg);
+                @include background-color($color__cases-bg);
                 figure{
                     padding: 5px 0;
                     img{
@@ -310,7 +316,7 @@ main{
         }
         .content__box{
             .content__content{
-                @include background-color($content-bg);
+                @include background-color($color__content-bg);
                 figure{
                     padding: 5px 0;
                     img{
@@ -330,6 +336,25 @@ main{
                     }
                 }
             }
+        }
+    }
+
+    .destaques-internas{
+        display: table;
+        width: 100%;
+
+        .destaques-internas-numero{
+            text-align: center;
+            border: solid 1px red;
+            margin-top: 0;
+            display: table-cell;
+        }
+        .destaques-internas-titulo{
+            width: 100%;
+            border-bottom: solid 1px red;
+            font-size: 23px;
+            vertical-align: bottom;
+            padding-left: 20px;
         }
     }
 }

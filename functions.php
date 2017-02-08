@@ -110,7 +110,6 @@ add_action('widgets_init', 'mjv_theme_widgets_init');
  */
 function mjv_theme_scripts() {
     wp_enqueue_style('mjv-theme-style', get_stylesheet_uri());
-
     wp_enqueue_script('mjv-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true);
 
     wp_enqueue_script('mjv-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true);
@@ -147,60 +146,11 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-// breadcrumb
-function the_breadcrumb() {
-    global $post;
-    echo '<ol>';
-    if (!is_home()) {
-        echo '<li><a href="';
-        echo get_option('home');
-        echo '">';
-        echo 'Home';
-        echo '</a></li><li class="separator"> >> </li>';
-        if (is_category() || is_single()) {
-            echo '<li>';
-            the_category(' </li><li class="separator"> >> </li><li> ');
-            if (is_single()) {
-                echo '</li><li class="separator"> >> </li><li>';
-                the_title();
-                echo '</li>';
-            }
-        } elseif (is_page()) {
-            if ($post->post_parent) {
-                $anc = get_post_ancestors($post->ID);
-                $title = get_the_title();
-                foreach ($anc as $ancestor) {
-                    $output = '<li><a href="' . get_permalink($ancestor) . '" title="' . get_the_title($ancestor) . '">' . get_the_title($ancestor) . '</a></li> <li class="separator">/</li>';
-                }
-                echo $output;
-                echo '<strong title="' . $title . '"> ' . $title . '</strong>';
-            } else {
-                echo '<li><strong> ' . get_the_title() . '</strong></li>';
-            }
-        }
-    } elseif (is_tag()) {
-        single_tag_title();
-    } elseif (is_day()) {
-        echo"<li>Archive for ";
-        the_time('F jS, Y');
-        echo'</li>';
-    } elseif (is_month()) {
-        echo"<li>Archive for ";
-        the_time('F, Y');
-        echo'</li>';
-    } elseif (is_year()) {
-        echo"<li>Archive for ";
-        the_time('Y');
-        echo'</li>';
-    } elseif (is_author()) {
-        echo"<li>Author Archive";
-        echo'</li>';
-    } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) {
-        echo "<li>Blog Archives";
-        echo'</li>';
-    } elseif (is_search()) {
-        echo"<li>Search Results";
-        echo'</li>';
-    }
-    echo '</ol>';
-}
+/**
+ * Load Jetpack compatibility file.
+ */
+require get_template_directory() . '/inc/shortcodes-mjv.php';
+
+
+//Load breadcrumb file.  
+require get_template_directory() . '/inc/breadcrumb.php';
