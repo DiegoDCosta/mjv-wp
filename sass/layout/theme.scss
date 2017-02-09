@@ -70,7 +70,6 @@ header.site-header{
 }
 
 //botao laranja
-
 .btnLaranja{
     background: $color-orange;
     @include padding-extremes(1.5rem);
@@ -86,9 +85,7 @@ header.site-header{
     }
 
 }
-.bg-footer{
-    @include background-color($color-blue-regular);
-}
+
 .page-template-page-insider{
     header{
         .insider{
@@ -97,6 +94,79 @@ header.site-header{
     }
 }
 
+// formata as cores dos shortcodes dos titulo internos de expert
+.design-thinking{
+    $design-thinking: design-thinking;
+    @if $design-thinking == design-thinking{
+        .destaques-internas-numero{
+            @include border($width: 1px, $style: solid, $color: $color__design-thinking);
+        }
+        .destaques-internas-titulo{
+            @include border($width: 0 0 1px 0, $style: solid, $color: $color__design-thinking);
+            color: $color__design-thinking;
+        }
+    }
+}
+.gamification{
+    $gamification: gamification;
+    @if $gamification == gamification{
+        .destaques-internas-numero{
+            @include border($width: 1px, $style: solid, $color: $color__gamification);
+        }
+        .destaques-internas-titulo{
+            @include border($width: 0 0 1px 0, $style: solid, $color: $color__gamification);
+            color: $color__gamification;
+        }
+    }
+}
+.big-data-analysis{
+    $big-data-analysis: big-data-analysis;
+    @if $big-data-analysis == big-data-analysis{
+        .destaques-internas-numero{
+            @include border($width: 1px, $style: solid, $color: $color__big-data-analysis);
+        }
+        .destaques-internas-titulo{
+            @include border($width: 0 0 1px 0, $style: solid, $color: $color__big-data-analysis);
+            color: $color__big-data-analysis;
+        }
+    }
+}
+.lean-methodology{
+    $lean-methodology: lean-methodology;
+    @if $lean-methodology == lean-methodology{
+        .destaques-internas-numero{
+            @include border($width: 1px, $style: solid, $color: $color__lean-methodology);
+        }
+        .destaques-internas-titulo{
+            @include border($width: 0 0 1px 0, $style: solid, $color: $color__lean-methodology);
+            color: $color__lean-methodology;
+        }
+    }
+}
+.digital-strategy{
+    $strategy: strategy;
+    @if $strategy == strategy{
+        .destaques-internas-numero{
+            @include border($width: 1px, $style: solid, $color: $color__digital-strategy);
+        }
+        .destaques-internas-titulo{
+            @include border($width: 0 0 1px 0, $style: solid, $color: $color__digital-strategy);
+            color: $color__digital-strategy;
+        }
+    }
+}
+.internet-of-things{
+    $internet-of-things: internet-of-things;
+    @if $internet-of-things == strategy{
+        .destaques-internas-numero{
+            @include border($width: 1px, $style: solid, $color: $color__internet-of-things);
+        }
+        .destaques-internas-titulo{
+            @include border($width: 0 0 1px 0, $style: solid, $color: $color__internet-of-things);
+            color: $color__internet-of-things;
+        }
+    }
+}
 
 //.main-navigation ul li:hover > ul
 header{
@@ -214,7 +284,6 @@ header{
     }
 
 }// fim header
-
 // breadcrumb
 .breadcrumbs{
     position: relative;
@@ -253,7 +322,6 @@ header{
 
 
 }
-
 main{
     h1, h2, h3, h4, h5, h6{
         @include font-roboto-bold($color: $color-gray-light  , $weight: 100);
@@ -345,22 +413,27 @@ main{
 
         .destaques-internas-numero{
             text-align: center;
-            border: solid 1px red;
+            //border: solid 1px red;
             margin-top: 0;
             display: table-cell;
+            font-weight: bold;
+            padding: 5px 0;
         }
         .destaques-internas-titulo{
             width: 100%;
-            border-bottom: solid 1px red;
-            font-size: 23px;
+            //border-bottom: solid 1px red;
+            font-size: 28px;
             vertical-align: bottom;
             padding-left: 20px;
         }
+
+
+
     }
+
+
 }
-
-
-
+//footer
 footer {
     h1, h2, h3, h4, h5, h6{
         @include font-roboto-bold($color: $color-gray-light, $weight: bold);
@@ -376,6 +449,9 @@ footer {
         @include background("./template_image/footer__logo-sap.png", $repeat: no-repeat, $position: left top, $background-size:60%);
         padding: 50px;
     }
+}
+.bg-footer{
+    @include background-color($color-blue-regular);
 }
 .sub__footer{
     .sub__footer-redes-sociais{

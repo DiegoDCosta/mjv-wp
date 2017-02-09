@@ -12,7 +12,6 @@ endif;
 
 <div id="primary" class="content-area internet-of-things">
     <main id="main" class="site-main" role="main">
-        <?php the_content(); ?>
         <?php
         while (have_posts()) : the_post();
 

@@ -5387,30 +5387,6 @@ td, th {
 .img-rounded {
   border-radius: 50%; }
 
-.img-responsive {
-  width: 100%;
-  height: auto; }
-
-/* Rever */
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5em; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5em; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.display-none {
-  display: none; }
-
 @font-face {
   font-family: 'robotobold';
   src: url("../../fonts/fonts/Roboto-Bold-webfont.eot");
@@ -5449,7 +5425,7 @@ h2 {
   font-size: 2.5rem; }
 
 h3 {
-  font-size: 1.4rem; }
+  font-size: 2rem; }
 
 h4 {
   font-size: 1.3rem; }
@@ -5875,30 +5851,6 @@ embed, iframe, object {
 .img-rounded {
   border-radius: 50%; }
 
-.img-responsive {
-  width: 100%;
-  height: auto; }
-
-/* Rever */
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5em; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5em; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.display-none {
-  display: none; }
-
 /* 
     Created on : 23/01/2017, 17:18:05
     Author     : diego.costa
@@ -5917,30 +5869,6 @@ embed, iframe, object {
 
 .img-rounded {
   border-radius: 50%; }
-
-.img-responsive {
-  width: 100%;
-  height: auto; }
-
-/* Rever */
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5em; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5em; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.display-none {
-  display: none; }
 
 @font-face {
   font-family: 'robotobold';
@@ -5980,7 +5908,7 @@ h2 {
   font-size: 2.5rem; }
 
 h3 {
-  font-size: 1.4rem; }
+  font-size: 2rem; }
 
 h4 {
   font-size: 1.3rem; }
@@ -6101,11 +6029,58 @@ header.site-header {
 .btnLaranja a:hover {
   color: #FFF; }
 
-.bg-footer {
-  background-color: #57a8db; }
-
 .page-template-page-insider header .insider {
   position: relative; }
+
+.design-thinking .destaques-internas-numero {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ca2c58; }
+.design-thinking .destaques-internas-titulo {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #ca2c58;
+  color: #ca2c58; }
+
+.gamification .destaques-internas-numero {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffb400; }
+.gamification .destaques-internas-titulo {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #ffb400;
+  color: #ffb400; }
+
+.big-data-analysis .destaques-internas-numero {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #78b444; }
+.big-data-analysis .destaques-internas-titulo {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #78b444;
+  color: #78b444; }
+
+.lean-methodology .destaques-internas-numero {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #b4adcc; }
+.lean-methodology .destaques-internas-titulo {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #b4adcc;
+  color: #b4adcc; }
+
+.digital-strategy .destaques-internas-numero {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #00698c; }
+.digital-strategy .destaques-internas-titulo {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #00698c;
+  color: #00698c; }
 
 header .header__navigation ul li a {
   padding: 10px;
@@ -6276,13 +6251,13 @@ main .destaques-internas {
   width: 100%; }
 main .destaques-internas .destaques-internas-numero {
   text-align: center;
-  border: solid 1px red;
   margin-top: 0;
-  display: table-cell; }
+  display: table-cell;
+  font-weight: bold;
+  padding: 5px 0; }
 main .destaques-internas .destaques-internas-titulo {
   width: 100%;
-  border-bottom: solid 1px red;
-  font-size: 23px;
+  font-size: 28px;
   vertical-align: bottom;
   padding-left: 20px; }
 
@@ -6299,6 +6274,9 @@ footer .footer__logo-sap {
   background: url(./template_image/footer__logo-sap.png) no-repeat left top;
   background-size: 60%;
   padding: 50px; }
+
+.bg-footer {
+  background-color: #57a8db; }
 
 .sub__footer .sub__footer-redes-sociais ul {
   list-style: none !important;
