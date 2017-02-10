@@ -6261,6 +6261,62 @@ main .destaques-internas .destaques-internas-titulo {
   vertical-align: bottom;
   padding-left: 20px; }
 
+.newsletter {
+  background: url(./template_image/bg-newsletter.jpg) no-repeat 0 0;
+  background-size: cover; }
+.newsletter .newsletter-box {
+  display: flex;
+  justify-content: center;
+  font-family: 'robotoregular', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-weight: 100; }
+.newsletter .newsletter-box h1, .newsletter .newsletter-box h2, .newsletter .newsletter-box h3, .newsletter .newsletter-box h4, .newsletter .newsletter-box h5, .newsletter .newsletter-box h6 {
+  color: #ffffff; }
+.newsletter .newsletter-box .newsletter-box-form {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #57a8db;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #ABD3ED; }
+.newsletter .newsletter-box .newsletter-box-form input[type="text"], .newsletter .newsletter-box .newsletter-box-form input[type="email"] {
+  width: 100%;
+  margin-bottom: 0 !important; }
+.newsletter .hs_submit {
+  display: flex;
+  justify-content: center; }
+.newsletter .hs_submit .hs-button {
+  background: #FFB400;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  display: block;
+  text-transform: uppercase;
+  text-align: center; }
+.newsletter .hs-error-msgs {
+  color: red;
+  padding-left: 0;
+  list-style: none;
+  margin-left: 0;
+  margin-right: 0; }
+.newsletter fieldset div {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important; }
+.newsletter fieldset div input[type="text"], .newsletter fieldset div input[type="email"] {
+  height: 40px; }
+
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   font-family: 'robotobold', Helvetica, Arial, sans-serif;
   color: #888888;
@@ -6346,6 +6402,13 @@ footer .footer__logo-sap {
   footer .home header.site-header {
     background: none !important; }
   footer header.site-header {
-    max-height: 190px; } }
+    max-height: 190px; }
+
+  .newsletter fieldset div {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    width: 100% !important; }
+  .newsletter fieldset div input[type="text"], .newsletter fieldset div input[type="email"] {
+    height: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

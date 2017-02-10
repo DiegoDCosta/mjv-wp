@@ -9,7 +9,17 @@
 
 </div><!-- #content -->
 
-
+<div class="container-fluid newsletter hidden-xs">
+    <div class="row">
+        <div class="newsletter-box">
+            <div class="newsletter-box-form">
+                <?php
+                get_template_part('template-parts/content', 'newsletter');
+                ?>
+            </div>
+        </div>
+    </div>
+</div>
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="container">
         <div class="row">
@@ -71,6 +81,7 @@
                 <div class="footer__logo-sap"></div>
             </div>
         </div>
+    </div>
 </footer><!-- #colophon -->
 <div class="container-fluid sub__footer">
     <div class="row bg-footer sub__footer-redes-sociais">       

@@ -4,11 +4,13 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/xampp/htdocs/__PROJETOS__/mjvinnovation.com/wp-content/themes/mjv-theme/sass/variables-site/_colors.scss</file>
-            <file>file:/C:/xampp/htdocs/__PROJETOS__/mjvinnovation.com/wp-content/themes/mjv-theme/page-design-thinking.php</file>
+            <file>file:/C:/xampp/htdocs/__PROJETOS__/mjvinnovation.com/wp-content/themes/mjv-theme/inc/shortcodes-mjv.php</file>
+            <file>file:/C:/xampp/htdocs/__PROJETOS__/mjvinnovation.com/wp-content/themes/mjv-theme/page-gamification.php</file>
             <file>file:/C:/xampp/htdocs/__PROJETOS__/mjvinnovation.com/wp-content/themes/mjv-theme/sass/layout/theme.scss</file>
-            <file>file:/C:/xampp/htdocs/__PROJETOS__/mjvinnovation.com/wp-content/themes/mjv-theme/page-big-data.php</file>
-            <file>file:/C:/xampp/htdocs/__PROJETOS__/mjvinnovation.com/wp-content/themes/mjv-theme/template-parts/content-insiders.php</file>
-            <file>file:/C:/xampp/htdocs/__PROJETOS__/mjvinnovation.com/wp-content/themes/mjv-theme/functions.php</file>
+            <file>file:/C:/xampp/htdocs/__PROJETOS__/mjvinnovation.com/wp-content/themes/mjv-theme/page-lean-methodology.php</file>
+            <file>file:/C:/xampp/htdocs/__PROJETOS__/mjvinnovation.com/wp-content/themes/mjv-theme/page-digital-strategy.php</file>
+            <file>file:/C:/xampp/htdocs/__PROJETOS__/mjvinnovation.com/wp-content/themes/mjv-theme/sass/mixins/utility.scss</file>
+            <file>file:/C:/xampp/htdocs/__PROJETOS__/mjvinnovation.com/wp-content/themes/mjv-theme/page-internet-of-things.php</file>
         </group>
     </open-files>
 </project-private>

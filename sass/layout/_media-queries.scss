@@ -13,22 +13,22 @@
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
     header.site-header{
-            max-height: 340px;
-        }
-        header{
-            .header__navigation{
-                ul{
-                    li{
-                        a{
-                            @include font-size(1.2);
-                        }
+        max-height: 340px;
+    }
+    header{
+        .header__navigation{
+            ul{
+                li{
+                    a{
+                        @include font-size(1.2);
                     }
                 }
             }
         }
-        .breadcrumbs{
-            height: 200px;
-        }
+    }
+    .breadcrumbs{
+        height: 200px;
+    }
 }
 
 /* Portrait tablets and small desktops */
@@ -52,7 +52,7 @@
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-    
+
     .insider{
         height: 300px;
     }
@@ -70,6 +70,18 @@
         }
         header.site-header{
             max-height: 190px;
+        }
+    }
+    // formata a newsletter
+    .newsletter{
+        fieldset {
+            div{
+                @include margin-extremes(10px!important);
+                width: 100%!important;                
+                input[type="text"], input[type="email"]{
+                    height: 40px;
+                }
+            }
         }
     }
 

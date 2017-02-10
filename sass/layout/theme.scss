@@ -83,7 +83,6 @@ header.site-header{
             color: #FFF;
         }
     }
-
 }
 
 .page-template-page-insider{
@@ -432,6 +431,65 @@ main{
     }
 
 
+}
+
+// newsletter
+.newsletter{
+    @include background("./template_image/bg-newsletter.jpg", $background-size:cover);
+
+
+    .newsletter-box{
+        display: flex;
+        justify-content: center;
+        @include font-roboto-regular($color: $color-white, $weight: 100);
+
+        h1, h2, h3, h4, h5, h6{
+            color: $color-white;
+        }
+
+        .newsletter-box-form{
+            @include padding-sides(10px);
+            @include padding-extremes(10px);
+            @include background-color($color-blue-regular);
+            @include margin-extremes(10px);
+            @include margin-sides(10px);
+            @include border(10px, solid, $color-blue-light);
+
+            input[type="text"], input[type="email"]{
+                width: 100%;
+                margin-bottom: 0!important;
+            }
+        }
+    }
+    .hs_submit{
+        display: flex;
+        justify-content: center;
+
+        .hs-button{
+            background: $color-orange;
+            @include padding-extremes(1.5rem);
+            @include margin-extremes(2rem);
+            @include font-roboto-bold($size: 1.5rem, $color: $color-white, $weight: bold,  $lh: false);
+            border: none;
+            display: block;
+            text-transform: uppercase;
+            text-align: center;
+
+        }
+    }
+    .hs-error-msgs{
+        color: red;
+        @include list-unstyled();
+        @include margin-sides(0);
+    }
+    fieldset {
+            div{
+                @include margin-extremes(10px!important);         
+                input[type="text"], input[type="email"]{
+                    height: 40px;
+                }
+            }
+        }
 }
 //footer
 footer {
