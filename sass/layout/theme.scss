@@ -454,6 +454,7 @@ main{
             @include margin-extremes(10px);
             @include margin-sides(10px);
             @include border(10px, solid, $color-blue-light);
+            height: 370px;
 
             input[type="text"], input[type="email"]{
                 width: 100%;

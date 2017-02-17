@@ -6284,7 +6284,8 @@ main .destaques-internas .destaques-internas-titulo {
   margin-right: 10px;
   border-width: 10px;
   border-style: solid;
-  border-color: #ABD3ED; }
+  border-color: #ABD3ED;
+  height: 370px; }
 .newsletter .newsletter-box .newsletter-box-form input[type="text"], .newsletter .newsletter-box .newsletter-box-form input[type="email"] {
   width: 100%;
   margin-bottom: 0 !important; }
