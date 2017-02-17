@@ -24,11 +24,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2 col-xs-4 col-sm-2 col-lg-1 footer__logo">
-                <a href="<?php echo esc_url(home_url('/')); ?>"></a>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="hidden-xs footer__logo-desktop"></a>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="hidden-md hidden-lg footer__logo-mobile"></a>
             </div>
         </div>
         <div class="row">           
-            <div class="col-xs-12 col-sm-4 col-md-2">
+            <div class="col-xs-6 col-sm-4 col-md-2">
                 <h3>LONDON</h3>
                 <p>
                     35 Corbridge Crescent,
@@ -37,7 +38,7 @@
                     +44 20 3586 1233
                 </p>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-2">                
+            <div class="col-xs-6 col-sm-4 col-md-2">                
                 <h3>ATLANTA</h3>
                 <p>
                     75 5th Street NW
@@ -46,7 +47,8 @@
                     +1 404 771 7187
                 </p>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-2">
+            <div class="clearfix visible-xs-block"></div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
                 <h3>HOUSTON</h3>
                 <p>                    
                     TMCx (x+131)
@@ -57,7 +59,7 @@
                     +1 (832) 272-5272
                 </p>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-2">
+            <div class="col-xs-6 col-sm-4 col-md-2">
                 <h3>SÃO PAULO</h3>
                 <p>                    
                     Rua Helena, 280 
@@ -67,7 +69,8 @@
 
                 </p>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-2">
+            <div class="clearfix visible-xs-block"></div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
                 <h3>RIO DE JANEIRO</h3>
                 <p>                    
                     Av. Marechal Câmara, 160 
@@ -76,9 +79,10 @@
                     +55 21 2532 6423
                 </p>
             </div>
-            <div class="col-xs-5 col-sm-4 col-md-2 col-lg-1">
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-1">
                 <h3>PARTNER</h3>
-                <div class="footer__logo-sap"></div>
+                <div class="footer__logo-sap hidden-xs"></div>
+                <div class="footer__logo-sap-mobile hidden-md hidden-lg"></div>
             </div>
         </div>
     </div>

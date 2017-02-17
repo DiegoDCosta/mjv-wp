@@ -57,20 +57,44 @@
         height: 300px;
     }
 
+    main{
+        h2{
+            @include font-size(1.8);
+        }
+    }
+
     footer {
+        @include background-color($color-blue-regular);
+
+        h1,h2,h3,h4,h5,h6{
+            @include font-size(1);
+        }
+        p, h1,h2,h3,h4,h5,h6{
+            color: $color-white !important;
+        }
         p{
-            @include font-size();
+            @include font-size(0.8);
         }
         .footer__logo-sap{
             @include background("./template_image/footer__logo-sap.png", $repeat: no-repeat, $position: -10px top, $background-size:100%);
         }
-
         .home header.site-header{
             background: none!important;
         }
         header.site-header{
             max-height: 190px;
         }
+    }
+    // borda na parte superior da redes sociais
+    .sub__footer{
+        .sub__footer-redes-sociais{
+            ul{
+                @include border(1px 0 0 0, solid, #FFF);
+                width: 90%;
+                margin-left: 5%;
+            }
+        }
+
     }
     // formata a newsletter
     .newsletter{
@@ -81,6 +105,23 @@
                 input[type="text"], input[type="email"]{
                     height: 40px;
                 }
+            }
+        }
+    }
+
+    // what we do 
+    .what-we-do{
+        .what-we-do__box{
+            width: 91.5%;
+
+            h2.first{
+                margin-top: 5px;
+            }
+
+            .what-we-do__desc{
+                line-height: 20px;
+                margin-top: 15px;
+
             }
         }
     }

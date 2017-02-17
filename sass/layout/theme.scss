@@ -483,28 +483,86 @@ main{
         @include margin-sides(0);
     }
     fieldset {
-            div{
-                @include margin-extremes(10px!important);         
-                input[type="text"], input[type="email"]{
-                    height: 40px;
-                }
+        div{
+            @include margin-extremes(10px!important);         
+            input[type="text"], input[type="email"]{
+                height: 40px;
             }
         }
+    }
 }
+
+// formata os titulos de what we do
+.what-we-do{
+    .what-we-do__ancoras{
+        a{
+            color: $color-gray-light;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        
+    }
+    .what-we-do__box{
+        display: flex;
+        width: 97.5%;
+        @include margin-sides(15px);
+        @include margin-extremes(10px);
+
+        h1, h2, h3, h4, h5, h6{
+            @include font-roboto-bold($size: 16px, $weight: bold, $color: $color__cases-bg);
+            @include margin-extremes(0);
+        }
+
+        .what-we-do__img{
+            @include padding-sides(15px);
+            @include padding-extremes(10px);
+            @include border(2px, solid, $color__cases-bg);
+        }
+
+        .what-we-do__desc{
+            margin-bottom:0;
+            width: 100%;
+            line-height: 50px;
+            vertical-align: bottom;
+            @include border(0 0 2px 0 , solid, $color__cases-bg);
+            @include padding-sides(10px);
+            font-size: 18px;
+        }
+
+    }
+    .see-also{
+        h1, h2, h3, h4, h5, h6{
+            margin-bottom: -15px;
+            @include font-roboto-bold($color:$color-blue-regular);
+        }
+    }
+}
+
+
 //footer
 footer {
     h1, h2, h3, h4, h5, h6{
         @include font-roboto-bold($color: $color-gray-light, $weight: bold);
     }
     .footer__logo{
-        a{
+        .footer__logo-desktop, .footer__logo-mobile{
             padding: 40px;
             display: block;
+        }
+        .footer__logo-desktop{
             @include background("./template_image/footer__logo_mjv.png", $repeat: no-repeat, $position: left center, $background-size:100%);
+        }
+        .footer__logo-mobile{
+            @include background("./template_image/footer__logo_mjv-mobile.png", $repeat: no-repeat, $position: left center, $background-size:100%);
         }
     }
     .footer__logo-sap{
         @include background("./template_image/footer__logo-sap.png", $repeat: no-repeat, $position: left top, $background-size:60%);
+        padding: 50px;
+    }
+    .footer__logo-sap-mobile{
+        @include background("./template_image/footer__logo-sap-mobile.png", $repeat: no-repeat, $position: left top, $background-size:60%);
         padding: 50px;
     }
 }
@@ -512,6 +570,7 @@ footer {
     @include background-color($color-blue-regular);
 }
 .sub__footer{
+
     .sub__footer-redes-sociais{
         ul{
             list-style: none!important;
@@ -519,7 +578,7 @@ footer {
             flex-direction: row;
             flex-wrap: nowrap;
             justify-content: center;
-            padding: 10px;
+            padding: 30px 0 10px 0;
             margin: 1.5rem 0;
         }
 

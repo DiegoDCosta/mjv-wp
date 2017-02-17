@@ -1,10 +1,10 @@
 // cores MJV
-$color-blue-regular : #57a8db;
+$color-blue-regular : #61abdf;
 $color-blue-light   : #ABD3ED;
 $color-blue-deep    : #51C0E6;
 $color-white        : #ffffff;
 $color-gray-regular : #505050;
-$color-gray-light   : #888888;
+$color-gray-light   : #999999;
 $color-gray-deep    : #333333;
 $color-orange       : #FFB400;
 
@@ -43,5 +43,5 @@ $color__internet-of-things :#6cc4c8;
 $color__colors-list: $color__design-thinking $color__gamification $color__big-data-analysis $color__lean-methodology $color__digital-strategy $color__internet-of-things;
 
 // colors box
-$color__cases-bg: #6cc4c8;
+$color__cases-bg: $color-blue-regular;
 $color__content-bg: #E38428;

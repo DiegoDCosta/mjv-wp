@@ -8,8 +8,8 @@ jQuery(window).on("load", function () {
     jQuery('#search').on('click', function () {
         jQuery(".header__form_busca").toggleClass("visible");
     });
-    
+
     // modal da busca
-     jQuery('#myModal').modal();
-   
+    jQuery('#myModal').modal();
+
 });

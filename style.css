@@ -5441,7 +5441,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-size: 1.4rem;
-  color: #888888; }
+  color: #999999; }
 
 p {
   margin-bottom: 1.5em; }
@@ -5729,7 +5729,7 @@ a:hover, a:active {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5em; }
+  margin: 0 0 5em; }
 
 .byline, .updated:not(.published) {
   display: none; }
@@ -5924,7 +5924,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-size: 1.4rem;
-  color: #888888; }
+  color: #999999; }
 
 p {
   margin-bottom: 1.5em; }
@@ -5975,7 +5975,7 @@ big {
   background: url(./template_image/header_bg.png) repeat-x 0 0; }
 .home h1, .home h2, .home h3, .home h4, .home h5 {
   font-family: 'robotobold', Helvetica, Arial, sans-serif;
-  color: #57a8db;
+  color: #61abdf;
   font-weight: bold; }
 
 header.site-header {
@@ -6180,7 +6180,7 @@ header nav .navbar-default .navbar-toggle button:focus, header nav .navbar-defau
 
 main h1, main h2, main h3, main h4, main h5, main h6 {
   font-family: 'robotobold', Helvetica, Arial, sans-serif;
-  color: #888888;
+  color: #999999;
   font-weight: 100; }
 main .expertise .expertise__bg-1 {
   background-color: #ca2c58;
@@ -6213,7 +6213,7 @@ main .expertise figure figcaption a, main .expertise figure figcaption:hover {
 main .cases .cases__title {
   margin-bottom: 0; }
 main .cases .cases__box .cases__content {
-  background-color: #6cc4c8; }
+  background-color: #61abdf; }
 main .cases .cases__box .cases__content figure {
   padding: 5px 0; }
 main .cases .cases__box .cases__content figure img {
@@ -6277,7 +6277,7 @@ main .destaques-internas .destaques-internas-titulo {
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #57a8db;
+  background-color: #61abdf;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 10px;
@@ -6317,22 +6317,72 @@ main .destaques-internas .destaques-internas-titulo {
 .newsletter fieldset div input[type="text"], .newsletter fieldset div input[type="email"] {
   height: 40px; }
 
+.what-we-do .what-we-do__ancoras a {
+  color: #999999; }
+.what-we-do .what-we-do__ancoras a:hover {
+  text-decoration: underline; }
+.what-we-do .what-we-do__box {
+  display: flex;
+  width: 97.5%;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+.what-we-do .what-we-do__box h1, .what-we-do .what-we-do__box h2, .what-we-do .what-we-do__box h3, .what-we-do .what-we-do__box h4, .what-we-do .what-we-do__box h5, .what-we-do .what-we-do__box h6 {
+  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #61abdf;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0; }
+.what-we-do .what-we-do__box .what-we-do__img {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #61abdf; }
+.what-we-do .what-we-do__box .what-we-do__desc {
+  margin-bottom: 0;
+  width: 100%;
+  line-height: 50px;
+  vertical-align: bottom;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: #61abdf;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px; }
+.what-we-do .see-also h1, .what-we-do .see-also h2, .what-we-do .see-also h3, .what-we-do .see-also h4, .what-we-do .see-also h5, .what-we-do .see-also h6 {
+  margin-bottom: -15px;
+  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  color: #61abdf; }
+
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   font-family: 'robotobold', Helvetica, Arial, sans-serif;
-  color: #888888;
+  color: #999999;
   font-weight: bold; }
-footer .footer__logo a {
+footer .footer__logo .footer__logo-desktop, footer .footer__logo .footer__logo-mobile {
   padding: 40px;
-  display: block;
+  display: block; }
+footer .footer__logo .footer__logo-desktop {
   background: url(./template_image/footer__logo_mjv.png) no-repeat left center;
+  background-size: 100%; }
+footer .footer__logo .footer__logo-mobile {
+  background: url(./template_image/footer__logo_mjv-mobile.png) no-repeat left center;
   background-size: 100%; }
 footer .footer__logo-sap {
   background: url(./template_image/footer__logo-sap.png) no-repeat left top;
   background-size: 60%;
   padding: 50px; }
+footer .footer__logo-sap-mobile {
+  background: url(./template_image/footer__logo-sap-mobile.png) no-repeat left top;
+  background-size: 60%;
+  padding: 50px; }
 
 .bg-footer {
-  background-color: #57a8db; }
+  background-color: #61abdf; }
 
 .sub__footer .sub__footer-redes-sociais ul {
   list-style: none !important;
@@ -6340,7 +6390,7 @@ footer .footer__logo-sap {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  padding: 10px;
+  padding: 30px 0 10px 0;
   margin: 1.5rem 0; }
 .sub__footer .sub__footer-redes-sociais li a {
   padding: 12px 20px; }
@@ -6393,9 +6443,20 @@ footer .footer__logo-sap {
   .insider {
     height: 300px; }
 
-  footer p {
+  main h2 {
+    font-size: 28.8px;
+    font-size: 1.8rem; }
+
+  footer {
+    background-color: #61abdf; }
+  footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
     font-size: 16px;
     font-size: 1rem; }
+  footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+    color: #ffffff !important; }
+  footer p {
+    font-size: 12.8px;
+    font-size: 0.8rem; }
   footer .footer__logo-sap {
     background: url(./template_image/footer__logo-sap.png) no-repeat -10px top;
     background-size: 100%; }
@@ -6404,11 +6465,26 @@ footer .footer__logo-sap {
   footer header.site-header {
     max-height: 190px; }
 
+  .sub__footer .sub__footer-redes-sociais ul {
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #FFF;
+    width: 90%;
+    margin-left: 5%; }
+
   .newsletter fieldset div {
     margin-top: 10px !important;
     margin-bottom: 10px !important;
     width: 100% !important; }
   .newsletter fieldset div input[type="text"], .newsletter fieldset div input[type="email"] {
-    height: 40px; } }
+    height: 40px; }
+
+  .what-we-do .what-we-do__box {
+    width: 91.5%; }
+  .what-we-do .what-we-do__box h2.first {
+    margin-top: 5px; }
+  .what-we-do .what-we-do__box .what-we-do__desc {
+    line-height: 20px;
+    margin-top: 15px; } }
 
 /*# sourceMappingURL=style.css.map */

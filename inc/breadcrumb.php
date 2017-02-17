@@ -21,7 +21,7 @@ function the_breadcrumb() {
                 $anc = get_post_ancestors($post->ID);
                 $title = get_the_title();
                 foreach ($anc as $ancestor) {
-                    $output = '<li><a href="' . get_permalink($ancestor) . '" title="' . get_the_title($ancestor) . '">' . get_the_title($ancestor) . '</a></li> <li class="separator">/</li>';
+                    $output = '<li><a href="' . get_permalink($ancestor) . '" title="' . get_the_title($ancestor) . '">' . get_the_title($ancestor) . '</a></li> <li class="separator"> >> </li>';
                 }
                 echo $output;
                 echo '<strong title="' . $title . '"> ' . $title . '</strong>';
