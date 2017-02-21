@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Digital Strategy
+ * Template Name: Library
  * @package mjv-theme
  */
 if (is_home()) :
@@ -10,15 +10,12 @@ else :
 endif;
 ?>
 
-<div id="primary" class="content-area design-thinking">
+<div id="primary" class="content-area library">
     <main id="main" class="site-main" role="main">
         <?php
-        while (have_posts()) : the_post();
-
-            get_template_part('template-parts/content', 'insiders');
-            
+        while (have_posts()) : the_post();           
             //carrega os cases, clients e content
-            get_template_part('template-parts/content', 'cases_e_content');
+            get_template_part('template-parts/content', 'library');
 
         // If comments are open or we have at least one comment, load up the comment template.
         /* if (comments_open() || get_comments_number()) :

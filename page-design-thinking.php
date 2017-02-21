@@ -18,7 +18,7 @@ endif;
             get_template_part('template-parts/content', 'insiders');
 
             //carrega os cases, clients e content
-            get_template_part('template-parts/content', 'cases-e-content');
+            get_template_part('template-parts/content', 'cases_e_content');
 
         // If comments are open or we have at least one comment, load up the comment template.
         /* if (comments_open() || get_comments_number()) :

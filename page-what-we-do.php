@@ -18,13 +18,13 @@ endif;
             get_template_part('template-parts/content', 'insiders');
         endwhile; // End of the loop.
         //carrega as páginas filhas de  INNOVATION IN PRODUCTS AND SERVICES
-        get_template_part('template-parts/content', 'innovation-in-product-and-services');
+        get_template_part('template-parts/content', 'innovation_in_product_and_services');
         //carrega as páginas filhas de  TECHNOLOGY
         get_template_part('template-parts/content', 'technology');
         //carrega as páginas filhas de DIGITAL PRODUCT
-        get_template_part('template-parts/content', 'digital-products');
+        get_template_part('template-parts/content', 'digital_products');
         //carrega os boxes
-        get_template_part('template-parts/content', 'see-also');
+        get_template_part('template-parts/content', 'see_also');
         ?>
 
     </main><!-- #main -->

@@ -41,6 +41,7 @@ if (!function_exists('mjv_theme_setup')) :
          *
          * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
          */
+        
         add_theme_support('post-thumbnails');
 
         // This theme uses wp_nav_menu() in one location.
@@ -150,7 +151,6 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/shortcodes-mjv.php';
-
 
 //Load breadcrumb file.  
 require get_template_directory() . '/inc/breadcrumb.php';

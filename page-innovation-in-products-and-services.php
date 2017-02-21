@@ -14,7 +14,7 @@ endif;
     <main id="main" class="site-main" role="main">
 
         <?php
-        get_template_part('template-parts/content', 'innovation-in-product-and-services');
+        get_template_part('template-parts/content', 'innovation_in_product_and_services');
         ?>
 
     </main><!-- #main -->

@@ -22,7 +22,7 @@
                     <div class="cases__content">
                         <figure>
                             <?php
-                            the_post_thumbnail('post-thumbnail', ['class' => 'img-responsive responsive--full']);
+                            the_post_thumbnail('post-thumbnail');
                             ?>
                             <figcaption class="case__description">
                                 <a href="<?php the_permalink(); ?>">
