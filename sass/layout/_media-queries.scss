@@ -63,6 +63,17 @@
         }
     }
 
+    // formata o titulo dos cases
+    .case-custom-post{
+        .case-custom-post-box{
+            @include padding-sides(0);
+            
+            .case-custom-post-box-titulo{
+                padding: 7px 236px 13px 12px;
+            }
+        }
+    }
+
     footer {
         @include background-color($color-blue-regular);
 

@@ -502,7 +502,7 @@ main{
                 text-decoration: underline;
             }
         }
-        
+
     }
     .what-we-do__box{
         display: flex;
@@ -540,6 +540,39 @@ main{
     }
 }
 
+.case-custom-post{
+
+    .case-custom-post-navigation{        
+        @include background-color($color-blue-regular);
+        @include text-center();
+        @include padding-extremes(10px);
+        @include padding-sides(10px);
+        @include margin-extremes(20px);
+
+        a{
+            @include font-roboto-bold($color:$color-white);
+            @include font-size(2);
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .case-custom-post-box{
+        @include margin-extremes(20px);
+        @include text-right();
+
+        .case-custom-post-box-icone{
+            @include border(2px, solid, $color-blue-regular);
+            padding: 14px 2px;            
+        }
+        .case-custom-post-box-titulo{
+            @include border(2px 2px 2px 0, solid, $color-blue-regular);
+            @include font-roboto-bold(18px, $color-blue-regular, $weight: bold,  $lh: false);
+            padding: 7px 60px 13px 12px;
+        }
+    }
+}
 
 //footer
 footer {

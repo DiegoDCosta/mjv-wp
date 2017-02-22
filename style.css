@@ -6360,6 +6360,41 @@ main .destaques-internas .destaques-internas-titulo {
   font-family: 'robotobold', Helvetica, Arial, sans-serif;
   color: #61abdf; }
 
+.case-custom-post .case-custom-post-navigation {
+  background-color: #61abdf;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+.case-custom-post .case-custom-post-navigation a {
+  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 32px;
+  font-size: 2rem; }
+.case-custom-post .case-custom-post-navigation a:hover {
+  text-decoration: underline; }
+.case-custom-post .case-custom-post-box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: right; }
+.case-custom-post .case-custom-post-box .case-custom-post-box-icone {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #61abdf;
+  padding: 14px 2px; }
+.case-custom-post .case-custom-post-box .case-custom-post-box-titulo {
+  border-width: 2px 2px 2px 0;
+  border-style: solid;
+  border-color: #61abdf;
+  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #61abdf;
+  font-weight: bold;
+  padding: 7px 60px 13px 12px; }
+
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   font-family: 'robotobold', Helvetica, Arial, sans-serif;
   color: #999999;
@@ -6447,6 +6482,12 @@ footer .footer__logo-sap-mobile {
   main h2 {
     font-size: 28.8px;
     font-size: 1.8rem; }
+
+  .case-custom-post .case-custom-post-box {
+    padding-left: 0;
+    padding-right: 0; }
+  .case-custom-post .case-custom-post-box .case-custom-post-box-titulo {
+    padding: 7px 236px 13px 12px; }
 
   footer {
     background-color: #61abdf; }
