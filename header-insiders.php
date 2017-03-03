@@ -75,6 +75,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="header__shadow"></div>
             </header><!-- #masthead -->
 
             <div id="content" class="content container site-content">

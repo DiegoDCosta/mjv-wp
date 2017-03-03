@@ -7,7 +7,7 @@ get_header();
 ?>
 
 <div class="slider__revolution">
-    <?php putRevSlider("slider_home_page") ?>  
+    <?php putRevSlider("slider_home_page") ?>
 </div>
 
 <div id="primary" class="content-area">

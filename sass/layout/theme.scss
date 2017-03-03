@@ -12,6 +12,7 @@
     @include background($position:center center, $repeat: no-repeat,  $background-size:cover);
     height: 400px;
 }
+
 .home{
     header.site-header{
         position: absolute;
@@ -22,12 +23,29 @@
     }
 }
 header.site-header{
+    position: relative;
     min-height: 161px;
     padding-top: 30px;
     width: 100%;
     z-index: 2;
-
 }
+
+.slotholder{
+    &:after{
+        content: "";
+        @extend .header__shadow;
+        z-index: 1!important;
+    }
+}
+.header__shadow{
+    @include gradient-vertical();
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
 .header__form_busca{
     .search{
         @include font-size(5);
@@ -435,8 +453,14 @@ main{
 
 // newsletter
 .newsletter{
+    article{
+        @include margin-extremes(0);
+    }
     @include background("./template_image/bg-newsletter.jpg", $background-size:cover);
 
+    label{
+        color: $color-white!important;
+    }
 
     .newsletter-box{
         display: flex;
@@ -454,7 +478,7 @@ main{
             @include margin-extremes(10px);
             @include margin-sides(10px);
             @include border(10px, solid, $color-blue-light);
-            height: 370px;
+            height: auto;
 
             input[type="text"], input[type="email"]{
                 width: 100%;
@@ -478,17 +502,110 @@ main{
 
         }
     }
+
+    fieldset {
+        div{
+            @include margin-extremes(10px!important);       
+            input[type="text"], input[type="email"]{
+                height: 40px;
+            }
+        }
+    }
+}
+
+// formata os formulários de contato
+.hbspt-form{
+    @include border-radius(0!important);
+
+    label{      
+        @include font-roboto-regular($weight: 100, $color: $color-gray-light);
+        margin-bottom: 0;
+        margin-top: 15px;
+    }
+    @include font-roboto-regular($size: 2rem);
+    fieldset{
+        max-width: 100%!important;
+    }
+    .hs-form{
+        fieldset.form-columns-1{
+            .hs-input{
+                width: 100%;
+            }
+        }
+    }
+    .input{        
+        input[type="text"], input[type="email"], input[type="tel"], select{
+            height: 40px;
+            width: 100%;
+            margin-bottom: 0!important;
+        }
+        textarea{
+            height: 150px;
+        }
+    }
+    .hs_submit{
+        .actions {
+            input[type="submit"]{
+                @extend .btnLaranja;
+                @include font-roboto-bold($size: 2rem, $color: $color-white, $weight: bold);
+                border:none;
+            }
+        }
+    }
     .hs-error-msgs{
         color: red;
         @include list-unstyled();
         @include margin-sides(0);
     }
-    fieldset {
-        div{
-            @include margin-extremes(10px!important);         
-            input[type="text"], input[type="email"]{
-                height: 40px;
+    ul{
+        @include list-unstyled();
+        @include padding-sides(0);
+        @include margin-sides(0);
+
+        li{
+            label{
+                .hs-input{
+                    width: 25px!important;
+                }
             }
+        }
+    }
+}
+
+// formata o formulário de trabalhe conosco
+.wpcf7-form{
+
+    p{
+        @include font-roboto-regular($weight: bold, $color: $color-gray-light);
+        width: 49%;
+        float: left;
+        margin-right: 20px;
+
+        .wpcf7-form-control-wrap{
+            display: block;
+            input[type="text"], input[type="email"], input[type="tel"], select{
+                height: 40px;
+                width: 100%;
+                margin-bottom: 0!important;
+                @include border-radius(0);
+            }            
+            textarea{
+                height: 150px;
+                @include border-radius(0);
+            }
+
+        }
+        .wpcf7-submit{
+            @extend .btnLaranja;
+            @include font-roboto-bold($size: 1.5rem, $color: $color-white, $weight: bold,  $lh: false);
+            @include border-radius(0);
+            border:none;
+        }
+        &:nth-child(8){
+            width: 100%;
+        }
+        &:nth-child(3), &:nth-child(5), &:nth-child(7){
+            margin-right: 0;
         }
     }
 }
@@ -572,6 +689,17 @@ main{
             padding: 7px 60px 13px 12px;
         }
     }
+}
+
+// formata a página de contato lading page
+.btn-azul{
+    @include btn-azul();
+    @include padding-extremes(10px);
+    @include padding-sides(20px);
+
+    &:hover{
+        color: $color-white;
+    }   
 }
 
 //footer

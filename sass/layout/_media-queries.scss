@@ -67,7 +67,7 @@
     .case-custom-post{
         .case-custom-post-box{
             @include padding-sides(0);
-            
+
             .case-custom-post-box-titulo{
                 padding: 7px 236px 13px 12px;
             }
@@ -107,6 +107,7 @@
         }
 
     }
+
     // formata a newsletter
     .newsletter{
         fieldset {
@@ -137,4 +138,43 @@
         }
     }
 
+    //formata o contato landing page
+    .btn-azul{
+        display: block;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    // formata os forms hubspot
+    .hbspt-form{
+        .hs_submit{
+            .actions {
+                input[type="submit"]{
+                    @include font-roboto-bold($size: 1.4rem);
+                    width: 98%;
+                }
+            }
+        }
+        label{
+            @include font-roboto-regular($size: 1.4rem, $weight: bold);
+        }
+    }
+
+    .form-columns-2 {
+        .hs-form-field{
+            .hs-input{
+                width: 100%!important;
+            }
+        }
+    }
+    .bg-form-mobile-hs{
+        background-color: $color__background-form-hs;
+    }
+
+    // formata o formulário de trabalhe conosco
+    .wpcf7-form{
+        p, .wpcf7-submit{            
+                width: 100%;            
+        }
+    }
 }

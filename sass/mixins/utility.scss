@@ -141,7 +141,7 @@ $font : '../../fonts';
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$first-color', endColorstr='$second-color',GradientType=1 );
 }
 
-@mixin gradient-vertical ($first-color:rgba(255,255,255,0), $second-color:rgba(150,150,150,0.5), $third-color:rgba(0,0,0,1)) {
+@mixin gradient-vertical ($first-color:rgba(255,255,255,0), $second-color:rgba(150,150,150,0.5), $third-color:rgba(0,0,0,0.5)) {
     background: -moz-linear-gradient(top, $first-color 0%, $second-color 41%, $third-color 100%);
     background: -webkit-linear-gradient(top, $first-color 0%,$second-color 41%,$third-color 100%);
     background: linear-gradient(to bottom, $first-color 0%,$second-color 41%,$third-color 100%);
@@ -167,4 +167,15 @@ $font : '../../fonts';
     border-width: $width;
     border-style: $style;
     border-color: $color;
+}
+
+@mixin btn-azul($background: $color-blue-regular, $color: $color-white, $captalize: uppercase){
+    background-color: $background;
+    color: $color;
+    text-transform: $captalize;
+}
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
 }
