@@ -7,7 +7,13 @@
  * @package mjv-theme
  */
 
-get_header(); ?>
+if (is_home()) :
+    get_header();
+else :
+    get_header('search');
+endif;
+
+?>
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

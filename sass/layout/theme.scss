@@ -573,6 +573,9 @@ main{
 }
 
 // formata o formulário de trabalhe conosco
+div.wpcf7-validation-errors{
+    border: none!important;
+}
 .wpcf7-form{
 
     p{
@@ -759,5 +762,40 @@ footer {
                 @include background("./template_image/footer__ico-twitter.png", $repeat: no-repeat, $position: center center, $background-size:100%);
             }
         }
+    }
+}
+
+// formata 404
+.error-404{
+    h1, h2, h3, h4, h5, h6{
+        color: $color-blue-regular;
+    }
+}
+.form-busca-404{
+    .search-404{
+        @include padding-sides(20px);
+        height: 60px;
+    }
+    .input-group-addon{
+        button{
+            @include background("./template_image/ico-search.png", $background-size:100%);
+            padding: 15px;
+        }
+    }
+
+    .input-group-addon, input, button{
+        @include border-radius(0);
+        border:none;
+    }
+    .input-group-addon, button{
+        @include background-color($color-blue-regular);
+        color: $color-white;
+    }
+    input, button{
+        background: none;
+    }
+    .form-busca-404__grupo{
+        @include border(2px, solid, $color-blue-regular);
+
     }
 }
