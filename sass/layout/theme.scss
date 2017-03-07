@@ -7,7 +7,9 @@
 @import "../typography/_typography.scss";
 @import "../variables-site/_colors.scss";
 
-
+.site-content{
+    @include padding-extremes(40px);
+}
 .insider {
     @include background($position:center center, $repeat: no-repeat,  $background-size:cover);
     height: 400px;
@@ -797,5 +799,71 @@ footer {
     .form-busca-404__grupo{
         @include border(2px, solid, $color-blue-regular);
 
+    }
+}
+
+// formata o menu biblioteca
+.menu-biblioteca{
+
+    .menu-biblioteca__itens{
+        h1, h2, h3, h4, h5, h6{
+            background: $color__background-orange;
+            @include background-color($color__background-orange);
+            @include font-roboto-regular($color: $color-white, $weight: 100);
+            @include padding-sides(10px);
+        }
+        .menu{
+            a{
+                @include font-size(2);
+                color: $color-gray-light;
+                @include padding-sides(10px);
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+        }
+
+        ul{
+            @include margin-sides(0);
+            @include padding-sides(10px);
+            @include list-unstyled();
+        }
+
+    }
+}
+.biblioteca-content{
+    .biblioteca-content__itens{
+        ul{
+            @include padding-sides(10px);
+            @include list-unstyled();
+        }
+    }
+}
+
+.biblioteca{
+
+    .biblioteca-boxes{
+
+        .biblioteca-boxe__content{
+            @include background-color($color__background-orange);
+            figure{
+                @include padding-extremes(5px);
+                
+                figcaption{
+                    @include font-size(1.5);
+                    color: $color-white;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-weight: bold;
+
+                    a, &:hover{
+                        color: $color-white;
+
+                    }
+                }
+            }
+        }
     }
 }

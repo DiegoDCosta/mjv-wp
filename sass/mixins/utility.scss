@@ -159,8 +159,8 @@ $font : '../../fonts';
     background: url(#{$imgpath}) $repeat $position;
     @if $background-size {background-size: $background-size;}
 }
-@mixin background-color($color-blue-regular){
-    background-color: $color-blue-regular;
+@mixin background-color($color){
+    background-color: $color;
 }
 
 @mixin border($width, $style, $color) {
