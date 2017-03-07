@@ -5965,14 +5965,9 @@ mark, ins {
 big {
   font-size: 125%; }
 
-.site-content {
-  padding-top: 40px;
-  padding-bottom: 40px; }
-
 .insider {
-  background: url(false) no-repeat center center;
   background-size: cover;
-  height: 400px; }
+  height: 300px; }
 
 .home header.site-header {
   position: absolute;
@@ -6586,7 +6581,9 @@ footer .footer__logo-sap-mobile {
   color: #ffffff;
   font-weight: 100;
   padding-left: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
 .menu-biblioteca .menu-biblioteca__itens .menu a {
   font-size: 32px;
   font-size: 2rem;
@@ -6620,7 +6617,11 @@ footer .footer__logo-sap-mobile {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
 .biblioteca .biblioteca-boxes .biblioteca-boxe__content figure figcaption a, .biblioteca .biblioteca-boxes .biblioteca-boxe__content figure figcaption:hover {
   color: #ffffff; }
 

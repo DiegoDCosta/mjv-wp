@@ -154,3 +154,6 @@ require get_template_directory() . '/inc/shortcodes-mjv.php';
 
 //Load breadcrumb file.  
 require get_template_directory() . '/inc/breadcrumb.php';
+
+//Load breadcrumb file.  
+require get_template_directory() . '/inc/post-paginate.php';

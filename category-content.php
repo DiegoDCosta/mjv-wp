@@ -43,8 +43,8 @@ endif;
                                     <?php
                                     the_post_thumbnail('post-thumbnail');
                                     ?>
-                                    <figcaption class="case__description">
-                                        <a href="<?php the_permalink(); ?>">
+                                    <figcaption class="biblioteca-boxe__description">
+                                        <a href="<?php echo get_post_meta($post->ID, 'wpcf-link-para-o-post-externo', true); ?>" target="_blank">
                                             <?php the_title(); ?>
                                         </a>
                                     </figcaption>

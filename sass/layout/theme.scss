@@ -7,12 +7,9 @@
 @import "../typography/_typography.scss";
 @import "../variables-site/_colors.scss";
 
-.site-content{
-    @include padding-extremes(40px);
-}
 .insider {
     @include background($position:center center, $repeat: no-repeat,  $background-size:cover);
-    height: 400px;
+    height: 300px;
 }
 
 .home{
@@ -811,6 +808,7 @@ footer {
             @include background-color($color__background-orange);
             @include font-roboto-regular($color: $color-white, $weight: 100);
             @include padding-sides(10px);
+            @include padding-extremes(10px);
         }
         .menu{
             a{
@@ -857,7 +855,9 @@ footer {
                     text-transform: uppercase;
                     text-align: center;
                     font-weight: bold;
-
+                    @include padding-sides(5px);
+                    @include padding-extremes(5px);
+                    
                     a, &:hover{
                         color: $color-white;
 
