@@ -11,6 +11,9 @@
     @include background($position:center center, $repeat: no-repeat,  $background-size:cover);
     height: 300px;
 }
+.site-main{
+    @include padding-extremes(20px);
+}
 
 .home{
     header.site-header{
@@ -303,7 +306,7 @@ header{
 // breadcrumb
 .breadcrumbs{
     position: relative;
-    height: 270px;
+    height: 180px;
 
     .breadcrumbs-itens{
         position: absolute;
@@ -338,7 +341,7 @@ header{
 
 
 }
-main{
+main, aside{
     h1, h2, h3, h4, h5, h6{
         @include font-roboto-bold($color: $color-gray-light  , $weight: 100);
     }

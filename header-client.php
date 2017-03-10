@@ -24,7 +24,7 @@
                 <?php esc_html_e('Skip to content', 'mjv-theme'); ?>
             </a>
 
-            <header id="masthead" class="site-header insider" role="banner" style="background-image: url('<?php echo get_template_directory_uri(); ?>/template_image/header__content.jpg');">
+            <header id="masthead" class="site-header insider" role="banner" style="background-image: url('<?php echo get_template_directory_uri(); ?>/template_image/header__posts-internas-clients.jpg');">
                 <div class="container">
                     <div class="row hidden-xs hidden-sm">
                         <div class="col-md-2">
@@ -34,7 +34,7 @@
                         </div>
                         <div class="col-md-8 col-md-offset-2">
                             <div class="row header__busca">
-
+                               
                                 <div class="col-md-1 col-md-offset-5">
                                     <button type="button" class="ico-search" data-toggle="modal" data-target=".bs-example-modal-sm"></button>
                                 </div>
@@ -65,7 +65,14 @@
                             </div>
                         </div>
                     </div>
-                   
+                    <div class="row">
+                        <div class="col-md-12 breadcrumbs">
+                            <div class="breadcrumbs-itens">
+                                <?php the_breadcrumb(); ?>
+                                <h1 class="breadcrumbs-titulo"><?php the_title(); ?></h1>
+                            </div>                            
+                        </div>
+                    </div>
                 </div>
                 <div class="header__shadow"></div>
             </header><!-- #masthead -->

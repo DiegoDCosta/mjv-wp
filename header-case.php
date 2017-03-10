@@ -13,7 +13,6 @@
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="<?php echo get_template_directory_uri(); ?>/vendor/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.min.css" />
         <link rel="profile" href="http://gmpg.org/xfn/11">
 
         <?php wp_head(); ?>
@@ -25,7 +24,7 @@
                 <?php esc_html_e('Skip to content', 'mjv-theme'); ?>
             </a>
 
-            <header id="masthead" class="site-header insider" role="banner" style="background-image: url('<?php echo get_template_directory_uri(); ?>/template_image/cases-mjv-tecnologia-e-inovacao.jpg');">
+            <header id="masthead" class="site-header insider" role="banner" style="background-image: url('<?php echo get_template_directory_uri(); ?>/template_image/header__posts-internas-cases.jpg');">
                 <div class="container">
                     <div class="row hidden-xs hidden-sm">
                         <div class="col-md-2">

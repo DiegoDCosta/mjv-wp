@@ -1,16 +1,16 @@
 <?php
 /**
- * Template Name: Single-Case
+ * Template Name: Single-Client
  * The template for displaying all single posts
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package mjv-theme
  */
-get_header('case');
+get_header('client');
 ?>
 
-<div id="primary" class="content-area case-custom-post">
+<div id="primary" class="content-area client-custom-post">
     <main id="main" class="site-main" role="main">
 
         <?php
@@ -34,14 +34,7 @@ get_header('case');
         <div class="col-xs-5 col-md-2 col-xs-offset-2 col-md-offset-1 case-custom-post-navigation">
             <?php previous_post_link('%link', 'Next'); ?>
         </div>
-        <div class="col-xs-12 col-md-4 col-md-offset-2 case-custom-post-box">
-            <span class="case-custom-post-box-icone">
-                <img src="<?php echo get_post_meta($post->ID, 'wpcf-icone-case', true); ?>">
-            </span>
-            <span class="case-custom-post-box-titulo">
-                <?php echo get_post_meta($post->ID, 'wpcf-titulo-icone-case', true); ?>
-            </span>
-        </div>
+        
         <div class="clearfix"></div>
 
         

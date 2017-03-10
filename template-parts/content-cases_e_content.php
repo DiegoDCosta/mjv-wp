@@ -41,7 +41,7 @@
             <div class="clearfix"></div>
             <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0 col-md-2 col-md-offset-0">
                 <div class="btnLaranja">
-                    <a href="#">see all Cases</a>
+                    <a href="<?php echo get_bloginfo('url') ?>/category/cases/">see all Cases</a>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@
             <div class="clearfix"></div>
             <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0 col-md-2 col-md-offset-0">
                 <div class="btnLaranja">
-                    <a href="#">see all Content</a>
+                    <a href="<?php echo get_bloginfo('url') ?>/category/content/">see all Content</a>
                 </div>
             </div>
         </div>

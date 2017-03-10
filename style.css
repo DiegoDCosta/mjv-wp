@@ -5969,6 +5969,10 @@ big {
   background-size: cover;
   height: 300px; }
 
+.site-main {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
 .home header.site-header {
   position: absolute;
   background: url(./template_image/header_bg.png) repeat-x 0 0; }
@@ -6168,7 +6172,7 @@ header nav .navbar-default .navbar-toggle button:focus, header nav .navbar-defau
 
 .breadcrumbs {
   position: relative;
-  height: 270px; }
+  height: 180px; }
 .breadcrumbs .breadcrumbs-itens {
   position: absolute;
   bottom: 20px;
@@ -6193,29 +6197,29 @@ header nav .navbar-default .navbar-toggle button:focus, header nav .navbar-defau
   margin-top: 10px;
   margin-bottom: 0; }
 
-main h1, main h2, main h3, main h4, main h5, main h6 {
+main h1, main h2, main h3, main h4, main h5, main h6, aside h1, aside h2, aside h3, aside h4, aside h5, aside h6 {
   font-family: 'robotobold', Helvetica, Arial, sans-serif;
   color: #999999;
   font-weight: 100; }
-main .expertise .expertise__bg-1 {
+main .expertise .expertise__bg-1, aside .expertise .expertise__bg-1 {
   background-color: #ca2c58;
   padding: 5px 0; }
-main .expertise .expertise__bg-2 {
+main .expertise .expertise__bg-2, aside .expertise .expertise__bg-2 {
   background-color: #ffb400;
   padding: 5px 0; }
-main .expertise .expertise__bg-3 {
+main .expertise .expertise__bg-3, aside .expertise .expertise__bg-3 {
   background-color: #78b444;
   padding: 5px 0; }
-main .expertise .expertise__bg-4 {
+main .expertise .expertise__bg-4, aside .expertise .expertise__bg-4 {
   background-color: #b4adcc;
   padding: 5px 0; }
-main .expertise .expertise__bg-5 {
+main .expertise .expertise__bg-5, aside .expertise .expertise__bg-5 {
   background-color: #00698c;
   padding: 5px 0; }
-main .expertise .expertise__bg-6 {
+main .expertise .expertise__bg-6, aside .expertise .expertise__bg-6 {
   background-color: #6cc4c8;
   padding: 5px 0; }
-main .expertise figure figcaption {
+main .expertise figure figcaption, aside .expertise figure figcaption {
   font-size: 24px;
   font-size: 1.5rem;
   color: #ffffff;
@@ -6223,17 +6227,17 @@ main .expertise figure figcaption {
   text-align: center;
   font-weight: bold;
   padding: 5px; }
-main .expertise figure figcaption a, main .expertise figure figcaption:hover {
+main .expertise figure figcaption a, main .expertise figure figcaption:hover, aside .expertise figure figcaption a, aside .expertise figure figcaption:hover {
   color: #ffffff; }
-main .cases .cases__title {
+main .cases .cases__title, aside .cases .cases__title {
   margin-bottom: 0; }
-main .cases .cases__box .cases__content {
+main .cases .cases__box .cases__content, aside .cases .cases__box .cases__content {
   background-color: #61abdf; }
-main .cases .cases__box .cases__content figure {
+main .cases .cases__box .cases__content figure, aside .cases .cases__box .cases__content figure {
   padding: 5px 0; }
-main .cases .cases__box .cases__content figure img {
+main .cases .cases__box .cases__content figure img, aside .cases .cases__box .cases__content figure img {
   max-height: 149px; }
-main .cases .cases__box .cases__content figure figcaption {
+main .cases .cases__box .cases__content figure figcaption, aside .cases .cases__box .cases__content figure figcaption {
   font-size: 24px;
   font-size: 1.5rem;
   color: #ffffff;
@@ -6241,17 +6245,17 @@ main .cases .cases__box .cases__content figure figcaption {
   text-align: center;
   font-weight: bold;
   padding: 5px; }
-main .cases .cases__box .cases__content figure figcaption a, main .cases .cases__box .cases__content figure figcaption:hover {
+main .cases .cases__box .cases__content figure figcaption a, main .cases .cases__box .cases__content figure figcaption:hover, aside .cases .cases__box .cases__content figure figcaption a, aside .cases .cases__box .cases__content figure figcaption:hover {
   color: #ffffff; }
-main .content .content__title {
+main .content .content__title, aside .content .content__title {
   margin-bottom: 0; }
-main .content .content__box .content__content {
+main .content .content__box .content__content, aside .content .content__box .content__content {
   background-color: #E38428; }
-main .content .content__box .content__content figure {
+main .content .content__box .content__content figure, aside .content .content__box .content__content figure {
   padding: 5px 0; }
-main .content .content__box .content__content figure img {
+main .content .content__box .content__content figure img, aside .content .content__box .content__content figure img {
   max-height: 149px; }
-main .content .content__box .content__content figure figcaption {
+main .content .content__box .content__content figure figcaption, aside .content .content__box .content__content figure figcaption {
   font-size: 24px;
   font-size: 1.5rem;
   color: #ffffff;
@@ -6259,18 +6263,18 @@ main .content .content__box .content__content figure figcaption {
   text-align: center;
   font-weight: bold;
   padding: 5px; }
-main .content .content__box .content__content figure figcaption a, main .content .content__box .content__content figure figcaption:hover {
+main .content .content__box .content__content figure figcaption a, main .content .content__box .content__content figure figcaption:hover, aside .content .content__box .content__content figure figcaption a, aside .content .content__box .content__content figure figcaption:hover {
   color: #ffffff; }
-main .destaques-internas {
+main .destaques-internas, aside .destaques-internas {
   display: table;
   width: 100%; }
-main .destaques-internas .destaques-internas-numero {
+main .destaques-internas .destaques-internas-numero, aside .destaques-internas .destaques-internas-numero {
   text-align: center;
   margin-top: 0;
   display: table-cell;
   font-weight: bold;
   padding: 5px 0; }
-main .destaques-internas .destaques-internas-titulo {
+main .destaques-internas .destaques-internas-titulo, aside .destaques-internas .destaques-internas-titulo {
   width: 100%;
   font-size: 28px;
   vertical-align: bottom;
