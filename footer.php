@@ -118,7 +118,7 @@
 </div>
 <!-- #form de busca modal -->
 <?php wp_footer(); ?>
-<script src="<?php bloginfo('template_url'); ?>/vendor/js/_bootstrap.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/vendor/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/main.min.js" type="text/javascript"></script>
 </body>
 </html>

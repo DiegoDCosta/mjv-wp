@@ -150,7 +150,7 @@
         .hs_submit{
             .actions {
                 input[type="submit"]{
-                    @include font-roboto-bold($size: 1.4rem);
+                    @include font-roboto($size: 1.4rem);
                     width: 98%;
                 }
             }

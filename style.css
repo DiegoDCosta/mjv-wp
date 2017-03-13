@@ -5389,31 +5389,31 @@ td, th {
 
 @font-face {
   font-family: 'robotobold';
-  src: url("../../fonts/fonts/Roboto-Bold-webfont.eot");
-  src: url("../../fonts/fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/fonts/Roboto-Bold-webfont.woff") format("woff"), url("../../fonts/fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("../../fonts/fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
+  src: url("./fonts/Roboto-Bold-webfont.eot");
+  src: url("./fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/Roboto-Bold-webfont.woff") format("woff"), url("./fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("./fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'robotothin';
-  src: url("../../fonts/fonts/Roboto-Thin-webfont.eot");
-  src: url("../../fonts/fonts/Roboto-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/fonts/Roboto-Thin-webfont.woff") format("woff"), url("../../fonts/fonts/Roboto-Thin-webfont.ttf") format("truetype"), url("../../fonts/fonts/Roboto-Thin-webfont.svg#robotothin") format("svg");
+  src: url("./fonts/Roboto-Thin-webfont.eot");
+  src: url("./fonts/Roboto-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/Roboto-Thin-webfont.woff") format("woff"), url("./fonts/Roboto-Thin-webfont.ttf") format("truetype"), url("./fonts/Roboto-Thin-webfont.svg#robotothin") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'robotoregular';
-  src: url("../../fonts/fonts/Roboto-Regular-webfont.eot");
-  src: url("../../fonts/fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/fonts/Roboto-Regular-webfont.woff") format("woff"), url("../../fonts/fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../../fonts/fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  src: url("./fonts/Roboto-Regular-webfont.eot");
+  src: url("./fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/Roboto-Regular-webfont.woff") format("woff"), url("./fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("./fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'robotoitalic';
-  src: url("../../fonts/fonts/Roboto-Italic-webfont.eot");
-  src: url("../../fonts/fonts/Roboto-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/fonts/Roboto-Italic-webfont.woff") format("woff"), url("../../fonts/fonts/Roboto-Italic-webfont.ttf") format("truetype"), url("../../fonts/fonts/Roboto-Italic-webfont.svg#robotoitalic") format("svg");
+  src: url("./fonts/Roboto-Italic-webfont.eot");
+  src: url("./fonts/Roboto-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/Roboto-Italic-webfont.woff") format("woff"), url("./fonts/Roboto-Italic-webfont.ttf") format("truetype"), url("./fonts/Roboto-Italic-webfont.svg#robotoitalic") format("svg");
   font-weight: normal;
   font-style: normal; }
 body, button, input, select, textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #666666;
+  font-family: "roboto";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -5494,7 +5494,9 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  /* Fallback for when there is no custom background color defined. */
+  font-family: 'roboto', Helvetica, Arial, sans-serif;
+  color: #666666; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -5872,31 +5874,31 @@ embed, iframe, object {
 
 @font-face {
   font-family: 'robotobold';
-  src: url("../../fonts/fonts/Roboto-Bold-webfont.eot");
-  src: url("../../fonts/fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/fonts/Roboto-Bold-webfont.woff") format("woff"), url("../../fonts/fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("../../fonts/fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
+  src: url("./fonts/Roboto-Bold-webfont.eot");
+  src: url("./fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/Roboto-Bold-webfont.woff") format("woff"), url("./fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("./fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'robotothin';
-  src: url("../../fonts/fonts/Roboto-Thin-webfont.eot");
-  src: url("../../fonts/fonts/Roboto-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/fonts/Roboto-Thin-webfont.woff") format("woff"), url("../../fonts/fonts/Roboto-Thin-webfont.ttf") format("truetype"), url("../../fonts/fonts/Roboto-Thin-webfont.svg#robotothin") format("svg");
+  src: url("./fonts/Roboto-Thin-webfont.eot");
+  src: url("./fonts/Roboto-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/Roboto-Thin-webfont.woff") format("woff"), url("./fonts/Roboto-Thin-webfont.ttf") format("truetype"), url("./fonts/Roboto-Thin-webfont.svg#robotothin") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'robotoregular';
-  src: url("../../fonts/fonts/Roboto-Regular-webfont.eot");
-  src: url("../../fonts/fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/fonts/Roboto-Regular-webfont.woff") format("woff"), url("../../fonts/fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../../fonts/fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  src: url("./fonts/Roboto-Regular-webfont.eot");
+  src: url("./fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/Roboto-Regular-webfont.woff") format("woff"), url("./fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("./fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'robotoitalic';
-  src: url("../../fonts/fonts/Roboto-Italic-webfont.eot");
-  src: url("../../fonts/fonts/Roboto-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/fonts/Roboto-Italic-webfont.woff") format("woff"), url("../../fonts/fonts/Roboto-Italic-webfont.ttf") format("truetype"), url("../../fonts/fonts/Roboto-Italic-webfont.svg#robotoitalic") format("svg");
+  src: url("./fonts/Roboto-Italic-webfont.eot");
+  src: url("./fonts/Roboto-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/Roboto-Italic-webfont.woff") format("woff"), url("./fonts/Roboto-Italic-webfont.ttf") format("truetype"), url("./fonts/Roboto-Italic-webfont.svg#robotoitalic") format("svg");
   font-weight: normal;
   font-style: normal; }
 body, button, input, select, textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #666666;
+  font-family: "roboto";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -5965,6 +5967,10 @@ mark, ins {
 big {
   font-size: 125%; }
 
+p {
+  font-family: 'roboto', Helvetica, Arial, sans-serif;
+  color: #666666; }
+
 .insider {
   background-size: cover;
   height: 300px; }
@@ -5977,7 +5983,7 @@ big {
   position: absolute;
   background: url(./template_image/header_bg.png) repeat-x 0 0; }
 .home h1, .home h2, .home h3, .home h4, .home h5 {
-  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-family: 'roboto', Helvetica, Arial, sans-serif;
   color: #61abdf;
   font-weight: bold; }
 
@@ -6041,7 +6047,7 @@ header.site-header {
   text-transform: uppercase;
   text-align: center; }
 .btnLaranja a, .hbspt-form .hs_submit .actions input[type="submit"] a, .wpcf7-form p .wpcf7-submit a {
-  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-family: 'roboto', Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   color: #ffffff;
   font-weight: bold; }
@@ -6103,7 +6109,7 @@ header.site-header {
 
 header .header__navigation ul li a {
   padding: 10px;
-  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-family: 'roboto', Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   color: #FFF;
   font-weight: normal; }
@@ -6198,9 +6204,9 @@ header nav .navbar-default .navbar-toggle button:focus, header nav .navbar-defau
   margin-bottom: 0; }
 
 main h1, main h2, main h3, main h4, main h5, main h6, aside h1, aside h2, aside h3, aside h4, aside h5, aside h6 {
-  font-family: 'robotobold', Helvetica, Arial, sans-serif;
-  color: #999999;
-  font-weight: 100; }
+  font-family: 'roboto', Helvetica, Arial, sans-serif;
+  color: #61abdf;
+  font-weight: bold; }
 main .expertise .expertise__bg-1, aside .expertise .expertise__bg-1 {
   background-color: #ca2c58;
   padding: 5px 0; }
@@ -6322,7 +6328,7 @@ main .destaques-internas .destaques-internas-titulo, aside .destaques-internas .
   padding-bottom: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-family: 'roboto', Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   color: #ffffff;
   font-weight: bold;
@@ -6359,7 +6365,7 @@ main .destaques-internas .destaques-internas-titulo, aside .destaques-internas .
 .hbspt-form .input textarea {
   height: 150px; }
 .hbspt-form .hs_submit .actions input[type="submit"] {
-  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-family: 'roboto', Helvetica, Arial, sans-serif;
   font-size: 2rem;
   color: #ffffff;
   font-weight: bold;
@@ -6405,7 +6411,7 @@ div.wpcf7-validation-errors {
   -moz-border-radius: 0;
   border-radius: 0; }
 .wpcf7-form p .wpcf7-submit {
-  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-family: 'roboto', Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   color: #ffffff;
   font-weight: bold;
@@ -6430,7 +6436,7 @@ div.wpcf7-validation-errors {
   margin-top: 10px;
   margin-bottom: 10px; }
 .what-we-do .what-we-do__box h1, .what-we-do .what-we-do__box h2, .what-we-do .what-we-do__box h3, .what-we-do .what-we-do__box h4, .what-we-do .what-we-do__box h5, .what-we-do .what-we-do__box h6 {
-  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-family: 'roboto', Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #61abdf;
   font-weight: bold;
@@ -6457,7 +6463,7 @@ div.wpcf7-validation-errors {
   font-size: 18px; }
 .what-we-do .see-also h1, .what-we-do .see-also h2, .what-we-do .see-also h3, .what-we-do .see-also h4, .what-we-do .see-also h5, .what-we-do .see-also h6 {
   margin-bottom: -15px;
-  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-family: 'roboto', Helvetica, Arial, sans-serif;
   color: #61abdf; }
 
 .case-custom-post .case-custom-post-navigation {
@@ -6470,7 +6476,7 @@ div.wpcf7-validation-errors {
   margin-top: 20px;
   margin-bottom: 20px; }
 .case-custom-post .case-custom-post-navigation a {
-  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-family: 'roboto', Helvetica, Arial, sans-serif;
   color: #ffffff;
   font-size: 32px;
   font-size: 2rem; }
@@ -6489,7 +6495,7 @@ div.wpcf7-validation-errors {
   border-width: 2px 2px 2px 0;
   border-style: solid;
   border-color: #61abdf;
-  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-family: 'roboto', Helvetica, Arial, sans-serif;
   font-size: 18px;
   color: #61abdf;
   font-weight: bold;
@@ -6507,7 +6513,7 @@ div.wpcf7-validation-errors {
   color: #ffffff; }
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
-  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  font-family: 'roboto', Helvetica, Arial, sans-serif;
   color: #999999;
   font-weight: bold; }
 footer .footer__logo .footer__logo-desktop, footer .footer__logo .footer__logo-mobile {
@@ -6723,7 +6729,7 @@ footer .footer__logo-sap-mobile {
     margin-left: 10%; }
 
   .hbspt-form .hs_submit .actions input[type="submit"] {
-    font-family: 'robotobold', Helvetica, Arial, sans-serif;
+    font-family: 'roboto', Helvetica, Arial, sans-serif;
     font-size: 1.4rem;
     width: 98%; }
   .hbspt-form label {

@@ -38,9 +38,6 @@
                                 <div class="col-md-6 header__submenu">
                                     <ul>
                                         <li>
-                                            <a href="<?php bloginfo('url'); ?>/news">News</a>
-                                        </li>
-                                        <li>
                                             <a href="<?php bloginfo('url'); ?>/contact/work-with-us">Work with us</a>
                                         </li>
                                         <li>

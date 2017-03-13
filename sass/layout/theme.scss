@@ -7,6 +7,9 @@
 @import "../typography/_typography.scss";
 @import "../variables-site/_colors.scss";
 
+p{
+    @include font-roboto($color:  $color__text-main);   
+}
 .insider {
     @include background($position:center center, $repeat: no-repeat,  $background-size:cover);
     height: 300px;
@@ -21,7 +24,7 @@
         @include background("./template_image/header_bg.png", $repeat: repeat-x);
     }
     h1, h2, h3, h4, h5{
-        @include font-roboto-bold($color: $color-blue-regular , $weight: bold);
+        @include font-roboto($color: $color-blue-regular, $weight: bold);
     }
 }
 header.site-header{
@@ -98,7 +101,7 @@ header.site-header{
     text-transform: uppercase;
     text-align: center;
     a{
-        @include font-roboto-bold($size: 1.5rem, $color: $color-white, $weight: bold,  $lh: false);
+        @include font-roboto($size: 1.5rem, $color: $color-white, $weight: bold,  $lh: false);
         &:hover{
             color: #FFF;
         }
@@ -194,7 +197,7 @@ header{
             li{
                 a {
                     padding:10px;
-                    @include font-roboto-bold(1.4rem, #FFF, normal);
+                    @include font-roboto(1.4rem, #FFF, normal);
                     &:visited {
                         color: #FFF;
                     }
@@ -343,7 +346,7 @@ header{
 }
 main, aside{
     h1, h2, h3, h4, h5, h6{
-        @include font-roboto-bold($color: $color-gray-light  , $weight: 100);
+        @include font-roboto($color: $color-blue-regular  , $weight: bold);
     }
     .expertise{        
         @each $current-color in $color__colors-list {
@@ -496,7 +499,7 @@ main, aside{
             background: $color-orange;
             @include padding-extremes(1.5rem);
             @include margin-extremes(2rem);
-            @include font-roboto-bold($size: 1.5rem, $color: $color-white, $weight: bold,  $lh: false);
+            @include font-roboto($size: 1.5rem, $color: $color-white, $weight: bold,  $lh: false);
             border: none;
             display: block;
             text-transform: uppercase;
@@ -549,7 +552,7 @@ main, aside{
         .actions {
             input[type="submit"]{
                 @extend .btnLaranja;
-                @include font-roboto-bold($size: 2rem, $color: $color-white, $weight: bold);
+                @include font-roboto($size: 2rem, $color: $color-white, $weight: bold);
                 border:none;
             }
         }
@@ -602,7 +605,7 @@ div.wpcf7-validation-errors{
         }
         .wpcf7-submit{
             @extend .btnLaranja;
-            @include font-roboto-bold($size: 1.5rem, $color: $color-white, $weight: bold,  $lh: false);
+            @include font-roboto($size: 1.5rem, $color: $color-white, $weight: bold,  $lh: false);
             @include border-radius(0);
             border:none;
         }
@@ -633,7 +636,7 @@ div.wpcf7-validation-errors{
         @include margin-extremes(10px);
 
         h1, h2, h3, h4, h5, h6{
-            @include font-roboto-bold($size: 16px, $weight: bold, $color: $color__cases-bg);
+            @include font-roboto($size: 16px, $weight: bold, $color: $color__cases-bg);
             @include margin-extremes(0);
         }
 
@@ -657,7 +660,7 @@ div.wpcf7-validation-errors{
     .see-also{
         h1, h2, h3, h4, h5, h6{
             margin-bottom: -15px;
-            @include font-roboto-bold($color:$color-blue-regular);
+            @include font-roboto($color:$color-blue-regular);
         }
     }
 }
@@ -672,7 +675,7 @@ div.wpcf7-validation-errors{
         @include margin-extremes(20px);
 
         a{
-            @include font-roboto-bold($color:$color-white);
+            @include font-roboto($color:$color-white);
             @include font-size(2);
 
             &:hover{
@@ -690,7 +693,7 @@ div.wpcf7-validation-errors{
         }
         .case-custom-post-box-titulo{
             @include border(2px 2px 2px 0, solid, $color-blue-regular);
-            @include font-roboto-bold(18px, $color-blue-regular, $weight: bold,  $lh: false);
+            @include font-roboto(18px, $color-blue-regular, $weight: bold,  $lh: false);
             padding: 7px 60px 13px 12px;
         }
     }
@@ -710,7 +713,7 @@ div.wpcf7-validation-errors{
 //footer
 footer {
     h1, h2, h3, h4, h5, h6{
-        @include font-roboto-bold($color: $color-gray-light, $weight: bold);
+        @include font-roboto($color: $color-gray-light, $weight: bold);
     }
     .footer__logo{
         .footer__logo-desktop, .footer__logo-mobile{

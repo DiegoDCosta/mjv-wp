@@ -59,8 +59,8 @@ $font : '../../fonts';
     touch-action: $attr;
 }
 
-@mixin font-roboto-bold($size: false, $color: false, $weight: false,  $lh: false){
-    font-family: 'robotobold', Helvetica, Arial, sans-serif;
+@mixin font-roboto($size: false, $color: false, $weight: false,  $lh: false){
+    font-family: 'roboto', Helvetica, Arial, sans-serif;
     @if $size { font-size: $size; }
     @if $color { color: $color; }
     @if $weight { font-weight: $weight; }
