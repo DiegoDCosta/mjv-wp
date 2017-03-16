@@ -24,9 +24,9 @@ function the_breadcrumb() {
                     $output = '<li><a href="' . get_permalink($ancestor) . '" title="' . get_the_title($ancestor) . '">' . get_the_title($ancestor) . '</a></li> <li class="separator"> >> </li>';
                 }
                 echo $output;
-                echo '<strong title="' . $title . '"> ' . $title . '</strong>';
+                echo '<li title="' . $title . '"> ' . $title . '</li>';
             } else {
-                echo '<li><strong> ' . get_the_title() . '</strong></li>';
+                echo '<li> ' . get_the_title() . '</li>';
             }
         }
     } elseif (is_tag()) {

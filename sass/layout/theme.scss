@@ -7,11 +7,14 @@
 @import "../typography/_typography.scss";
 @import "../variables-site/_colors.scss";
 
+.destaque{
+    font-size:16px;
+}
 p{
     @include font-roboto($color:  $color__text-main);   
 }
 .insider {
-    @include background($position:center center, $repeat: no-repeat,  $background-size:cover);
+    @include background($repeat: no-repeat,  $background-size:cover);
     height: 300px;
 }
 .site-main{
@@ -24,7 +27,7 @@ p{
         @include background("./template_image/header_bg.png", $repeat: repeat-x);
     }
     h1, h2, h3, h4, h5{
-        @include font-roboto($color: $color-blue-regular, $weight: bold);
+        @include font-roboto($color: $color-gray-light, $weight: bold);
     }
 }
 header.site-header{
@@ -121,10 +124,10 @@ header.site-header{
     $design-thinking: design-thinking;
     @if $design-thinking == design-thinking{
         .destaques-internas-numero{
-            @include border($width: 1px, $style: solid, $color: $color__design-thinking);
+            @include border($width: 2px, $style: solid, $color: $color__design-thinking);
         }
         .destaques-internas-titulo{
-            @include border($width: 0 0 1px 0, $style: solid, $color: $color__design-thinking);
+            @include border($width: 0 0 2px 0, $style: solid, $color: $color__design-thinking);
             color: $color__design-thinking;
         }
     }
@@ -133,10 +136,10 @@ header.site-header{
     $gamification: gamification;
     @if $gamification == gamification{
         .destaques-internas-numero{
-            @include border($width: 1px, $style: solid, $color: $color__gamification);
+            @include border($width: 2px, $style: solid, $color: $color__gamification);
         }
         .destaques-internas-titulo{
-            @include border($width: 0 0 1px 0, $style: solid, $color: $color__gamification);
+            @include border($width: 0 0 2px 0, $style: solid, $color: $color__gamification);
             color: $color__gamification;
         }
     }
@@ -145,10 +148,10 @@ header.site-header{
     $big-data-analysis: big-data-analysis;
     @if $big-data-analysis == big-data-analysis{
         .destaques-internas-numero{
-            @include border($width: 1px, $style: solid, $color: $color__big-data-analysis);
+            @include border($width: 2px, $style: solid, $color: $color__big-data-analysis);
         }
         .destaques-internas-titulo{
-            @include border($width: 0 0 1px 0, $style: solid, $color: $color__big-data-analysis);
+            @include border($width: 0 0 2px 0, $style: solid, $color: $color__big-data-analysis);
             color: $color__big-data-analysis;
         }
     }
@@ -157,10 +160,10 @@ header.site-header{
     $lean-methodology: lean-methodology;
     @if $lean-methodology == lean-methodology{
         .destaques-internas-numero{
-            @include border($width: 1px, $style: solid, $color: $color__lean-methodology);
+            @include border($width: 2px, $style: solid, $color: $color__lean-methodology);
         }
         .destaques-internas-titulo{
-            @include border($width: 0 0 1px 0, $style: solid, $color: $color__lean-methodology);
+            @include border($width: 0 0 2px 0, $style: solid, $color: $color__lean-methodology);
             color: $color__lean-methodology;
         }
     }
@@ -169,22 +172,22 @@ header.site-header{
     $strategy: strategy;
     @if $strategy == strategy{
         .destaques-internas-numero{
-            @include border($width: 1px, $style: solid, $color: $color__digital-strategy);
+            @include border($width: 2px, $style: solid, $color: $color__digital-strategy);
         }
         .destaques-internas-titulo{
-            @include border($width: 0 0 1px 0, $style: solid, $color: $color__digital-strategy);
+            @include border($width: 0 0 2px 0, $style: solid, $color: $color__digital-strategy);
             color: $color__digital-strategy;
         }
     }
 }
 .internet-of-things{
     $internet-of-things: internet-of-things;
-    @if $internet-of-things == strategy{
+    @if $internet-of-things == internet-of-things{
         .destaques-internas-numero{
-            @include border($width: 1px, $style: solid, $color: $color__internet-of-things);
+            @include border($width: 2px, $style: solid, $color: $color__internet-of-things);
         }
         .destaques-internas-titulo{
-            @include border($width: 0 0 1px 0, $style: solid, $color: $color__internet-of-things);
+            @include border($width: 0 0 2px 0, $style: solid, $color: $color__internet-of-things);
             color: $color__internet-of-things;
         }
     }
@@ -193,6 +196,7 @@ header.site-header{
 //.main-navigation ul li:hover > ul
 header{
     .header__navigation{
+        text-transform: uppercase;
         ul{
             li{
                 a {
@@ -345,8 +349,9 @@ header{
 
 }
 main, aside{
+
     h1, h2, h3, h4, h5, h6{
-        @include font-roboto($color: $color-blue-regular  , $weight: bold);
+        @include font-roboto($weight: bold);
     }
     .expertise{        
         @each $current-color in $color__colors-list {
@@ -401,6 +406,7 @@ main, aside{
         }
     }
     .content{
+
         .content__title{
             margin-bottom: 0;
         }
@@ -429,6 +435,37 @@ main, aside{
         }
     }
 
+    .iot{
+        .iot__title{
+            margin-bottom: 0;
+        }
+        .iot__box{
+            .iot__content{
+                @include background-color($color__internet-of-things);
+                figure{
+                    padding: 5px 0;
+                    img{
+                        max-height: 149px;
+                    }
+                    figcaption{
+                        @include font-size(1.5);
+                        color: $color-white;
+                        padding: 5px;
+                        min-height: 164px;
+                    }
+                }
+                a, &:hover{
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+    .content, .cases{
+        h1, h2, h3, h4, h5, h6{
+            @include font-roboto($color: $color-blue-regular!important);
+        }
+    }
     .destaques-internas{
         display: table;
         width: 100%;
@@ -439,20 +476,24 @@ main, aside{
             margin-top: 0;
             display: table-cell;
             font-weight: bold;
-            padding: 5px 0;
+            padding: 4px 10px;
+            width: 50px;
         }
         .destaques-internas-titulo{
             width: 100%;
-            //border-bottom: solid 1px red;
-            font-size: 28px;
-            vertical-align: bottom;
+            font-size: 21px;
             padding-left: 20px;
+            padding-bottom: 1px;
         }
 
 
 
     }
-
+    .block-contact-us{
+        h1, h2, h3, h4, h5, h6{
+            @include font-roboto($weight: normal !important);
+        }
+    }
 
 }
 
@@ -854,7 +895,7 @@ footer {
             @include background-color($color__background-orange);
             figure{
                 @include padding-extremes(5px);
-                
+
                 figcaption{
                     @include font-size(1.5);
                     color: $color-white;
@@ -863,7 +904,7 @@ footer {
                     font-weight: bold;
                     @include padding-sides(5px);
                     @include padding-extremes(5px);
-                    
+
                     a, &:hover{
                         color: $color-white;
 

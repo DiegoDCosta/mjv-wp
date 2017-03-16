@@ -155,7 +155,7 @@ $font : '../../fonts';
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#007db9e8',GradientType=0 );
 }
 
-@mixin background($imgpath:false, $position:0 0, $repeat: no-repeat,  $background-size:false) {
+@mixin background($imgpath:false, $position:center center, $repeat: no-repeat,  $background-size:false) {
     @if $imgpath {background: url(#{$imgpath}) $repeat $position;}
     @if $background-size {background-size: $background-size;}
 }

@@ -38,3 +38,39 @@
         <!-- content -->
     </div><!-- .entry-content -->
 </article><!-- #post-## -->
+
+
+
+<div class="iot">
+    <div class="iot__box">
+        <div class="iot__content">
+            <a href="#" data-toggle="modal" data-target="#myModal" title="Hackaton">
+                <figure>
+                    <img class="aligncenter size-full wp-image-471" src="http://novosite.mjv.com.br/wp-content/uploads/2017/02/iot-arduino.png" alt="" width="567" height="373" />
+                    <figcaption class="iot__description">
+                        <strong>HACKATHONS</strong>
+                        <br />MJV organizes programming marathons, where innovative solutions to various problems and challenges arise.
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="iot">
+    <div class="iot__box">
+        <div class="iot__content">
+            <a href="#" data-toggle="modal" data-target="#myModal" title="Hackaton">
+                <figure>
+                    <img class="aligncenter size-full wp-image-471" src="http://novosite.mjv.com.br/wp-content/uploads/2017/02/iot-arduino.png" alt="" width="567" height="373" />
+                    <figcaption class="iot__description">
+                        <strong>HACKATHONS</strong>
+                        <br />MJV organizes programming marathons, where innovative solutions to various problems and challenges arise.
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+</div>

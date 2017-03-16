@@ -14,8 +14,7 @@
             <div class="entry-meta">
                 <?php mjv_theme_posted_on(); ?>
             </div><!-- .entry-meta -->
-        <?php endif;
-        ?>
+        <?php endif;?>
     </header><!-- .entry-header -->
 
     <div class="entry-content">

@@ -16,7 +16,10 @@ endif;
         while (have_posts()) : the_post();
 
             get_template_part('template-parts/content', 'insiders');
-           
+
+            // contact
+            get_template_part('template-parts/contact', 'us');
+
             //carrega os cases, clients e content
             get_template_part('template-parts/content', 'cases_e_content');
 

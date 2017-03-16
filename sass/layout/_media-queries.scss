@@ -41,6 +41,11 @@
     .home header.site-header{
         background: none!important;
     }
+    .breadcrumbs{
+        .breadcrumbs-itens{
+            top: 100%;
+        }
+    }
 }
 
 /* Landscape phones and portrait tablets */
@@ -48,13 +53,25 @@
     .home header.site-header{
         background: none!important;
     }
+    .breadcrumbs{
+        .breadcrumbs-itens{
+            top: 100%;
+        }
+    }
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+    
+    .breadcrumbs{
+        .breadcrumbs-itens{
+            top: 100%;
+        }
+    }
 
     .insider{
         height: 300px;
+        background-position: center center;
     }
 
     main{

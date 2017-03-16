@@ -5967,6 +5967,9 @@ mark, ins {
 big {
   font-size: 125%; }
 
+.destaque {
+  font-size: 16px; }
+
 p {
   font-family: 'roboto', Helvetica, Arial, sans-serif;
   color: #666666; }
@@ -5981,10 +5984,10 @@ p {
 
 .home header.site-header {
   position: absolute;
-  background: url(./template_image/header_bg.png) repeat-x 0 0; }
+  background: url(./template_image/header_bg.png) repeat-x center center; }
 .home h1, .home h2, .home h3, .home h4, .home h5 {
   font-family: 'roboto', Helvetica, Arial, sans-serif;
-  color: #61abdf;
+  color: #999999;
   font-weight: bold; }
 
 header.site-header {
@@ -6058,55 +6061,67 @@ header.site-header {
   position: relative; }
 
 .design-thinking .destaques-internas-numero {
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: #ca2c58; }
 .design-thinking .destaques-internas-titulo {
-  border-width: 0 0 1px 0;
+  border-width: 0 0 2px 0;
   border-style: solid;
   border-color: #ca2c58;
   color: #ca2c58; }
 
 .gamification .destaques-internas-numero {
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: #ffb400; }
 .gamification .destaques-internas-titulo {
-  border-width: 0 0 1px 0;
+  border-width: 0 0 2px 0;
   border-style: solid;
   border-color: #ffb400;
   color: #ffb400; }
 
 .big-data-analysis .destaques-internas-numero {
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: #78b444; }
 .big-data-analysis .destaques-internas-titulo {
-  border-width: 0 0 1px 0;
+  border-width: 0 0 2px 0;
   border-style: solid;
   border-color: #78b444;
   color: #78b444; }
 
 .lean-methodology .destaques-internas-numero {
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: #b4adcc; }
 .lean-methodology .destaques-internas-titulo {
-  border-width: 0 0 1px 0;
+  border-width: 0 0 2px 0;
   border-style: solid;
   border-color: #b4adcc;
   color: #b4adcc; }
 
 .digital-strategy .destaques-internas-numero {
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: #00698c; }
 .digital-strategy .destaques-internas-titulo {
-  border-width: 0 0 1px 0;
+  border-width: 0 0 2px 0;
   border-style: solid;
   border-color: #00698c;
   color: #00698c; }
 
+.internet-of-things .destaques-internas-numero {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #6cc4c8; }
+.internet-of-things .destaques-internas-titulo {
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: #6cc4c8;
+  color: #6cc4c8; }
+
+header .header__navigation {
+  text-transform: uppercase; }
 header .header__navigation ul li a {
   padding: 10px;
   font-family: 'roboto', Helvetica, Arial, sans-serif;
@@ -6142,7 +6157,7 @@ header .header__busca button {
   border: none;
   color: #FFF; }
 header .header__busca .ico-search {
-  background: url(./template_image/ico-search.png) no-repeat 0 0;
+  background: url(./template_image/ico-search.png) no-repeat center center;
   background-size: 100%;
   padding: 15px; }
 header .header__submenu {
@@ -6205,7 +6220,6 @@ header nav .navbar-default .navbar-toggle button:focus, header nav .navbar-defau
 
 main h1, main h2, main h3, main h4, main h5, main h6, aside h1, aside h2, aside h3, aside h4, aside h5, aside h6 {
   font-family: 'roboto', Helvetica, Arial, sans-serif;
-  color: #61abdf;
   font-weight: bold; }
 main .expertise .expertise__bg-1, aside .expertise .expertise__bg-1 {
   background-color: #ca2c58;
@@ -6238,7 +6252,7 @@ main .expertise figure figcaption a, main .expertise figure figcaption:hover, as
 main .cases .cases__title, aside .cases .cases__title {
   margin-bottom: 0; }
 main .cases .cases__box .cases__content, aside .cases .cases__box .cases__content {
-  background-color: #61abdf; }
+  background-color: #45B7AF; }
 main .cases .cases__box .cases__content figure, aside .cases .cases__box .cases__content figure {
   padding: 5px 0; }
 main .cases .cases__box .cases__content figure img, aside .cases .cases__box .cases__content figure img {
@@ -6271,6 +6285,25 @@ main .content .content__box .content__content figure figcaption, aside .content 
   padding: 5px; }
 main .content .content__box .content__content figure figcaption a, main .content .content__box .content__content figure figcaption:hover, aside .content .content__box .content__content figure figcaption a, aside .content .content__box .content__content figure figcaption:hover {
   color: #ffffff; }
+main .iot .iot__title, aside .iot .iot__title {
+  margin-bottom: 0; }
+main .iot .iot__box .iot__content, aside .iot .iot__box .iot__content {
+  background-color: #6cc4c8; }
+main .iot .iot__box .iot__content figure, aside .iot .iot__box .iot__content figure {
+  padding: 5px 0; }
+main .iot .iot__box .iot__content figure img, aside .iot .iot__box .iot__content figure img {
+  max-height: 149px; }
+main .iot .iot__box .iot__content figure figcaption, aside .iot .iot__box .iot__content figure figcaption {
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding: 5px;
+  min-height: 164px; }
+main .iot .iot__box .iot__content a, main .iot .iot__box .iot__content:hover, aside .iot .iot__box .iot__content a, aside .iot .iot__box .iot__content:hover {
+  color: #ffffff; }
+main .content h1, main .content h2, main .content h3, main .content h4, main .content h5, main .content h6, main .cases h1, main .cases h2, main .cases h3, main .cases h4, main .cases h5, main .cases h6, aside .content h1, aside .content h2, aside .content h3, aside .content h4, aside .content h5, aside .content h6, aside .cases h1, aside .cases h2, aside .cases h3, aside .cases h4, aside .cases h5, aside .cases h6 {
+  font-family: 'roboto', Helvetica, Arial, sans-serif;
+  color: #61abdf !important; }
 main .destaques-internas, aside .destaques-internas {
   display: table;
   width: 100%; }
@@ -6279,15 +6312,19 @@ main .destaques-internas .destaques-internas-numero, aside .destaques-internas .
   margin-top: 0;
   display: table-cell;
   font-weight: bold;
-  padding: 5px 0; }
+  padding: 4px 10px;
+  width: 50px; }
 main .destaques-internas .destaques-internas-titulo, aside .destaques-internas .destaques-internas-titulo {
   width: 100%;
-  font-size: 28px;
-  vertical-align: bottom;
-  padding-left: 20px; }
+  font-size: 21px;
+  padding-left: 20px;
+  padding-bottom: 1px; }
+main .block-contact-us h1, main .block-contact-us h2, main .block-contact-us h3, main .block-contact-us h4, main .block-contact-us h5, main .block-contact-us h6, aside .block-contact-us h1, aside .block-contact-us h2, aside .block-contact-us h3, aside .block-contact-us h4, aside .block-contact-us h5, aside .block-contact-us h6 {
+  font-family: 'roboto', Helvetica, Arial, sans-serif;
+  font-weight: normal !important; }
 
 .newsletter {
-  background: url(./template_image/bg-newsletter.jpg) no-repeat 0 0;
+  background: url(./template_image/bg-newsletter.jpg) no-repeat center center;
   background-size: cover; }
 .newsletter article {
   margin-top: 0;
@@ -6438,7 +6475,7 @@ div.wpcf7-validation-errors {
 .what-we-do .what-we-do__box h1, .what-we-do .what-we-do__box h2, .what-we-do .what-we-do__box h3, .what-we-do .what-we-do__box h4, .what-we-do .what-we-do__box h5, .what-we-do .what-we-do__box h6 {
   font-family: 'roboto', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: #61abdf;
+  color: #45B7AF;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0; }
@@ -6449,7 +6486,7 @@ div.wpcf7-validation-errors {
   padding-bottom: 10px;
   border-width: 2px;
   border-style: solid;
-  border-color: #61abdf; }
+  border-color: #45B7AF; }
 .what-we-do .what-we-do__box .what-we-do__desc {
   margin-bottom: 0;
   width: 100%;
@@ -6457,7 +6494,7 @@ div.wpcf7-validation-errors {
   vertical-align: bottom;
   border-width: 0 0 2px 0;
   border-style: solid;
-  border-color: #61abdf;
+  border-color: #45B7AF;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 18px; }
@@ -6566,7 +6603,7 @@ footer .footer__logo-sap-mobile {
   padding-right: 20px;
   height: 60px; }
 .form-busca-404 .input-group-addon button {
-  background: url(./template_image/ico-search.png) no-repeat 0 0;
+  background: url(./template_image/ico-search.png) no-repeat center center;
   background-size: 100%;
   padding: 15px; }
 .form-busca-404 .input-group-addon, .form-busca-404 input, .form-busca-404 button {
@@ -6663,15 +6700,25 @@ footer .footer__logo-sap-mobile {
     background-size: 30%; }
 
   .home header.site-header {
-    background: none !important; } }
+    background: none !important; }
+
+  .breadcrumbs .breadcrumbs-itens {
+    top: 100%; } }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   .home header.site-header {
-    background: none !important; } }
+    background: none !important; }
+
+  .breadcrumbs .breadcrumbs-itens {
+    top: 100%; } }
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+  .breadcrumbs .breadcrumbs-itens {
+    top: 100%; }
+
   .insider {
-    height: 300px; }
+    height: 300px;
+    background-position: center center; }
 
   main h2 {
     font-size: 28.8px;
