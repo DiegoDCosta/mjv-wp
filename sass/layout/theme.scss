@@ -27,7 +27,7 @@ p{
         @include background("./template_image/header_bg.png", $repeat: repeat-x);
     }
     h1, h2, h3, h4, h5{
-        @include font-roboto($color: $color-gray-light, $weight: bold);
+        @include font-roboto($color: $color-gray-light);
     }
 }
 header.site-header{
@@ -349,10 +349,10 @@ header{
 
 }
 main, aside{
-
-    h1, h2, h3, h4, h5, h6{
-        @include font-roboto($weight: bold);
+    h3{
+        @include font-roboto($weight: 100 !important);
     }
+
     .expertise{        
         @each $current-color in $color__colors-list {
             $i: index($color__colors-list, $current-color);
@@ -368,12 +368,16 @@ main, aside{
                 color: $color-white;
                 text-transform: uppercase;
                 text-align: center;
-                font-weight: bold;
                 padding: 5px;
+
                 a, &:hover{
                     color: $color-white;
-
+                    display: block;
                 }
+            }
+            img{
+                width: 100%!important;
+                max-height: 202px;
             }
         }
     }
@@ -394,7 +398,6 @@ main, aside{
                         color: $color-white;
                         text-transform: uppercase;
                         text-align: center;
-                        font-weight: bold;
                         padding: 5px;
                         a, &:hover{
                             color: $color-white;
@@ -434,7 +437,6 @@ main, aside{
             }
         }
     }
-
     .iot{
         .iot__title{
             margin-bottom: 0;
@@ -457,6 +459,50 @@ main, aside{
                 a, &:hover{
                     color: $color-white;
                 }
+            }
+        }
+    }
+    //clients page
+    .client-custom-post{
+        .clients{
+            .clients__title{
+                margin-bottom: 0;
+            }
+            .clients__box{               
+                .clients__content{
+                    @include border($width:2px, $style:solid, $color:$color-blue-regular);
+                    @include margin-extremes(20px);
+                    min-height: 220px;
+
+                    figure{
+                        @include grayscale_element(100%);
+                        transition: all 200ms ease-in-out;
+                        &:hover {
+                            @include grayscale_element(0);
+                        }
+                        figcaption{
+                            @include font-size(1.5);
+                            color: $color-blue-regular;
+                            text-transform: uppercase;
+                            text-align: center;
+                            font-weight: bold;
+                            padding: 5px;
+                            a{
+                                color: $color-blue-regular;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // clients home page{}
+    .clients{
+        figure{
+            @include grayscale_element(100%);
+            transition: all 200ms ease-in-out;
+            &:hover {
+                @include grayscale_element(0);
             }
         }
     }
@@ -489,12 +535,6 @@ main, aside{
 
 
     }
-    .block-contact-us{
-        h1, h2, h3, h4, h5, h6{
-            @include font-roboto($weight: normal !important);
-        }
-    }
-
 }
 
 // newsletter
@@ -735,7 +775,7 @@ div.wpcf7-validation-errors{
         .case-custom-post-box-titulo{
             @include border(2px 2px 2px 0, solid, $color-blue-regular);
             @include font-roboto(18px, $color-blue-regular, $weight: bold,  $lh: false);
-            padding: 7px 60px 13px 12px;
+            padding: 5px 60px 12px 12px;
         }
     }
 }
@@ -754,7 +794,7 @@ div.wpcf7-validation-errors{
 //footer
 footer {
     h1, h2, h3, h4, h5, h6{
-        @include font-roboto($color: $color-gray-light, $weight: bold);
+        @include font-roboto($color: $color-gray-light);
     }
     .footer__logo{
         .footer__logo-desktop, .footer__logo-mobile{
@@ -901,7 +941,6 @@ footer {
                     color: $color-white;
                     text-transform: uppercase;
                     text-align: center;
-                    font-weight: bold;
                     @include padding-sides(5px);
                     @include padding-extremes(5px);
 
@@ -913,4 +952,9 @@ footer {
             }
         }
     }
+}
+
+// RESETS VISUAL COMPOSER
+.wpb_content_element{
+    margin-bottom: 10px!important;
 }

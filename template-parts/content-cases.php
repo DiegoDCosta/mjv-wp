@@ -6,19 +6,20 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
     <div class="entry-content">       
         <div class="clearfix"></div>
         <!-- Cases -->
         <div class="row cases">
-            <?php
-            global $post;
-            $args = array('numberposts' => 3, 'cat' => 4);
-            $myposts = get_posts($args);
-            foreach ($myposts as $post) : setup_postdata($post);
-                ?>
+            <div class="col-md-12">
+                <h1 class="case__title">Cases</h1>
+            </div>
+            
+             <?php query_posts(array('post_type' => 'case', 'orderby' => 'ASC', 'posts_per_page' => 8)); ?>
+            <?php if (have_posts()) : ?>
+                <?php while (have_posts()) : the_post() ?>
 
-                <div class="cases__box col-xs-12 col-sm-4 col-md-4">
+                    <div class="cases__box col-xs-12 col-sm-4 col-md-4">
                     <div class="cases__content">
                         <figure>
                             <?php
@@ -32,45 +33,18 @@
                         </figure>
                     </div>
                 </div>
-            <?php endforeach; ?>
+                    <?php
+                endwhile;
+            endif;
+            ?>
+            <div class="clearfix"></div>
+            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0 col-md-2 col-md-offset-0">
+                <div class="btnLaranja">
+                    <a href="<?php echo get_bloginfo('url') ?>/category/cases/">see all Cases</a>
+                </div>
+            </div>
             <div class="clearfix"></div>
         </div>
         <!-- content -->
     </div><!-- .entry-content -->
 </article><!-- #post-## -->
-
-
-
-<div class="iot">
-    <div class="iot__box">
-        <div class="iot__content">
-            <a href="#" data-toggle="modal" data-target="#myModal" title="Hackaton">
-                <figure>
-                    <img class="aligncenter size-full wp-image-471" src="http://novosite.mjv.com.br/wp-content/uploads/2017/02/iot-arduino.png" alt="" width="567" height="373" />
-                    <figcaption class="iot__description">
-                        <strong>HACKATHONS</strong>
-                        <br />MJV organizes programming marathons, where innovative solutions to various problems and challenges arise.
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="iot">
-    <div class="iot__box">
-        <div class="iot__content">
-            <a href="#" data-toggle="modal" data-target="#myModal" title="Hackaton">
-                <figure>
-                    <img class="aligncenter size-full wp-image-471" src="http://novosite.mjv.com.br/wp-content/uploads/2017/02/iot-arduino.png" alt="" width="567" height="373" />
-                    <figcaption class="iot__description">
-                        <strong>HACKATHONS</strong>
-                        <br />MJV organizes programming marathons, where innovative solutions to various problems and challenges arise.
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-    </div>
-</div>

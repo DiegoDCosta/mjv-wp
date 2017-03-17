@@ -11,26 +11,28 @@ get_header('client');
 
 
             <div class="row cases">      
-                <?php
-                the_content();
+                <?php the_content(); ?>
 
+              <?php query_posts(array('post_type' => 'client', 'orderby' => 'DESC', 'posts_per_page' => 8)); ?>
+                <?php if (have_posts()) : ?> 
+                    <?php while (have_posts()) : the_post() ?>
 
-                $clients = new WP_Query("cat=5&showposts=8");
-                while ($clients->have_posts()) : $clients->the_post();
-                    ?>
-                    <div class="clients__box col-xs-6 col-sm-4 col-md-4">
-                        <div class="clients__content">
-                            <figure>
-                                <?php
-                                the_post_thumbnail('post-thumbnail');
-                                ?>
-                                <figcaption class="case__description">
-                                  <?php the_title(); ?>
-                                </figcaption>
-                            </figure>
+                        <div class="clients__box col-xs-6 col-sm-4 col-md-2">
+                            <div class="clients__content">
+                                <figure>
+                                    <?php
+                                    the_post_thumbnail('post-thumbnail');
+                                    ?>
+                                    <figcaption class="case__description">
+                                        <?php the_title(); ?>
+                                    </figcaption>
+                                </figure>
+                            </div>
                         </div>
-                    </div>
-                <?php endwhile; ?>
+                        <?php
+                    endwhile;
+                endif;
+                ?>
 
                 <div class="post-paginate">
                     <?php echo paginate_links($args); ?>

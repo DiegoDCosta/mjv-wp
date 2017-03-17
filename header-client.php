@@ -66,7 +66,7 @@
                         <div class="col-md-12 breadcrumbs">
                             <div class="breadcrumbs-itens">
                                 <?php the_breadcrumb(); ?>
-                                <h1 class="breadcrumbs-titulo"><?php the_title(); ?></h1>
+                                <h1 class="breadcrumbs-titulo">Client</h1>
                             </div>                            
                         </div>
                     </div>

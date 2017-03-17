@@ -77,48 +77,17 @@
         <?php
         // carrega clientes
         get_template_part('template-parts/content', 'clients');
+         get_template_part('template-parts/content', 'cases');
         ?>
 
-        <!-- Cases -->
-        <div class="row cases">
-            <div class="col-md-12">
-                <h1 class="cases__title">Cases</h1>
-            </div>
-
-            <?php
-            $cases = new WP_Query("cat=4&showposts=3");
-            while ($cases->have_posts()) : $cases->the_post();
-                ?>
-
-                <div class="cases__box col-xs-12 col-sm-4 col-md-4">
-                    <div class="cases__content">
-                        <figure>
-                            <?php
-                            the_post_thumbnail('post-thumbnail');
-                            ?>
-                            <figcaption class="case__description">
-                                <a href="<?php the_permalink(); ?>">
-                                    <?php the_title(); ?>
-                                </a>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            <?php endwhile; ?>
-
-            <div class="clearfix"></div>
-            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0 col-md-2 col-md-offset-0">
-                <div class="btnLaranja">
-                    <a href="<?php echo get_bloginfo('url') ?>/category/cases/">see all Cases</a>
-                </div>
-            </div>
-        </div>
+      
+        
         <!-- content -->
         <div class="row content">
             <div class="col-md-12">
                 <h1 class="content__title">Content</h1>
             </div>
-
+            
             <?php
             $content = new WP_Query("cat=6&showposts=4");
             while ($content->have_posts()) : $content->the_post();

@@ -15,28 +15,29 @@
             <div class="col-md-12">
                 <h1 class="cases__title">Related Cases</h1>
             </div>
-            <?php
-            global $post;
-            $args = array('numberposts' => 3, 'cat' => 4);
-            $myposts = get_posts($args);
-            foreach ($myposts as $post) : setup_postdata($post);
-                ?>
 
-                <div class="cases__box col-xs-12 col-sm-4 col-md-4">
-                    <div class="cases__content">
-                        <figure>
-                            <?php
-                            the_post_thumbnail('post-thumbnail');
-                            ?>
-                            <figcaption class="case__description">
-                                <a href="<?php the_permalink(); ?>">
+            <?php query_posts(array('post_type' => 'client', 'orderby' => 'DESC', 'posts_per_page' => 8)); ?>
+            <?php if (have_posts()) : ?> 
+                <?php while (have_posts()) : the_post() ?>
+
+                    <div class="clients__box col-xs-6 col-sm-4 col-md-2">
+                        <div class="clients__content">
+                            <figure>
+                                <?php
+                                the_post_thumbnail('post-thumbnail');
+                                ?>
+                                <figcaption class="case__description">
                                     <?php the_title(); ?>
-                                </a>
-                            </figcaption>
-                        </figure>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
-                </div>
-            <?php endforeach; ?>
+                    <?php
+                endwhile;
+            endif;
+            ?>
+
+
 
             <div class="clearfix"></div>
             <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0 col-md-2 col-md-offset-0">

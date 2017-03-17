@@ -13,20 +13,6 @@ get_header('case');
 <div id="primary" class="content-area case-custom-post">
     <main id="main" class="site-main" role="main">
 
-        <?php
-        while (have_posts()) : the_post();
-
-            get_template_part('template-parts/content', get_post_format());
-
-            the_post_navigation();
-
-            // If comments are open or we have at least one comment, load up the comment template.
-            /*if (comments_open() || get_comments_number()) :
-                comments_template();
-            endif;
-*/
-            ?>
-        
         <div class="col-xs-5 col-md-2 case-custom-post-navigation">
             <?php next_post_link('%link', 'Previous'); ?>
         </div>
@@ -44,11 +30,27 @@ get_header('case');
         </div>
         <div class="clearfix"></div>
 
-        
 
-        <?php endwhile; // End of the loop. ?>
-        
+        <?php
+        while (have_posts()) : the_post();
 
+            the_content();
+
+            // If comments are open or we have at least one comment, load up the comment template.
+            /* if (comments_open() || get_comments_number()) :
+              comments_template();
+              endif;
+             */
+            ?>
+
+
+
+
+        <?php endwhile; // End of the loop.  ?>
+
+        <?php
+        get_template_part('template-parts/contact', 'us');
+        ?>
     </main><!-- #main -->
 </div><!-- #primary -->
 
