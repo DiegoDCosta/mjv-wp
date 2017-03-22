@@ -12,19 +12,17 @@
         <!-- Cases -->
         <div class="row cases">
             <div class="col-md-12">
-                <h1 class="case__title">Cases</h1>
+                <h1 class="cases__title">Cases</h1>
             </div>
             
-             <?php query_posts(array('post_type' => 'case', 'orderby' => 'ASC', 'posts_per_page' => 8)); ?>
+             <?php query_posts(array('post_type' => 'case', 'orderby' => 'ASC', 'posts_per_page' => 3)); ?>
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post() ?>
 
                     <div class="cases__box col-xs-12 col-sm-4 col-md-4">
                     <div class="cases__content">
                         <figure>
-                            <?php
-                            the_post_thumbnail('post-thumbnail');
-                            ?>
+                           <div style="background-image: url(<?php echo the_post_thumbnail_url( 'large' ); ?>);" class="thumbs"> </div>
                             <figcaption class="case__description">
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_title(); ?>
@@ -47,4 +45,16 @@
         </div>
         <!-- content -->
     </div><!-- .entry-content -->
+    <?php if (get_edit_post_link()) : ?>
+        <footer class="entry-footer">
+            <?php
+            edit_post_link(
+                    sprintf(
+                            /* translators: %s: Name of current post */
+                            esc_html__('Edit %s', 'mjv-theme'), the_title('<span class="screen-reader-text">"', '"</span>', false)
+                    ), '<span class="edit-link">', '</span>'
+            );
+            ?>
+        </footer><!-- .entry-footer -->
+    <?php endif; ?>
 </article><!-- #post-## -->

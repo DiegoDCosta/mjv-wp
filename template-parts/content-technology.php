@@ -31,9 +31,7 @@
                 <div class="cases__box col-xs-12 col-sm-4 col-md-4">
                     <div class="cases__content">
                         <figure>
-                            <?php
-                            the_post_thumbnail('post-thumbnail');
-                            ?>
+                           <div style="background-image: url(<?php echo the_post_thumbnail_url( 'large' ); ?>);" class="thumbs"> </div>
                             <figcaption class="case__description">
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_title(); ?>

@@ -12,9 +12,7 @@ endif;
 
 <div id="primary" class="content-area design-thinking">
     <main id="main" class="site-main" role="main">
-        <?php
-        while (have_posts()) : the_post();
-          
+        <?php    
             get_template_part('template-parts/content', 'insiders');
 
             //carrega os cases, clients e content
@@ -25,7 +23,7 @@ endif;
           comments_template();
           endif;
          */
-        endwhile; // End of the loop.
+       
         ?>
 
     </main><!-- #main -->

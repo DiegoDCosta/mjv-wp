@@ -33,9 +33,7 @@
                     <div class="cases__box col-xs-12 col-sm-4 col-md-4">
                         <div class="cases__content">
                             <figure>
-                                <?php
-                                the_post_thumbnail('post-thumbnail');
-                                ?>
+                                <div style="background-image: url(<?php echo the_post_thumbnail_url( 'large' ); ?>);" class="thumbs"> </div>
                                 <figcaption class="case__description">
                                     <a href="<?php echo get_post_meta($post->ID, 'wpcf-link-para-o-post-externo', true); ?>">
                                         <?php the_title(); ?>

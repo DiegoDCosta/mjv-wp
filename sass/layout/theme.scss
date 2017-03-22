@@ -7,6 +7,10 @@
 @import "../typography/_typography.scss";
 @import "../variables-site/_colors.scss";
 
+.thumbs{
+    height: 143px;    
+    @include background($imgpath:false, $position:center center, $repeat: no-repeat,  $background-size:cover);
+}
 .destaque{
     font-size:16px;
 }
@@ -26,8 +30,8 @@ p{
         position: absolute;
         @include background("./template_image/header_bg.png", $repeat: repeat-x);
     }
-    h1, h2, h3, h4, h5{
-        @include font-roboto($color: $color-gray-light);
+    h1{
+        @include font-roboto($color: $color-blue-regular);
     }
 }
 header.site-header{
@@ -264,9 +268,14 @@ header{
         padding-right: 0;
 
         ul {
+            display: block;
+            position: relative;
+            text-align: right;
             list-style: none;
+            @include margin-sides(0);
+
             li{
-                float:left;
+                display: inline-table;
                 a{
                     color:#FFF;
                     margin: 20px 5px 5px;
@@ -279,7 +288,6 @@ header{
                 }
                 &:last-child{
                     border: none;
-                    float: right;
                     a{
                         border: none;
                     }
@@ -365,7 +373,9 @@ main, aside{
         figure{
             figcaption{
                 @include font-size(1.5);
+                margin-top: 10px;
                 color: $color-white;
+                height: 50px;
                 text-transform: uppercase;
                 text-align: center;
                 padding: 5px;
@@ -395,6 +405,8 @@ main, aside{
                     }
                     figcaption{
                         @include font-size(1.5);
+                        margin-top: 10px;
+                        height: 50px;
                         color: $color-white;
                         text-transform: uppercase;
                         text-align: center;
@@ -423,10 +435,11 @@ main, aside{
                     }
                     figcaption{
                         @include font-size(1.5);
+                        margin-top: 10px;
                         color: $color-white;
+                        height: 50px;
                         text-transform: uppercase;
                         text-align: center;
-                        font-weight: bold;
                         padding: 5px;
                         a, &:hover{
                             color: $color-white;
@@ -451,7 +464,9 @@ main, aside{
                     }
                     figcaption{
                         @include font-size(1.5);
+                        margin-top: 10px;
                         color: $color-white;
+                        height: 50px;
                         padding: 5px;
                         min-height: 164px;
                     }
@@ -463,16 +478,23 @@ main, aside{
         }
     }
     //clients page
+    .clients{
+        .clients__title{
+            color: $color-blue-regular;
+        }
+    }
     .client-custom-post{
         .clients{
             .clients__title{
                 margin-bottom: 0;
+                color: $color-blue-regular;
             }
             .clients__box{               
                 .clients__content{
                     @include border($width:2px, $style:solid, $color:$color-blue-regular);
                     @include margin-extremes(20px);
-                    min-height: 220px;
+                    height: 280px;
+                    text-align: center;
 
                     figure{
                         @include grayscale_element(100%);
@@ -482,10 +504,10 @@ main, aside{
                         }
                         figcaption{
                             @include font-size(1.5);
+                            margin-top: 10px;
+                            height: 50px;
                             color: $color-blue-regular;
                             text-transform: uppercase;
-                            text-align: center;
-                            font-weight: bold;
                             padding: 5px;
                             a{
                                 color: $color-blue-regular;
@@ -508,7 +530,7 @@ main, aside{
     }
 
     .content, .cases{
-        h1, h2, h3, h4, h5, h6{
+        h1{
             @include font-roboto($color: $color-blue-regular!important);
         }
     }
@@ -700,7 +722,15 @@ div.wpcf7-validation-errors{
 }
 
 // formata os titulos de what we do
+
 .what-we-do{
+
+    .cases__content{
+        @include background-color($color-blue-regular!important);
+
+
+    }
+
     .what-we-do__ancoras{
         a{
             color: $color-gray-light;
@@ -717,14 +747,14 @@ div.wpcf7-validation-errors{
         @include margin-extremes(10px);
 
         h1, h2, h3, h4, h5, h6{
-            @include font-roboto($size: 16px, $weight: bold, $color: $color__cases-bg);
+            @include font-roboto($size: 16px, $weight: bold, $color: $color-blue-regular);
             @include margin-extremes(0);
         }
 
         .what-we-do__img{
             @include padding-sides(15px);
             @include padding-extremes(10px);
-            @include border(2px, solid, $color__cases-bg);
+            @include border(2px, solid, $color-blue-regular);
         }
 
         .what-we-do__desc{
@@ -732,7 +762,7 @@ div.wpcf7-validation-errors{
             width: 100%;
             line-height: 50px;
             vertical-align: bottom;
-            @include border(0 0 2px 0 , solid, $color__cases-bg);
+            @include border(0 0 2px 0 , solid, $color-blue-regular);
             @include padding-sides(10px);
             font-size: 18px;
         }
@@ -914,6 +944,11 @@ footer {
             @include margin-sides(0);
             @include padding-sides(10px);
             @include list-unstyled();
+            list-style: none !important;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
     }
@@ -937,18 +972,22 @@ footer {
                 @include padding-extremes(5px);
 
                 figcaption{
-                    @include font-size(1.5);
+                    height: 50px;
                     color: $color-white;
                     text-transform: uppercase;
                     text-align: center;
                     @include padding-sides(5px);
-                    @include padding-extremes(5px);
+                    @include padding-extremes(10px);
+                    @include font-size(1.5);
 
                     a, &:hover{
                         color: $color-white;
 
                     }
                 }
+            }
+            .biblioteca-boxe__description{
+                height: 60px;
             }
         }
     }

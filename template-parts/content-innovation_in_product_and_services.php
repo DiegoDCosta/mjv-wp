@@ -31,9 +31,7 @@
                 <div class="cases__box col-xs-12 col-sm-4 col-md-4">
                     <div class="cases__content">
                         <figure>
-                            <?php
-                            the_post_thumbnail('post-thumbnail');
-                            ?>
+                            <div style="background-image: url(<?php echo the_post_thumbnail_url( 'large' ); ?>);" class="thumbs"> </div>
                             <figcaption class="case__description">
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_title(); ?>
@@ -44,6 +42,18 @@
                 </div>
             <?php endwhile; ?>
         </div><!-- .entry-content -->
+        <?php if (get_edit_post_link()) : ?>
+        <footer class="entry-footer">
+            <?php
+            edit_post_link(
+                    sprintf(
+                            /* translators: %s: Name of current post */
+                            esc_html__('Edit %s', 'mjv-theme'), the_title('<span class="screen-reader-text">"', '"</span>', false)
+                    ), '<span class="edit-link">', '</span>'
+            );
+            ?>
+        </footer><!-- .entry-footer -->
+    <?php endif; ?>
     </div>
 
 </article><!-- #post-## -->

@@ -16,18 +16,18 @@
                 <h1 class="cases__title">Related Cases</h1>
             </div>
 
-            <?php query_posts(array('post_type' => 'client', 'orderby' => 'DESC', 'posts_per_page' => 8)); ?>
+            <?php query_posts(array('post_type' => 'case', 'orderby' => 'DESC', 'posts_per_page' => 3)); ?>
             <?php if (have_posts()) : ?> 
                 <?php while (have_posts()) : the_post() ?>
 
-                    <div class="clients__box col-xs-6 col-sm-4 col-md-2">
-                        <div class="clients__content">
+                    <div class="cases__box col-xs-12 col-sm-4 col-md-4">
+                        <div class="cases__content">
                             <figure>
-                                <?php
-                                the_post_thumbnail('post-thumbnail');
-                                ?>
-                                <figcaption class="case__description">
-                                    <?php the_title(); ?>
+                                <div style="background-image: url(<?php echo the_post_thumbnail_url('large'); ?>);" class="thumbs"> </div>
+                                <figcaption class="cases__description">
+                                    <a href="<?php the_permalink(); ?>">
+                                        <?php the_title(); ?>
+                                    </a>
                                 </figcaption>
                             </figure>
                         </div>
@@ -53,17 +53,15 @@
             </div>
             <?php
             global $post;
-            $argsContent = array('numberposts' => 4, 'cat' => 6);
+            $argsContent = array('numberposts' => 4, 'cat' => 8);
             $content = get_posts($argsContent);
             foreach ($content as $post) : setup_postdata($post);
                 ?>
 
-                <div class="content__box col-xs-12 col-sm-4 col-md-4">
+                <div class="content__box col-xs-12 col-sm-3 col-md-3">
                     <div class="content__content">
                         <figure>
-                            <?php
-                            the_post_thumbnail('post-thumbnail');
-                            ?>
+                            <div style="background-image: url(<?php echo the_post_thumbnail_url('large'); ?>);" class="thumbs"> </div>
                             <figcaption class="content__description">
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_title(); ?>
