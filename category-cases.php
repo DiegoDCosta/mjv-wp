@@ -22,12 +22,12 @@ endif;
                         <div class="cases__box col-xs-12 col-sm-4 col-md-4">
                             <div class="cases__content">
                                 <figure>
-                                    <div style="background-image: url(<?php echo the_post_thumbnail_url( 'large' ); ?>);" class="thumbs"> </div>
-                                    <figcaption class="case__description">
-                                        <a href="<?php the_permalink(); ?>">
-                                            <?php the_title(); ?>
-                                        </a>
-                                    </figcaption>
+                                    <a href="<?php the_permalink(); ?>">
+                                        <div style="background-image: url(<?php echo the_post_thumbnail_url('large'); ?>);" class="thumbs"> </div>
+                                        <figcaption class="case__description">                                        
+                                            <?php the_title(); ?>                                        
+                                        </figcaption>
+                                    </a>
                                 </figure>
                             </div>
                         </div>

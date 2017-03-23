@@ -202,6 +202,18 @@ header{
     .header__navigation{
         text-transform: uppercase;
         ul{
+
+            li.current-menu-item, .current-menu-ancestor{
+                background: #4889a7;
+                ul.sub-menu{
+                    li.current-menu-item{
+                        background: #3A7F9E;
+                        &:hover{
+                            background: #4889a7;
+                        }
+                    }
+                }
+            }
             li{
                 a {
                     padding:10px;
@@ -325,7 +337,7 @@ header{
 
     .breadcrumbs-itens{
         position: absolute;
-        bottom: 20px;
+        bottom: 60px;
         height: auto;
         text-transform: capitalize;
         color: $color-white;
@@ -408,7 +420,6 @@ main, aside{
                         margin-top: 10px;
                         height: 50px;
                         color: $color-white;
-                        text-transform: uppercase;
                         text-align: center;
                         padding: 5px;
                         a, &:hover{
@@ -437,8 +448,7 @@ main, aside{
                         @include font-size(1.5);
                         margin-top: 10px;
                         color: $color-white;
-                        height: 50px;
-                        text-transform: uppercase;
+                        height: 80px;
                         text-align: center;
                         padding: 5px;
                         a, &:hover{
@@ -491,9 +501,9 @@ main, aside{
             }
             .clients__box{               
                 .clients__content{
-                    @include border($width:2px, $style:solid, $color:$color-blue-regular);
+                    //@include border($width:2px, $style:solid, $color:$color-blue-regular);
                     @include margin-extremes(20px);
-                    height: 280px;
+                    //min-height: 240px;
                     text-align: center;
 
                     figure{
@@ -503,15 +513,17 @@ main, aside{
                             @include grayscale_element(0);
                         }
                         figcaption{
-                            @include font-size(1.5);
-                            margin-top: 10px;
-                            height: 50px;
-                            color: $color-blue-regular;
-                            text-transform: uppercase;
-                            padding: 5px;
-                            a{
-                                color: $color-blue-regular;
-                            }
+                            display: none;
+                            /* @include font-size(1.5);
+                             margin-top: 10px;
+                             height: 50px;
+                             color: $color-blue-regular;
+                             text-transform: uppercase;
+                             padding: 5px;
+                             a{
+                                 color: $color-blue-regular;
+                             }*/
+
                         }
                     }
                 }
@@ -778,6 +790,9 @@ div.wpcf7-validation-errors{
 
 .case-custom-post{
 
+    .case-custom-post-navigation-previous{
+        margin-right: 30px;
+    }
     .case-custom-post-navigation{        
         @include background-color($color-blue-regular);
         @include text-center();

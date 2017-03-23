@@ -26,41 +26,41 @@
             <div class="cases__box col-xs-12 col-sm-4 col-md-4">
                 <div class="cases__content">
                     <figure>
-                        <img src="<?php echo get_template_directory_uri(); ?>/template_image/what-we-do__coolcenter.jpg" alt="Coolcenter" class="img-responsive" width="100%"/>
-                        <figcaption class="case__description">
-                            <a href="http://www.coolcentersoftware.com/" target="_blank">
-                                Coolcenter
-                            </a>
-                        </figcaption>
+                        <a href="http://www.coolcentersoftware.com/" target="_blank">
+                            <img src="<?php echo get_template_directory_uri(); ?>/template_image/what-we-do__coolcenter.jpg" alt="Coolcenter" class="img-responsive" width="100%"/>
+                            <figcaption class="case__description">                           
+                                Coolcenter                            
+                            </figcaption>
+                        </a>
                     </figure>
                 </div>
             </div>
 
             <div class="cases__box col-xs-12 col-sm-4 col-md-4">
                 <div class="cases__content">
-                    <figure> 
-                        <img src="<?php echo get_template_directory_uri(); ?>/template_image/what-we-do__groundbreaker.png" alt="GroundBreaker" class="img-responsive" width="100%"/>
-                        <figcaption class="case__description">
-                            <a href="#" target="_blank" >
-                                BroundBreak
-                            </a>
-                        </figcaption>
+                    <figure>
+                        <a href="http://www.groundbreakerapp.com/" target="_blank" >
+                            <img src="<?php echo get_template_directory_uri(); ?>/template_image/what-we-do__groundbreaker.png" alt="GroundBreaker" class="img-responsive" width="100%"/>
+                            <figcaption class="case__description">                           
+                                BroundBreak                            
+                            </figcaption>
+                        </a>
                     </figure>
                 </div>
             </div>
         </div><!-- .entry-content -->
         <?php if (get_edit_post_link()) : ?>
-        <footer class="entry-footer">
-            <?php
-            edit_post_link(
-                    sprintf(
-                            /* translators: %s: Name of current post */
-                            esc_html__('Edit %s', 'mjv-theme'), the_title('<span class="screen-reader-text">"', '"</span>', false)
-                    ), '<span class="edit-link">', '</span>'
-            );
-            ?>
-        </footer><!-- .entry-footer -->
-    <?php endif; ?>
+            <footer class="entry-footer">
+                <?php
+                edit_post_link(
+                        sprintf(
+                                /* translators: %s: Name of current post */
+                                esc_html__('Edit %s', 'mjv-theme'), the_title('<span class="screen-reader-text">"', '"</span>', false)
+                        ), '<span class="edit-link">', '</span>'
+                );
+                ?>
+            </footer><!-- .entry-footer -->
+        <?php endif; ?>
     </div>
 
 </article><!-- #post-## -->

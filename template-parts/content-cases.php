@@ -14,29 +14,29 @@
             <div class="col-md-12">
                 <h1 class="cases__title">Cases</h1>
             </div>
-            
-             <?php query_posts(array('post_type' => 'case', 'orderby' => 'ASC', 'posts_per_page' => 3)); ?>
+
+            <?php query_posts(array('post_type' => 'case', 'orderby' => 'ASC', 'posts_per_page' => 3)); ?>
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post() ?>
 
                     <div class="cases__box col-xs-12 col-sm-4 col-md-4">
-                    <div class="cases__content">
-                        <figure>
-                           <div style="background-image: url(<?php echo the_post_thumbnail_url( 'large' ); ?>);" class="thumbs"> </div>
-                            <figcaption class="case__description">
+                        <div class="cases__content">
+                            <figure>
                                 <a href="<?php the_permalink(); ?>">
-                                    <?php the_title(); ?>
+                                    <div style="background-image: url(<?php echo the_post_thumbnail_url('large'); ?>);" class="thumbs"> </div>
+                                    <figcaption class="case__description">                                
+                                        <?php the_title(); ?>                                
+                                    </figcaption>
                                 </a>
-                            </figcaption>
-                        </figure>
+                            </figure>
+                        </div>
                     </div>
-                </div>
                     <?php
                 endwhile;
             endif;
             ?>
             <div class="clearfix"></div>
-            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0 col-md-2 col-md-offset-0">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5">
                 <div class="btnLaranja">
                     <a href="<?php echo get_bloginfo('url') ?>/category/cases/">see all Cases</a>
                 </div>

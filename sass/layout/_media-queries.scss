@@ -7,7 +7,7 @@
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
-
+   
 }
 
 /* Landscape tablets and medium desktops */
@@ -29,6 +29,7 @@
     .breadcrumbs{
         height: 200px;
     }
+
 }
 
 /* Portrait tablets and small desktops */
@@ -46,6 +47,7 @@
             top: 100%;
         }
     }
+
 }
 
 /* Landscape phones and portrait tablets */
@@ -58,14 +60,21 @@
             top: 100%;
         }
     }
+    
+
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 
     .breadcrumbs{
+        height: 160px;
+        
         .breadcrumbs-itens{
             top: 100%;
+            ol{
+                flex-wrap: wrap;
+            }
         }
     }
 
@@ -74,23 +83,7 @@
         background-position: center center;
     }
 
-    main{
-        h2{
-            @include font-size(1.8);
-        }
-
-        .client-custom-post{
-            .clients{                
-                .clients__box{               
-                    .clients__content{
-                        min-height: 175px;
-                    }
-                }
-            }
-        }
-
-
-    }
+    
 
     // formata o titulo dos cases
     .case-custom-post{

@@ -13,7 +13,7 @@ get_header('client');
             <div class="row clients">      
                 <?php the_content(); ?>
 
-              <?php query_posts(array('post_type' => 'client', 'orderby' => 'DESC', 'posts_per_page' => 3000)); ?>
+                <?php query_posts(array('post_type' => 'client', 'orderby' => 'DESC', 'posts_per_page' => 3000)); ?>
                 <?php if (have_posts()) : ?> 
                     <?php while (have_posts()) : the_post() ?>
 
@@ -32,9 +32,13 @@ get_header('client');
                 endif;
                 ?>
 
-                <div class="post-paginate">
-                    <?php echo paginate_links($args); ?>
+
+                <div class="clearfix"></div>
+            <div class="col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5 col-xs-10 col-xs-offset-1">
+                <div class="btnLaranja">
+                    <a href="<?php echo get_bloginfo('url') ?>/category/cases/">see Cases</a>
                 </div>
+            </div>
 
             </div>
         </div>

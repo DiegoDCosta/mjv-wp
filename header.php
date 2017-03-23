@@ -32,7 +32,7 @@
                         </div>
                         <div class="col-md-9 col-md-offset-1">
                             <div class="row header__busca">
-                                <div class="col-md-4 col-md-offset-7 header__submenu">
+                                <div class="col-md-5 col-md-offset-6 header__submenu">
                                     <ul>
                                         <li>
                                             <a href="<?php bloginfo('url'); ?>/contact/work-with-us">Work with us</a>

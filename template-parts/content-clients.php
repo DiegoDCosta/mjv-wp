@@ -30,7 +30,7 @@
 
 
             <div class="clearfix"></div>
-            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-4 col-sm-offset-0 col-md-2 col-md-offset-0">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5">
                 <div class="btnLaranja">
                     <a href="<?php echo get_bloginfo('url') ?>/category/clients/">see all Clients</a>
                 </div>

@@ -79,11 +79,20 @@
                     +55 21 2532 6423
                 </p>
             </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <h3>ALPHAVILLE</h3>
+                <p>                    
+                   Avenida Sagitario Nº 138 Conj 2205B Bairro: Alphaville Conde I 
+CEP: 06.473-073 Barueri - SP
+                </p>
+            </div>           
+            <!-- 
             <div class="col-xs-4 col-sm-4 col-md-2 col-lg-1">
                 <h3>PARTNER</h3>
                 <div class="footer__logo-sap hidden-xs"></div>
                 <div class="footer__logo-sap-mobile hidden-md hidden-lg"></div>
             </div>
+            -->
         </div>
     </div>
 </footer><!-- #colophon -->

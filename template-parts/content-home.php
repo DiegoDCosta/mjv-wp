@@ -24,36 +24,36 @@
             <div class="expertise col-xs-12 col-md-4 col-sm-4">
                 <div class="expertise__design-thinking">
                     <figure class="expertise__bg-1">
-                        <div style="background-image: url(<?php echo get_post_meta($post->ID, 'wpcf-design-thinking', true); ?>);" class="thumbs"> </div>
-                        <figcaption class="expertise__description">
-                            <a href="<?php echo get_bloginfo('url') ?>/how-we-work/design-thinking/">
+                        <a href="<?php echo get_bloginfo('url') ?>/how-we-work/design-thinking/">
+                            <div style="background-image: url(<?php echo get_post_meta($post->ID, 'wpcf-design-thinking', true); ?>);" class="thumbs"> </div>
+                            <figcaption class="expertise__description">                            
                                 <?php echo get_post_meta($post->ID, 'wpcf-design-thinking-description', true); ?>
-                            </a>
-                        </figcaption>
+                            </figcaption>
+                        </a>
                     </figure>
                 </div>
             </div>
             <div class="expertise col-xs-12 col-md-4 col-sm-4">
                 <div class="expertise__gamefication">
                     <figure class="expertise__bg-2">
-                        <div style="background-image: url(<?php echo get_post_meta($post->ID, 'wpcf-gamefication', true); ?>);" class="thumbs"> </div>
-                        <figcaption class="expertise__description">
-                            <a href="<?php echo get_bloginfo('url') ?>/how-we-work/gamification/">
-                                <?php echo get_post_meta($post->ID, 'wpcf-gamefication-description', true); ?>
-                            </a>
-                        </figcaption>
+                        <a href="<?php echo get_bloginfo('url') ?>/how-we-work/gamification/">
+                            <div style="background-image: url(<?php echo get_post_meta($post->ID, 'wpcf-gamefication', true); ?>);" class="thumbs"> </div>
+                            <figcaption class="expertise__description">                            
+                                <?php echo get_post_meta($post->ID, 'wpcf-gamefication-description', true); ?>                            
+                            </figcaption>
+                        </a>
                     </figure>
                 </div>
             </div>
             <div class="expertise col-xs-12 col-md-4 col-sm-4">
                 <div class="expertise__big-data-analysis">
                     <figure class="expertise__bg-3">
-                        <div style="background-image: url(<?php echo get_post_meta($post->ID, 'wpcf-big-data-analysis', true); ?>);" class="thumbs"> </div>
-                        <figcaption class="expertise__description">
-                            <a href="<?php echo get_bloginfo('url') ?>/how-we-work/big-data-analytics/">
-                                <?php echo get_post_meta($post->ID, 'wpcf-big-data-analysis-description', true); ?>
-                            </a>
-                        </figcaption>
+                        <a href="<?php echo get_bloginfo('url') ?>/how-we-work/big-data-analytics/">
+                            <div style="background-image: url(<?php echo get_post_meta($post->ID, 'wpcf-big-data-analysis', true); ?>);" class="thumbs"> </div>
+                            <figcaption class="expertise__description">                           
+                                <?php echo get_post_meta($post->ID, 'wpcf-big-data-analysis-description', true); ?>                            
+                            </figcaption>
+                        </a>
                     </figure>
                 </div>
             </div>
@@ -62,36 +62,36 @@
             <div class="expertise col-xs-12 col-sm-4 col-md-4">
                 <div class="expertise__lean-methodology">
                     <figure class="expertise__bg-4">
-                        <div style="background-image: url(<?php echo get_post_meta($post->ID, 'wpcf-lean-methodology', true); ?>);" class="thumbs"> </div>
-                        <figcaption class="expertise__description">
-                            <a href="<?php echo get_bloginfo('url') ?>/how-we-work/lean-methodology/">
-                                <?php echo get_post_meta($post->ID, 'wpcf-lean-methodology-description', true); ?>
-                            </a>
-                        </figcaption>
+                        <a href="<?php echo get_bloginfo('url') ?>/how-we-work/lean-methodology/">
+                            <div style="background-image: url(<?php echo get_post_meta($post->ID, 'wpcf-lean-methodology', true); ?>);" class="thumbs"> </div>
+                            <figcaption class="expertise__description">                            
+                                <?php echo get_post_meta($post->ID, 'wpcf-lean-methodology-description', true); ?>                            
+                            </figcaption>
+                        </a>
                     </figure>
                 </div>
             </div>
             <div class="expertise col-xs-12 col-sm-4 col-md-4">
                 <div class="expertise__digital-strategy">
                     <figure class="expertise__bg-5">
-                        <div style="background-image: url(<?php echo get_post_meta($post->ID, 'wpcf-digital-strategy', true); ?>);" class="thumbs"> </div>
-                        <figcaption class="expertise__description">
-                            <a href="<?php echo get_bloginfo('url') ?>/how-we-work/digital-strategy/">
+                        <a href="<?php echo get_bloginfo('url') ?>/how-we-work/digital-strategy/">
+                            <div style="background-image: url(<?php echo get_post_meta($post->ID, 'wpcf-digital-strategy', true); ?>);" class="thumbs"> </div>
+                            <figcaption class="expertise__description">
                                 <?php echo get_post_meta($post->ID, 'wpcf-digital-strategy-description', true); ?>
-                            </a>
-                        </figcaption>
+                            </figcaption>
+                        </a>
                     </figure>
                 </div>
             </div>
             <div class="expertise col-xs-12 col-sm-4 col-sm-offset-0 col-md-4">
                 <div class="expertise__internet-of-things">
                     <figure class="expertise__bg-6">
-                        <div style="background-image: url(<?php echo get_post_meta($post->ID, 'wpcf-internet-of-things', true); ?>);" class="thumbs"> </div>
-                        <figcaption class="expertise__description">
-                            <a href="<?php echo get_bloginfo('url') ?>/how-we-work/design-thinking/">
+                        <a href="<?php echo get_bloginfo('url') ?>/how-we-work/design-thinking/">
+                            <div style="background-image: url(<?php echo get_post_meta($post->ID, 'wpcf-internet-of-things', true); ?>);" class="thumbs"> </div>
+                            <figcaption class="expertise__description">
                                 <?php echo get_post_meta($post->ID, 'wpcf-internet-of-things-description', true); ?>
-                            </a>
-                        </figcaption>
+                            </figcaption>
+                        </a>
                     </figure>
                 </div>
             </div>
@@ -117,24 +117,22 @@
             while ($content->have_posts()) : $content->the_post();
                 ?>
 
-                <div class="content__box col-xs-6 col-sm-3 col-md-3">
+                <div class="content__box col-xs-12 col-sm-3 col-md-3">
                     <div class="content__content">
                         <figure>
-                            <?php
-                            the_post_thumbnail('post-thumbnail');
-                            ?>
-                            <figcaption class="content__description">
-                                <a href="<?php the_permalink(); ?>">
-                                    <?php the_title(); ?>
-                                </a>
-                            </figcaption>
+                            <a href="<?php the_permalink(); ?>">
+                                <?php the_post_thumbnail('post-thumbnail'); ?>
+                                <figcaption class="content__description">                               
+                                    <?php the_title(); ?>                               
+                                </figcaption>
+                            </a>
                         </figure>
                     </div>
                 </div>
             <?php endwhile; ?>
 
             <div class="clearfix"></div>
-            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0 col-md-2 col-md-offset-0">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5">
                 <div class="btnLaranja">
                     <a href="<?php echo get_bloginfo('url') ?>/category/content/">see all Content</a>
                 </div>
