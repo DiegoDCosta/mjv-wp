@@ -35,11 +35,11 @@ endif;
                     endwhile;
                 endif;
                 ?>
-
-                <div class="post-paginate">
-                    <?php echo paginate_links($args); ?>
+                <div class="col-md-12 text-center">
+                    <div class="post-paginate">
+                        <?php echo paginate_links($args); ?>
+                    </div>
                 </div>
-
             </div>
         </div>
     </main>

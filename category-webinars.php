@@ -39,9 +39,9 @@ endif;
                         <div class="biblioteca-boxes col-xs-12 col-sm-4 col-md-4">
                             <div class="biblioteca-boxe__content">
                                 <figure>
-                                   <div style="background-image: url(<?php echo the_post_thumbnail_url( 'large' ); ?>);" class="thumbs"> </div>
+                                    <div style="background-image: url(<?php echo the_post_thumbnail_url('large'); ?>);" class="thumbs"> </div>
                                     <figcaption class="biblioteca-boxe__description">
-                                       <a href="<?php echo get_post_meta($post->ID, 'wpcf-link-para-o-post-externo', true); ?>" target="_blank">
+                                        <a href="<?php echo get_post_meta($post->ID, 'wpcf-link-para-o-post-externo', true); ?>" target="_blank">
                                             <?php the_title(); ?>
                                         </a>
                                     </figcaption>
@@ -51,7 +51,9 @@ endif;
                     <?php endforeach; ?>
                 </div>
             <?php endif ?>
-            
+
+        </div>
+        <div class="col-md-12 text-center">
             <div class="post-paginate">
                 <?php echo paginate_links($args); ?>
             </div>

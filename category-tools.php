@@ -31,7 +31,7 @@ endif;
                 <div class="row biblioteca">
                     <?php
                     global $post;
-                    $args = array('numberposts' => 3000, 'cat' => 12);
+                    $args = array('numberposts' => 3000, 'cat' => 13);
                     $myposts = get_posts($args);
                     foreach ($myposts as $post) : setup_postdata($post);
                         ?>
