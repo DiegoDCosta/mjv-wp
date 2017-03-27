@@ -37,7 +37,7 @@ endif;
                     foreach ($myposts as $post) : setup_postdata($post);
                         ?>
 
-                        <div class="biblioteca-boxes col-xs-12 col-sm-4 col-md-4">
+                        <div class="biblioteca-boxes col-xs-12 col-sm-3 col-md-3">
                             <div class="biblioteca-boxe__content">
                                 <figure>
                                     <div style="background-image: url(<?php echo the_post_thumbnail_url('large'); ?>);" class="thumbs"> </div>

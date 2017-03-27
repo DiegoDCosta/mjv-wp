@@ -26,10 +26,6 @@
             }
         }
     }
-    .breadcrumbs{
-        height: 200px;
-    }
-
 }
 
 /* Portrait tablets and small desktops */
@@ -43,8 +39,22 @@
         background: none!important;
     }
     .breadcrumbs{
+        height: 270px;
+
         .breadcrumbs-itens{
-            top: 100%;
+            bottom: 30px;
+        }
+    }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+    .breadcrumbs{
+        height: 250px!important;
+
+        .breadcrumbs-itens{
+            bottom: 30px;
         }
     }
 }
@@ -55,20 +65,18 @@
         background: none!important;
     }
     .breadcrumbs{
+        height: 140px;
+
         .breadcrumbs-itens{
-            top: 100%;
+            bottom: 30px;
         }
     }
-
-
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 
     .breadcrumbs{
-        height: 160px;
-
         .breadcrumbs-itens{
             top: 100%;
             ol{
@@ -84,16 +92,11 @@
 
 
 
-    // formata o titulo dos cases
-    .case-custom-post{
-        .case-custom-post-box{
-            @include padding-sides(0);
-
-            .case-custom-post-box-titulo{
-                padding: 3px 12px;
-                min-height: 45px;
-                display: inline-flex;
-                text-align: left;
+    .menu-biblioteca{
+        .menu-biblioteca__itens{
+            ul{
+                width: 100%;
+                justify-content: start;
             }
         }
     }
@@ -200,5 +203,11 @@
         p, .wpcf7-submit{            
             width: 100%;            
         }
+    }
+}
+
+@media (max-width: 320px){
+    .breadcrumbs{
+        height: 120px;
     }
 }
