@@ -25,7 +25,7 @@
                             <figure>
                                 <a href="<?php the_permalink(); ?>">
                                     <div style="background-image: url(<?php echo the_post_thumbnail_url('large'); ?>);" class="thumbs"> </div>
-                                    <figcaption class="cases__description">                                   
+                                    <figcaption class="cases__description">  
                                         <?php the_title(); ?>                                    
                                     </figcaption>
                                 </a>

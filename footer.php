@@ -41,9 +41,9 @@
             <div class="col-xs-6 col-sm-4 col-md-2">                
                 <h3>ATLANTA</h3>
                 <p>
-                    75 5th Street NW
-                    Suite 424 Atlanta, GA
-                    30308 - United States
+                    715 Peachtree Street N.E.
+                    Suite 100
+                    Atlanta, Georgia 30308
                     +1 404 771 7187
                 </p>
             </div>
@@ -56,17 +56,16 @@
                     Innovation Institute
                     2450 Holcombe Blvd., Ste. X
                     Houston, TX 77021
-                    +1 (832) 272-5272
+                    +1 832 272-5272
                 </p>
             </div>
             <div class="col-xs-6 col-sm-4 col-md-2">
                 <h3>SÃO PAULO</h3>
                 <p>                    
-                    Rua Helena, 280 
+                    Rua Helena, 280
                     Gr. 1103 Vila Olímpia - SP
                     04552-050 Brazil
                     +55 11 3045 0536
-
                 </p>
             </div>
             <div class="clearfix visible-xs-block"></div>
@@ -82,8 +81,8 @@
             <div class="col-xs-6 col-sm-4 col-md-2">
                 <h3>ALPHAVILLE</h3>
                 <p>                    
-                   Avenida Sagitario Nº 138 Conj 2205B Bairro: Alphaville Conde I 
-CEP: 06.473-073 Barueri - SP
+                    Avenida Sagitario Nº 138 Conj 2205B Bairro: Alphaville Conde I 
+                    CEP: 06.473-073 Barueri - SP
                 </p>
             </div>           
             <!-- 

@@ -45,7 +45,21 @@
             bottom: 30px;
         }
     }
-
+    
+    .biblioteca {
+        .biblioteca-boxes{
+            .biblioteca-boxe__content{
+                .biblioteca-boxe__description{
+                    font-size: 12px;
+                }
+                figure{
+                    .thumbs{
+                        height: 103px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* Landscape phones and portrait tablets */
@@ -55,6 +69,17 @@
 
         .breadcrumbs-itens{
             bottom: 30px;
+        }
+    }
+    .biblioteca {
+        .biblioteca-boxes{
+            .biblioteca-boxe__content{
+                figure{
+                    .thumbs{
+                        height: 300px;
+                    }
+                }
+            }
         }
     }
 }
@@ -75,6 +100,17 @@
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+    .biblioteca {
+        .biblioteca-boxes{
+            .biblioteca-boxe__content{
+                figure{
+                    .thumbs{
+                        height: 230px;
+                    }
+                }
+            }
+        }
+    }
 
     .breadcrumbs{
         .breadcrumbs-itens{
@@ -90,7 +126,13 @@
         background-position: center center;
     }
 
-
+    .page-template-page-big-data{
+        .boxes-verdes{
+            .wpb_column{
+                padding: 0!important;
+            }
+        }
+    }
 
     .menu-biblioteca{
         .menu-biblioteca__itens{
@@ -183,7 +225,7 @@
             }
         }
         label{
-            @include font-roboto-regular($size: 1.4rem, $weight: bold);
+            @include font-roboto($size: 1.4rem, $weight: bold);
         }
     }
 
@@ -209,5 +251,16 @@
 @media (max-width: 320px){
     .breadcrumbs{
         height: 120px;
+    }
+    .biblioteca {
+        .biblioteca-boxes{
+            .biblioteca-boxe__content{
+                figure{
+                    .thumbs{
+                        height: 190px;
+                    }
+                }
+            }
+        }
     }
 }

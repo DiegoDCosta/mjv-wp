@@ -16,10 +16,10 @@
         <div class="entry-content cases">
             <div class="cases__box col-xs-12 col-sm-4 col-md-4">
                 <div class="cases__content">
-                    <figure>
-                        <a href="<?php bloginfo('url'); ?>/category/cases" target="_blank">
-                            <img src="<?php echo get_template_directory_uri(); ?>/template_image/what-we-do__cases.jpg" alt="Coolcenter" class="img-responsive" width="100%"/>
-                            <figcaption class="case__description">
+                    <figure>                        
+                        <a href="<?php bloginfo('url'); ?>/category/cases">
+                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/template_image/see-also-cases.jpg');" class="thumbs" > </div>
+                            <figcaption class="cases__description">                                   
                                 Cases
                             </figcaption>
                         </a>
@@ -29,26 +29,26 @@
 
             <div class="cases__box col-xs-12 col-sm-4 col-md-4">
                 <div class="cases__content">
-                    <figure>
+                    <figure>                        
                         <a href="<?php bloginfo('url'); ?>/category/library">
-                            <img src="<?php echo get_template_directory_uri(); ?>/template_image/what-we-do__content.jpg" alt="GroundBreaker" class="img-responsive" width="100%"/>
-                            <figcaption class="case__description">
+                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/template_image/see-also-content.jpg');" class="thumbs" > </div>
+                            <figcaption class="cases__description">                                   
                                 Content
                             </figcaption>
-                        </a>
+                        </a>                        
                     </figure>                    
                 </div>
             </div>
 
             <div class="cases__box col-xs-12 col-sm-4 col-md-4">
                 <div class="cases__content">
-                    <figure>
-                        <a href="<?php bloginfo('url'); ?>/how-we-work/design-thinking">                        
-                            <img src="<?php echo get_template_directory_uri(); ?>/template_image/what-we-do__areas-of-knowlegde.jpg" alt="Areas of knowlegde" class="img-responsive" width="100%"/>
-                            <figcaption class="case__description">
-                                Areas of knowlegde
+                    <figure>                        
+                        <a href="<?php bloginfo('url'); ?>/how-we-work/design-thinking">
+                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/template_image/see-alse-knowledge.jpg');" class="thumbs" > </div>
+                            <figcaption class="cases__description">                                   
+                                Areas de knowlegde                              
                             </figcaption>
-                        </a>
+                        </a>                        
                     </figure>
                 </div>
             </div>

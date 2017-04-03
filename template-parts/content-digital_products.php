@@ -26,10 +26,10 @@
             <div class="cases__box col-xs-12 col-sm-4 col-md-4">
                 <div class="cases__content">
                     <figure>
-                        <a href="http://www.coolcentersoftware.com/" target="_blank">
-                            <img src="<?php echo get_template_directory_uri(); ?>/template_image/what-we-do__coolcenter.jpg" alt="Coolcenter" class="img-responsive" width="100%"/>
-                            <figcaption class="case__description">                           
-                                Coolcenter                            
+                        <a href="http://www.coolcentersoftware.com/">
+                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/template_image/what-we-do__coolcenter.jpg');" class="thumbs" > </div>
+                            <figcaption class="cases__description">                                   
+                                Cases
                             </figcaption>
                         </a>
                     </figure>
@@ -38,11 +38,11 @@
 
             <div class="cases__box col-xs-12 col-sm-4 col-md-4">
                 <div class="cases__content">
-                    <figure>
-                        <a href="http://www.groundbreakerapp.com/" target="_blank" >
-                            <img src="<?php echo get_template_directory_uri(); ?>/template_image/what-we-do__groundbreaker.png" alt="GroundBreaker" class="img-responsive" width="100%"/>
-                            <figcaption class="case__description">                           
-                                BroundBreak                            
+                    <figure>                        
+                        <a href="http://www.groundbreakerapp.com/">
+                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/template_image/what-we-do__groundbreaker.png');" class="thumbs" > </div>
+                            <figcaption class="cases__description">                                   
+                                Cases
                             </figcaption>
                         </a>
                     </figure>

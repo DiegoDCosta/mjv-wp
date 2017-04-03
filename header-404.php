@@ -40,7 +40,7 @@
                                             <a href="<?php bloginfo('url'); ?>/contact/work-with-us">Work with us</a>
                                         </li>
                                         <li>
-                                            <a href="<?php bloginfo('url'); ?>/blog">Blog</a>
+                                            <a href="http://blog.mjvinnovation.com/" target="_blank">Blog</a>
                                         </li>
                                         <li class="header__link_br">
                                             <a href="http://www.mjv.com.br/" target="_blank">

@@ -60,34 +60,12 @@ $font : '../../fonts';
 }
 
 @mixin font-roboto($size: false, $color: false, $weight: false,  $lh: false){
-    font-family: 'roboto', Helvetica, Arial, sans-serif;
-    @if $size { font-size: $size; }
-    @if $color { color: $color; }
-    @if $weight { font-weight: $weight; }
-    @if $lh { line-height: $lh; }
-}
-@mixin font-roboto-thin($size: false, $color: false, $weight: false,  $lh: false) {
-    font-family: 'robotothin', Helvetica, Arial, sans-serif;
-    @if $size { font-size: $size; }
-    @if $color { color: $color; }
-    @if $weight { font-weight: $weight; }
-    @if $lh { line-height: $lh; }
-}
-@mixin font-roboto-regular($size: false, $color: false, $weight: false,  $lh: false) {
     font-family: 'robotoregular', Helvetica, Arial, sans-serif;
     @if $size { font-size: $size; }
     @if $color { color: $color; }
     @if $weight { font-weight: $weight; }
     @if $lh { line-height: $lh; }
 }
-@mixin font-roboto-italic($size: false, $color: false, $weight: false,  $lh: false) {
-    font-family: 'robotoitalic', Helvetica, Arial, sans-serif;
-    @if $size { font-size: $size; }
-    @if $color { color: $color; }
-    @if $weight { font-weight: $weight; }
-    @if $lh { line-height: $lh; }
-}
-
 @mixin margin-extremes ($value) {
     margin-top: $value;
     margin-bottom: $value;

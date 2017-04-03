@@ -7,6 +7,12 @@
 @import "../typography/_typography.scss";
 @import "../variables-site/_colors.scss";
 
+
+div.wpcf7-mail-sent-ok{
+    @include font-size(2);
+    color: #398f14;
+    border:0;
+}
 a:hover{
     text-decoration: none!important;
 }
@@ -58,7 +64,8 @@ a:hover{
 }
 .thumbs{
     height: 143px;    
-    @include background($imgpath:false, $position:center center, $repeat: no-repeat,  $background-size:cover);
+    @include background($imgpath:false, $repeat: no-repeat,  $background-size:cover);
+    background-position: center center;
 }
 .destaque{
     font-size:16px;
@@ -68,6 +75,7 @@ p{
 }
 .insider {
     @include background($repeat: no-repeat,  $background-size:cover);
+    background-position: center center;
     height: 300px;
 }
 .site-main{
@@ -77,6 +85,7 @@ p{
 .home{
     header.site-header{
         position: absolute;
+        min-height: 143px;
         @include background("./template_image/header_bg.png", $repeat: repeat-x);
     }
     h1{
@@ -85,7 +94,7 @@ p{
 }
 header.site-header{
     position: relative;
-    min-height: 161px;
+    min-height: 330px;
     padding-top: 30px;
     width: 100%;
     z-index: 2;
@@ -122,32 +131,6 @@ header.site-header{
     display: block!important;
     @include transition(all 1s cubic-bezier(.6,-0.28,.74,.05));
 }
-/*logo mobile
-.logo-holder{
-    text-align: left!important;
-    margin-left: 20px;
-}
-.mobmenur-container{
-    margin-right: 20px!important;
-}
-.mobmenu_content{
-    #mobmenuright {
-        li.menu-item-has-children{
-            ul.sub-menu{
-                li.menu-item{
-                    a{
-                        padding-left: 15px!important;
-                    }
-                }
-            }
-        }
-        .sub-menu{
-            padding-left: 0!important;
-
-        }
-    }
-}
-*/
 
 //botao laranja
 .btnLaranja{
@@ -389,10 +372,10 @@ header{
 
     .breadcrumbs-itens{
         position: absolute;
-        bottom: 60px;
+        bottom: 0;
         height: auto;
         text-transform: capitalize;
-        @include font-roboto($size: 1.5rem, $color: $color-white, $weight: bold);
+        @include font-roboto($size: 1.5rem, $color: $color-white);
 
         a, &a:hover{
             color: $color-white;
@@ -435,7 +418,7 @@ main, aside{
 
         figure{
             figcaption{
-                @include font-size(1.5);
+                @include font-size(1.6);
                 margin-top: 10px;
                 color: $color-white;
                 height: 50px;
@@ -467,7 +450,7 @@ main, aside{
                         max-height: 149px;
                     }
                     figcaption{
-                        @include font-size(1.5);
+                        @include font-size(1.6);
                         margin-top: 10px;
                         height: 50px;
                         color: $color-white;
@@ -495,7 +478,7 @@ main, aside{
                         max-height: 149px;
                     }
                     figcaption{
-                        @include font-size(1.5);
+                        @include font-size(1.6);
                         margin-top: 10px;
                         color: $color-white;
                         height: 80px;
@@ -522,7 +505,7 @@ main, aside{
                         max-height: 149px;
                     }
                     figcaption{
-                        @include font-size(1.5);
+                        @include font-size(1.6);
                         margin-top: 10px;
                         color: $color-white;
                         height: 50px;
@@ -563,16 +546,6 @@ main, aside{
                         }
                         figcaption{
                             display: none;
-                            /* @include font-size(1.5);
-                             margin-top: 10px;
-                             height: 50px;
-                             color: $color-blue-regular;
-                             text-transform: uppercase;
-                             padding: 5px;
-                             a{
-                                 color: $color-blue-regular;
-                             }*/
-
                         }
                     }
                 }
@@ -612,7 +585,7 @@ main, aside{
             width: 100%;
             font-size: 21px;
             padding-left: 20px;
-            padding-bottom: 1px;
+            padding-bottom: 2px;
         }
 
 
@@ -634,7 +607,7 @@ main, aside{
     .newsletter-box{
         display: flex;
         justify-content: center;
-        @include font-roboto-regular($color: $color-white, $weight: 100);
+        @include font-roboto($color: $color-white, $weight: 100, $size:2rem);
 
         h1, h2, h3, h4, h5, h6{
             color: $color-white;
@@ -650,8 +623,11 @@ main, aside{
             height: auto;
 
             input[type="text"], input[type="email"]{
+                @include padding-sides(10px);
+                @include font-roboto($color: $color__text-input, $weight: 400, $size:2rem);
                 width: 100%;
                 margin-bottom: 0!important;
+
             }
         }
     }
@@ -687,11 +663,11 @@ main, aside{
     @include border-radius(0!important);
 
     label{      
-        @include font-roboto-regular($weight: 100, $color: $color-gray-light);
+        @include font-roboto($weight: 100, $color: $color-gray-light);
         margin-bottom: 0;
         margin-top: 15px;
     }
-    @include font-roboto-regular($size: 2rem);
+    @include font-roboto($size: 2rem);
     fieldset{
         max-width: 100%!important;
     }
@@ -722,7 +698,7 @@ main, aside{
         }
     }
     .hs-error-msgs{
-        color: red;
+        color: red!important;
         @include list-unstyled();
         @include margin-sides(0);
     }
@@ -748,7 +724,7 @@ div.wpcf7-validation-errors{
 .wpcf7-form{
 
     p{
-        @include font-roboto-regular($weight: bold, $color: $color-gray-light);
+        @include font-roboto($weight: bold, $color: $color-gray-light);
         width: 49%;
         float: left;
         margin-right: 20px;
@@ -883,10 +859,11 @@ div.wpcf7-validation-errors{
 // formata a página de contato lading page
 .btn-azul{
     @include btn-azul();
-    @include padding-extremes(10px);
-    @include padding-sides(20px);
+    @include padding-extremes(1.5rem);
+    @include padding-sides(1.5rem);
+    @include font-roboto($size: 1.5rem, $weight: bold);
 
-    &:hover{
+    &:hover, &:visited{
         color: $color-white;
     }   
 }
@@ -993,7 +970,7 @@ footer {
         h1, h2, h3, h4, h5, h6{
             background: $color__background-orange;
             @include background-color($color__background-orange);
-            @include font-roboto-regular($color: $color-white, $weight: 100);
+            @include font-roboto($color: $color-white, $weight: 100);
             @include padding-sides(10px);
             @include padding-extremes(10px);
         }
@@ -1041,7 +1018,9 @@ footer {
             figure{
                 @include padding-extremes(5px);
                 .thumbs{
-                    height: 170px;
+                    height: 143px;
+                    background-position: center center;
+                    background-size: 100%!important;
                 }
 
                 figcaption{
@@ -1051,7 +1030,7 @@ footer {
                     text-align: center;
                     @include padding-sides(5px);
                     @include padding-extremes(10px);
-                    @include font-size(1.5);
+                    @include font-size(1.6);
 
                     a, &:hover{
                         color: $color-white;

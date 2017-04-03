@@ -28,37 +28,35 @@ endif;
 
 
         <div class="col-md-12">
-            <?php if (have_posts()) : ?>
-                <div class="row biblioteca">
-                    <?php
-                    global $post;
-                    $args = array('numberposts' => 3000, 'cat' => 8);
-                    $myposts = get_posts($args);
-                    foreach ($myposts as $post) : setup_postdata($post);
-                        ?>
 
-                        <div class="biblioteca-boxes col-xs-12 col-sm-3 col-md-3">
-                            <div class="biblioteca-boxe__content">
-                                <figure>
-                                    <a href="<?php echo get_post_meta($post->ID, 'wpcf-link-para-o-post-externo', true); ?>" target="_blank">
-                                        <div style="background-image: url(<?php echo the_post_thumbnail_url('large'); ?>);" class="thumbs"> </div>
-                                        <figcaption class="biblioteca-boxe__description">                                        
-                                            <?php the_title(); ?>                                        
-                                        </figcaption>
-                                    </a>
-                                </figure>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
+            <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?> 
+            <?php query_posts("cat=8&showposts=12&paged=$paged"); ?> 
+
+            <?php if (have_posts()) : ?>
+                <?php while (have_posts()) : the_post(); ?>
+
+                <div class="biblioteca-boxes col-xs-12 col-sm-3 col-md-3">
+                    <div class="biblioteca-boxe__content">
+                        <figure>
+                            <a href="<?php echo get_post_meta($post->ID, 'wpcf-link-para-o-post-externo', true); ?>" target="_blank">
+                                <div style="background-image: url(<?php echo the_post_thumbnail_url('large'); ?>);" class="thumbs"> </div>
+                                <figcaption class="biblioteca-boxe__description">                                        
+                                    <?php the_title(); ?>                                        
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
                 </div>
-            <?php endif ?>
-        </div>
-        <div class="col-md-12 text-center">
-            <div class="post-paginate">
-                <?php echo paginate_links($args); ?>
+                <?php endwhile; ?>
             </div>
+        <?php endif ?>
+    </div>
+    <div class="col-md-12 text-center">
+        <div class="post-paginate">
+            <?php echo paginate_links($args); ?>
         </div>
     </div>
+</div>
 </div><!-- #container-->
 
 <?php
