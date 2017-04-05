@@ -7,7 +7,7 @@
  *
  * @package mjv-theme
  */
-get_header('case');
+get_header('case-internas');
 ?>
 
 <div id="primary" class="content-area case-custom-post">
@@ -20,7 +20,7 @@ get_header('case');
                 $next_post = get_next_post();
                 if (!empty($next_post)):
                     ?>
-                    <div class="col-xs-5 col-md-4 case-custom-post-navigation case-custom-post-navigation-previous">
+                    <div class="col-xs-6 col-md-4 case-custom-post-navigation case-custom-post-navigation-previous">
                         <?php next_post_link('%link', 'Previous'); ?>
                     </div>
                 <?php endif; ?>		
@@ -29,7 +29,7 @@ get_header('case');
                 $prev_post = get_previous_post();
                 if (!empty($prev_post)):
                     ?>
-                    <div class="col-xs-5 col-md-4 case-custom-post-navigation">
+                    <div class="col-xs-6 col-md-4 case-custom-post-navigation case-custom-post-navigation-next">
                         <?php previous_post_link('%link', 'Next'); ?>
                     </div>
 
@@ -52,7 +52,7 @@ get_header('case');
                 <div class="clearfix"></div>
             </div>
         </div>
-
+        <div class="clearfix"></div>
         <?php
         while (have_posts()) : the_post();
 

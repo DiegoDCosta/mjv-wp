@@ -32,7 +32,7 @@
                                 <a href="<?php echo esc_url(home_url('/')); ?>"></a>
                             </div><!-- .site-branding -->
                         </div>
-                      <div class="col-md-9 col-md-offset-1">
+                        <div class="col-md-9 col-md-offset-1">
                             <div class="row header__busca">
                                 <div class="col-md-5 col-md-offset-6 header__submenu">
                                     <ul>
@@ -40,7 +40,7 @@
                                             <a href="<?php bloginfo('url'); ?>/contact/work-with-us">Work with us</a>
                                         </li>
                                         <li>
-                                             <a href="http://blog.mjvinnovation.com/" target="_blank">Blog</a>
+                                            <a href="http://blog.mjvinnovation.com/" target="_blank">Blog</a>
                                         </li>
                                         <li class="header__link_br">
                                             <a href="http://www.mjv.com.br/" target="_blank">
@@ -65,6 +65,9 @@
                         <div class="col-md-12 breadcrumbs">
                             <div class="breadcrumbs-itens">
                                 <?php the_breadcrumb(); ?>
+                                <h1 class="breadcrumbs-titulo">
+                                    <?php the_title(); ?>
+                                </h1>
                             </div>                            
                         </div>
                     </div>

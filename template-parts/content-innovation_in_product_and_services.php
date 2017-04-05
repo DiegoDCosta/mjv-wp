@@ -30,11 +30,12 @@
                 ?>
                 <div class="cases__box col-xs-12 col-sm-4 col-md-4">
                     <div class="cases__content">
-                        <figure> <a href="<?php the_permalink(); ?>">
-                            <div style="background-image: url(<?php echo the_post_thumbnail_url( 'large' ); ?>);" class="thumbs"> </div>
-                            <figcaption class="case__description">                               
+                        <figure>
+                            <a href="<?php echo get_post_meta($post->ID, 'wpcf-link-para-o-post-externo', true); ?>" target="_blank">
+                                <div style="background-image: url(<?php echo the_post_thumbnail_url('large'); ?>);" class="thumbs"> </div>
+                                <figcaption class="case__description">                               
                                     <?php the_title(); ?>                                
-                            </figcaption>
+                                </figcaption>
                             </a>
                         </figure>
                     </div>
@@ -42,17 +43,17 @@
             <?php endwhile; ?>
         </div><!-- .entry-content -->
         <?php if (get_edit_post_link()) : ?>
-        <footer class="entry-footer">
-            <?php
-            edit_post_link(
-                    sprintf(
-                            /* translators: %s: Name of current post */
-                            esc_html__('Edit %s', 'mjv-theme'), the_title('<span class="screen-reader-text">"', '"</span>', false)
-                    ), '<span class="edit-link">', '</span>'
-            );
-            ?>
-        </footer><!-- .entry-footer -->
-    <?php endif; ?>
+            <footer class="entry-footer">
+                <?php
+                edit_post_link(
+                        sprintf(
+                                /* translators: %s: Name of current post */
+                                esc_html__('Edit %s', 'mjv-theme'), the_title('<span class="screen-reader-text">"', '"</span>', false)
+                        ), '<span class="edit-link">', '</span>'
+                );
+                ?>
+            </footer><!-- .entry-footer -->
+        <?php endif; ?>
     </div>
 
 </article><!-- #post-## -->

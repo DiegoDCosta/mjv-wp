@@ -113,15 +113,15 @@
             </div>
 
             <?php
-            $content = new WP_Query("cat=8&showposts=4");
+            $content = new WP_Query("cat=8&showposts=3");
             while ($content->have_posts()) : $content->the_post();
                 ?>
 
-                <div class="content__box col-xs-12 col-sm-3 col-md-3">
+                <div class="content__box col-xs-12 col-sm-4 col-md-4">
                     <div class="content__content">
                         <figure>
-                            <a href="<?php the_permalink(); ?>">
-                                <?php the_post_thumbnail('post-thumbnail'); ?>
+                             <a href="<?php echo get_post_meta($post->ID, 'wpcf-link-para-o-post-externo', true); ?>" target="_blank">
+                              <div style="background-image: url(<?php echo the_post_thumbnail_url( 'large' ); ?>);" class="thumbs"> </div>
                                 <figcaption class="content__description">                               
                                     <?php the_title(); ?>                               
                                 </figcaption>
@@ -132,9 +132,9 @@
             <?php endwhile; ?>
 
             <div class="clearfix"></div>
-            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5">
+            <div class="col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5 col-xs-10 col-xs-offset-1">
                 <div class="btnLaranja">
-                    <a href="<?php echo get_bloginfo('url') ?>/category/content/">see all Content</a>
+                    <a href="<?php echo get_bloginfo('url') ?>/category/library/">see all Content</a>
                 </div>
             </div>
         </div>

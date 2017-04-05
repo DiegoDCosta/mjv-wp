@@ -15,7 +15,7 @@ endif;
 
 ?>
 
-	<section id="primary" class="content-area">
+	<section id="primary" class="content-area section-search-results">
 		<main id="main" class="site-main" role="main">
 
 		<?php

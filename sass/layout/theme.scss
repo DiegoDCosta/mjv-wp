@@ -378,7 +378,7 @@ header{
         @include font-roboto($size: 1.5rem, $color: $color-white);
 
         a, &a:hover{
-            color: $color-white;
+            @include font-roboto($size: 1.5rem, $color: $color-white);
         }
 
         ol{
@@ -426,9 +426,10 @@ main, aside{
                 text-align: center;
                 padding: 5px;
 
-                a, &:hover{
+                a, &:hover, &:focus{
                     color: $color-white;
-                    display: block;
+                    text-decoration: none;
+                    outline: none;
                 }
             }
             img{
@@ -456,8 +457,11 @@ main, aside{
                         color: $color-white;
                         text-align: center;
                         padding: 5px;
-                        a, &:hover{
+
+                        a, &:hover, &:focus{
                             color: $color-white;
+                            text-decoration: none;
+                            outline: none;
                         }
                     }
                 }
@@ -484,8 +488,11 @@ main, aside{
                         height: 80px;
                         text-align: center;
                         padding: 5px;
-                        a, &:hover{
+
+                        a, &:hover, &:focus{
                             color: $color-white;
+                            text-decoration: none;
+                            outline: none;
                         }
                     }
                 }
@@ -513,8 +520,10 @@ main, aside{
                         min-height: 164px;
                     }
                 }
-                a, &:hover{
+                a, &:hover, &:focus{
                     color: $color-white;
+                    text-decoration: none;
+                    outline: none;
                 }
             }
         }
@@ -814,15 +823,13 @@ div.wpcf7-validation-errors{
 }
 
 .case-custom-post{
-    .case-custom-post-navigation-previous{
-        margin-right: 30px;
-    }
+
     .case-custom-post-navigation{        
-        @include background-color($color-blue-regular);
         @include text-center();
         @include margin-extremes(20px);
 
         a{
+            @include background-color($color-blue-regular);
             @include font-roboto($color:$color-white);
             @include font-size(2);
             @include padding-extremes(10px);
@@ -846,6 +853,10 @@ div.wpcf7-validation-errors{
             height: 40px;
             display: table-cell;
             @include border(0 2px 0 0, solid, $color-blue-regular);
+
+            img{
+                margin-top: -5px;
+            }
         }
         .case-custom-post-box-titulo{
             display: block;
@@ -1032,8 +1043,10 @@ footer {
                     @include padding-extremes(10px);
                     @include font-size(1.6);
 
-                    a, &:hover{
+                    a, &:hover, &:focus{
                         color: $color-white;
+                        text-decoration: none;
+                        outline: none;
                     }
                 }
             }
@@ -1047,4 +1060,24 @@ footer {
 // RESETS VISUAL COMPOSER
 .wpb_content_element{
     margin-bottom: 10px!important;
+}
+
+// formata o resultado da busca
+.section-search-results{
+    .page-title{
+        @include font-roboto($color: $color-blue-regular, $weight: 400);
+        span{
+            font-weight: 400;
+        }
+    }
+    .entry-title{
+        margin-bottom: 0;
+        
+        a{
+            @include font-roboto($size: 20px, $color: $color-blue-regular);
+            &:hover, &:focus, &:visited{
+                color: $color-blue-regular!important;
+            }
+        }
+    }
 }

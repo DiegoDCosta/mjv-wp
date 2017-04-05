@@ -40,7 +40,7 @@
 
 
             <div class="clearfix"></div>
-            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5">
+            <div class="col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5 col-xs-10 col-xs-offset-1">
                 <div class="btnLaranja">
                     <a href="<?php echo get_bloginfo('url') ?>/category/cases/">see all Cases</a>
                 </div>
@@ -53,12 +53,12 @@
             </div>
             <?php
             global $post;
-            $argsContent = array('numberposts' => 4, 'cat' => 8);
+            $argsContent = array('numberposts' => 3, 'cat' => 8);
             $content = get_posts($argsContent);
             foreach ($content as $post) : setup_postdata($post);
                 ?>
 
-                <div class="content__box col-xs-12 col-sm-3 col-md-3">
+                <div class="content__box col-xs-12 col-sm-4 col-md-4">
                     <div class="content__content">
                         <figure>
                             <a href="<?php the_permalink(); ?>">
@@ -73,9 +73,9 @@
             <?php endforeach; ?>
 
             <div class="clearfix"></div>
-            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5">
+            <div class="col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5 col-xs-10 col-xs-offset-1">
                 <div class="btnLaranja">
-                    <a href="<?php echo get_bloginfo('url') ?>/category/content/">see all Content</a>
+                    <a href="<?php echo get_bloginfo('url') ?>/category/library/">see all Content</a>
                 </div>
             </div>
         </div>

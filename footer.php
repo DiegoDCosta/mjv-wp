@@ -23,7 +23,7 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="container">
         <div class="row">
-            <div class="col-md-2 col-xs-4 col-sm-2 col-lg-1 footer__logo">
+            <div class="col-md-2 col-xs-3 col-sm-2 col-lg-1 footer__logo">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="hidden-xs footer__logo-desktop"></a>
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="hidden-md hidden-lg footer__logo-mobile"></a>
             </div>
@@ -34,7 +34,7 @@
                 <p>
                     35 Corbridge Crescent,
                     Containerville, London E2 9EZ
-                    United Kingdom
+                    United Kingdom <br>
                     +44 20 3586 1233
                 </p>
             </div>
@@ -43,7 +43,7 @@
                 <p>
                     715 Peachtree Street N.E.
                     Suite 100
-                    Atlanta, Georgia 30308
+                    Atlanta, Georgia 30308<br>
                     +1 404 771 7187
                 </p>
             </div>
@@ -55,7 +55,7 @@
                     Texas Medical Center
                     Innovation Institute
                     2450 Holcombe Blvd., Ste. X
-                    Houston, TX 77021
+                    Houston, TX 77021<br>
                     +1 832 272-5272
                 </p>
             </div>
@@ -64,7 +64,7 @@
                 <p>                    
                     Rua Helena, 280
                     Gr. 1103 Vila Olímpia - SP
-                    04552-050 Brazil
+                    CEP: 04552-050 Brazil<br>
                     +55 11 3045 0536
                 </p>
             </div>
@@ -74,15 +74,17 @@
                 <p>                    
                     Av. Marechal Câmara, 160 
                     Gr. 206 Centro - RJ.
-                    20020-080 - Brazil
+                    CEP: 20020-080 - Brazil<br>
                     +55 21 2532 6423
                 </p>
             </div>
             <div class="col-xs-6 col-sm-4 col-md-2">
                 <h3>ALPHAVILLE</h3>
                 <p>                    
-                    Avenida Sagitario Nº 138 Conj 2205B Bairro: Alphaville Conde I 
-                    CEP: 06.473-073 Barueri - SP
+                    Avenida Sagitario Nº 138 Conj 2205B
+                    Bairro: Alphaville Conde I
+                    CEP: 06473-073 Barueri - SP<br>
+                    +55 11 2898 4732
                 </p>
             </div>           
             <!-- 

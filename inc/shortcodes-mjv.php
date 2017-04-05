@@ -3,7 +3,7 @@
 // Cria o numero do titulo dos destaques das internas
 function BtnLaranja($params, $content = null) {
     extract(shortcode_atts(array(
-        'url'=> '',
+        'url'=> '/contact',
         'class' => ''
                     ), $params));
     return

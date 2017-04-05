@@ -40,7 +40,7 @@
                                             <a href="<?php bloginfo('url'); ?>/contact/work-with-us">Work with us</a>
                                         </li>
                                         <li>
-                                             <a href="http://blog.mjvinnovation.com/" target="_blank">Blog</a>
+                                            <a href="http://blog.mjvinnovation.com/" target="_blank">Blog</a>
                                         </li>
                                         <li class="header__link_br">
                                             <a href="http://www.mjv.com.br/" target="_blank">
@@ -61,7 +61,14 @@
                             </div>
                         </div>
                     </div>
-                   
+                    <div class="row">
+                        <div class="col-md-12 breadcrumbs">
+                            <div class="breadcrumbs-itens">
+                                <?php the_breadcrumb(); ?>
+                            </div>                            
+                        </div>
+                    </div>
+
                 </div>
                 <div class="header__shadow"></div>
             </header><!-- #masthead -->
