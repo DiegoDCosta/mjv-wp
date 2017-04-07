@@ -12,6 +12,7 @@
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+   
     header.site-header{
         max-height: 340px;
     }
@@ -28,6 +29,18 @@
     }
 }
 
+@media (min-width: 992px){
+    .breadcrumbs{
+        height: 180px;
+    }
+}
+
+@media (max-width: 991px){
+    .breadcrumbs{
+        height: 300px;
+    }
+}
+
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
     footer{
@@ -39,8 +52,7 @@
         background: none!important;
     }
     .breadcrumbs{
-        height: 270px;
-
+        height: 300px;
         .breadcrumbs-itens{
             bottom: 30px;
         }
@@ -63,31 +75,9 @@
 }
 
 /* Landscape phones and portrait tablets */
-@media (min-width: 481px) and (max-width: 767px) {
-    .breadcrumbs{
-        height: 250px!important;
-
-        .breadcrumbs-itens{
-            bottom: 30px;
-        }
-    }
-    .biblioteca {
-        .biblioteca-boxes{
-            .biblioteca-boxe__content{
-                figure{
-                    .thumbs{
-                        height: 300px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-/* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
     footer {
-       @include padding-extremes(20px);
+        @include padding-extremes(20px);
         @include background-color($color-blue-regular);
 
         h1,h2,h3,h4,h5,h6{
@@ -106,8 +96,6 @@
         background: none!important;
     }
     .breadcrumbs{
-        height: 140px;
-
         .breadcrumbs-itens{
             bottom: 30px;
         }
@@ -117,28 +105,47 @@
     }
 }
 
+/* Landscape phones and portrait tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+    .breadcrumbs{
+        .breadcrumbs-itens{
+            bottom: 30px;
+        }
+    }
+
+    .biblioteca {
+        .biblioteca-boxes{
+            .biblioteca-boxe__content{
+                figure{
+                    .thumbs{
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 
     .thumbs{
         height: 170px;
     }
-
-
     .breadcrumbs{
+
         .breadcrumbs-itens{
-            top: 100%;
+
             ol{
                 flex-wrap: wrap;
             }
         }
     }
-
     .insider{
         height: 300px;
         background-position: center center;
     }
-
     .page-template-page-big-data{
         .boxes-verdes{
             .wpb_column{
@@ -146,7 +153,6 @@
             }
         }
     }
-
     .menu-biblioteca{
         .menu-biblioteca__itens{
             ul{
@@ -155,7 +161,17 @@
             }
         }
     }
-
+    .biblioteca {
+        .biblioteca-boxes{
+            .biblioteca-boxe__content{
+                figure{
+                    .thumbs{
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
     footer {
         @include background-color($color-blue-regular);
 
@@ -189,7 +205,6 @@
         }
 
     }
-
     // formata a newsletter
     .newsletter{
         fieldset {
@@ -202,7 +217,6 @@
             }
         }
     }
-
     // what we do 
     .what-we-do{
         .what-we-do__box{
@@ -219,14 +233,12 @@
             }
         }
     }
-
     //formata o contato landing page
     .btn-azul{
         display: block;
         width: 80%;
         margin-left: 10%;
     }
-
     // formata os forms hubspot
     .hbspt-form{
         .hs_submit{
@@ -241,7 +253,6 @@
             @include font-roboto($size: 1.4rem, $weight: bold);
         }
     }
-
     .form-columns-2 {
         .hs-form-field{
             .hs-input{
@@ -261,10 +272,22 @@
     }
 }
 
-@media (max-width: 320px){
-    .breadcrumbs{
-        height: 120px;
+@media (min-width: 321px) and (max-width: 479px){
+    .biblioteca {
+        .biblioteca-boxes{
+            .biblioteca-boxe__content{
+                figure{
+                    .thumbs{
+                        height: 190px;
+                    }
+                }
+            }
+        }
     }
+}
+
+@media (max-width: 320px){
+
     .biblioteca {
         .biblioteca-boxes{
             .biblioteca-boxe__content{

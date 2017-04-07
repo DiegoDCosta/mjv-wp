@@ -16,8 +16,9 @@
         <div class="entry-content cases">
             <div class="what-we-do__box">
                 <div class="what-we-do__img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/template_image/titulo__ico-seta-what-we-do.png" alt=""/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/template_image/InnovationInProductsAndServices_02.png" alt=""/>
                 </div>
+                
                 <h2 class="what-we-do__desc first">
                     INNOVATION IN PRODUCTS AND SERVICES
                 </h2>

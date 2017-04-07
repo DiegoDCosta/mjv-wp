@@ -368,7 +368,6 @@ header{
 // breadcrumb
 .breadcrumbs{
     position: relative;
-    height: 180px;
 
     .breadcrumbs-itens{
         position: absolute;
@@ -1072,12 +1071,15 @@ footer {
     }
     .entry-title{
         margin-bottom: 0;
-        
+
         a{
-            @include font-roboto($size: 20px, $color: $color-blue-regular);
+            @include font-roboto($size: 24px, $color: $color-blue-regular);
             &:hover, &:focus, &:visited{
                 color: $color-blue-regular!important;
             }
         }
+    }
+    .entry-summary{
+        @include font-roboto($size: 14px);
     }
 }

@@ -16,20 +16,20 @@
         <div class="entry-content cases">
             <div class="what-we-do__box">
                 <div class="what-we-do__img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/template_image/titulo__ico-seta-what-we-do.png" alt=""/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/template_image/DigitalProduct_02.png " alt=""/>
                 </div>
                 <h2 class="what-we-do__desc">
-                    DIGITAL PRODUCT
+                    PRODUCTS
                 </h2>
             </div>
 
             <div class="cases__box col-xs-12 col-sm-4 col-md-4">
                 <div class="cases__content">
                     <figure>
-                        <a href="http://www.coolcentersoftware.com/">
-                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/template_image/what-we-do__coolcenter.jpg');" class="thumbs" > </div>
+                        <a href="http://www.coolcentersoftware.com/" target="_blank">
+                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/template_image/what-we-do__coolcenter.png');" class="thumbs" > </div>
                             <figcaption class="cases__description">                                   
-                                Cases
+                                CoolCenter
                             </figcaption>
                         </a>
                     </figure>
@@ -39,15 +39,28 @@
             <div class="cases__box col-xs-12 col-sm-4 col-md-4">
                 <div class="cases__content">
                     <figure>                        
-                        <a href="http://www.groundbreakerapp.com/">
+                        <a href="http://www.groundbreakerapp.com/" target="_blank">
                             <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/template_image/what-we-do__groundbreaker.png');" class="thumbs" > </div>
                             <figcaption class="cases__description">                                   
-                                Cases
+                                GroundBreaker
                             </figcaption>
                         </a>
                     </figure>
                 </div>
             </div>
+             <div class="cases__box col-xs-12 col-sm-4 col-md-4">
+                <div class="cases__content">
+                    <figure>                        
+                        <a href="http://www.mjvinnovation.com/dtincompany" target="_blank">
+                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/template_image/Design-Thinking-in-Company.png');" class="thumbs" > </div>
+                            <figcaption class="cases__description">                                   
+                                Design Thinking in Company
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+            </div>
+            
         </div><!-- .entry-content -->
         <?php if (get_edit_post_link()) : ?>
             <footer class="entry-footer">
